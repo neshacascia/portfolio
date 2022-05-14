@@ -5,121 +5,127 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Nesha Mervin</title>
 </head>
 
-<body>
-    <nav>
-        <div class="nav-bar">
-            <div class="nav-logo">
-                <img src="Assets/logo.svg" alt="Logo">
+<body></body>
+    <header id="home">
+        <nav>
+            <div class="nav-bar">
+                    <img class="nav-logo" src="Assets/logo.svg" alt="Logo">
+    
+                    <div class="nav-links">
+                        <ul class="nav-links">
+                            <a href="#home" class="nav-item"><li>home</li></a>
+                            <a href="#about" class="nav-item"><li>about</li></a>
+                            <a href="#projects" class="nav-item"><li>projects</li></a>
+                            <a href="#contact" class="nav-item"><li>contact</li></a>
+                        </ul>
+                        <img class="nav-toggle-button" src="Assets/toggle-button.svg" alt="Day/night theme toggle button">
+                    </div>
             </div>
+        </nav>
+    </header>
 
-            <div class="nav-links">
-                <ul>
-                    <a href="#home" class="nav-item"><li>home</li></a>
-                    <a href="#about" class="nav-item"><li>about</li></a>
-                    <a href="#projects" class="nav-item"><li>projects</li></a>
-                    <a href="#contact" class="nav-item"><li>contact</li></a>
-                </ul>
-                
-                <div class="nav-toggle-button">
-                    <img src="Assets/toggle-button.svg" alt="Day/night theme toggle button">
-                </div>
+    <section class="pages">
+        <div class="home"> 
+            <div class="home-text">
+                <h5>hello, my name is</h5>
+                <h1>Nesha Mervin</h1>
+                <h2 class="gradient">Software Developer</h2>
+                <p>I am a full-stack developer specializing in building and designing interactive digital experiences that are simple, beautiful, and accessible. Do you have a project in mind and need help bringing that idea to life? Let's <a href="#contact">chat!</a></p>
             </div>
-        </div>
-    </nav>
-
-    <section>
-        <div class="home">
-            <h5>hello, my name is</h5>
-            <h1>Nesha Mervin</h1>
-            <h2>Software Developer</h2>
-            <p>I am a full-stack developer specializing in building and designing interactive digital experiences that are simple, beautiful, and accessible. Do you have a project in mind and need help bringing that idea to life? Let's <span>chat!</span></p>
-        </div>
-
-        <div class="home-ig">
-            <img src="Assets/home-computer.svg" alt="Illustration of a computer">
+    
+            <div class="home-ig">
+                <img src="Assets/home-computer.svg" alt="Illustration of a computer">
+            </div>
         </div>
 
         <div class="home-arrow">
             <img src="" alt="Arrow pointing down">
         </div>
+
     </section>
 
-    <span class="social-media-links">
-        <a href="">
+    <span class="fixed-links">
+        <a class="social-media-links"href="">
             <img src="Assets/media-links/linkedin.svg" alt="LinkedIn">
         </a>
-        <a href="">
+        <a class="social-media-links"href="">
             <img src="Assets/media-links/github.svg" alt="GitHub">
         </a>
-        <a href="">
+        <a class="social-media-links"href="">
             <img src="Assets/media-links/twitter.svg" alt="Twitter">
         </a>
+        <img class="social-media-links" src="Assets/media-links/line.svg" alt="Line">
     </span>
 
-    <section>
+    <section class="pages">
         <div id="about">
             <div class="about-text">
                 <h2>/about me</h2>
                 <h4>— art + design + coding</h4>
-                <p>Ever since I was young, I always had a profound interest in technology. From watching Youtube videos on the latest technology to tweaking other individuals' custom themes on Tumblr, I now create things that live on the web. I hope to bring value and success through one line of code at a time.</p>
+                <p>Ever since I was young, I always had a profound interest in technology. From watching Youtube videos on the latest gadgets to tweaking other individuals' custom themes on Tumblr, I now create things that live on the web. I hope to bring value and success through one line of code at a time.</p>
                 <p>When I'm not coding, I love to visit new cafes and am currently improving my skills in 3D illustration and interactive art.</p>
             </div>
 
-            <div class="tech-stack-title">
+            <div class="tech-stack-container">
                 <span>Technology Stack</span>
                 <div class="tech-stack">
-                    <figure>
-                        <img src="Assets/tech-stack/html.svg" alt="HTML">
-                        <figcaption>HTML</figcaption>
-                    </figure>
+                    <div class="tech-stack-row">
+                        <figure class="tech-stack-item">
+                            <img src="Assets/tech-stack/html.svg" alt="HTML">
+                            <figcaption>HTML</figcaption>
+                        </figure>
+    
+                        <figure class="tech-stack-item">
+                            <img src="Assets/tech-stack/css.svg" alt="CSS">
+                            <figcaption>CSS</figcaption>
+                        </figure>
+    
+                        <figure class="tech-stack-item">
+                            <img src="Assets/tech-stack/javascript.svg" alt="JavaScript">
+                            <figcaption>JavaScript</figcaption>
+                        </figure>
+    
+                        <figure class="tech-stack-item">
+                            <img src="Assets/tech-stack/react.svg" alt="React">
+                            <figcaption>React</figcaption>
+                        </figure>
+    
+                        <figure class="tech-stack-item">
+                            <img src="Assets/tech-stack/figma.svg" alt="Figma">
+                            <figcaption>Figma</figcaption>
+                        </figure>
+                    </div>
 
-                    <figure>
-                        <img src="Assets/tech-stack/css.svg" alt="CSS">
-                        <figcaption>CSS</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="Assets/tech-stack/javascript.svg" alt="JavaScript">
-                        <figcaption>JavaScript</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="Assets/tech-stack/react.svg" alt="React">
-                        <figcaption>React</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="Assets/tech-stack/figma.svg" alt="Figma">
-                        <figcaption>Figma</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="Assets/tech-stack/mongodb.svg" alt="MongoDB">
-                        <figcaption>MongoDB</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="Assets/tech-stack/sass.svg" alt="SASS">
-                        <figcaption>SASS</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="Assets/tech-stack/tailwindcss.svg" alt="TailwindCSS">
-                        <figcaption>TailwindCSS</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="Assets/tech-stack/nodejs.svg" alt="NodeJS">
-                        <figcaption>NodeJS</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="Assets/tech-stack/git.svg" alt="Git">
-                        <figcaption>Git</figcaption>
-                    </figure>
+                    <div class="tech-stack-row">
+                        <figure class="tech-stack-item">
+                            <img src="Assets/tech-stack/mongodb.svg" alt="MongoDB">
+                            <figcaption>MongoDB</figcaption>
+                        </figure>
+    
+                        <figure class="tech-stack-item">
+                            <img src="Assets/tech-stack/sass.svg" alt="SASS">
+                            <figcaption>SASS</figcaption>
+                        </figure>
+    
+                        <figure class="tech-stack-item">
+                            <img src="Assets/tech-stack/tailwindcss.svg" alt="TailwindCSS">
+                            <figcaption>TailwindCSS</figcaption>
+                        </figure>
+    
+                        <figure class="tech-stack-item">
+                            <img src="Assets/tech-stack/nodejs.svg" alt="NodeJS">
+                            <figcaption>NodeJS</figcaption>
+                        </figure>
+    
+                        <figure class="tech-stack-item">
+                            <img src="Assets/tech-stack/git.svg" alt="Git">
+                            <figcaption>Git</figcaption>
+                        </figure>
+                    </div>
                 </div>
 
                 <div class="tech-stack-design">
@@ -129,7 +135,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="pages">
         <div id="projects">
             <div class="projects-text">
                 <h2>/projects</h2>
@@ -157,7 +163,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="pages">
         <div id="contact">
             <div class="contact-text">
                 <h2>/contact me</h2>
@@ -185,7 +191,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="pages">
         <div class="footer">
             <p>2022 | Designed & coded with <span></span> by Nesha Mervin</p>
         </div>
