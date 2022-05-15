@@ -193,28 +193,54 @@ h1 {
 }
 
 .about-text p {
-    padding: 15px 0;
+    padding-bottom: 15px;
 }
 
+.tech-stack-container {
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+}
 .tech-stack-container span {
     color: #D8DEED;
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    position: relative;
+    left: 150px;
 }
 
+.tech-stack-img {
+    position: absolute;
+    left: 1020px;
+    margin-bottom: 20px;
+}
 .tech-stack {
     background: rgba(46, 51, 61);
     width: 80%;
     height: 250px;
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px auto;
+    gap: 15px;
 }
 
 .tech-stack-row {
     display: flex;
-    justify-content: center;
-
 }
 
 .tech-stack-item {
-    
-    
+    font-family: 'Josefin Sans', sans-serif;
+    color: #D8DEED;
+    width: 160px;
+    height: 82px;
+    padding: 0 40px;
+    text-align: center;
 }
+
+figcaption {
+    padding-top: 10px;              
+}
+
+/* Projects Styles */
