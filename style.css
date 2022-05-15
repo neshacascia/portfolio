@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Josefin+Sans:wght@700&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Josefin+Sans:wght@700&family=Roboto:wght@700&display=swap');
 
 * {
     margin: 0;
@@ -89,6 +89,7 @@ h4 {
 p {
     color: #D8DEED;
     font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
     font-size: 18px;
     /* font-weight: lighter; */
     line-height: 2;
@@ -162,22 +163,20 @@ h1 {
     background-position: top right;
   }
 }
-}
 
 .home-text a {
-    font-weight: 700;
-    color: #8EA9A8;
     text-decoration: none;
-}
-
-.home-text a:hover {
-    transform: ;
+    color: #8EA9A8;
+    font-weight: 700;
 }
 
 .home-text a:visited {
-    color: #5c7170;
+    color: #4743c1;
 }
 
+a:hover {
+    color: #c5d1d1;
+}
 /* About Me Styles */
 #about {
     margin-top: 160px;
