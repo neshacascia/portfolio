@@ -23,7 +23,7 @@ h3,
 }
 
 h1,
-h2
+h2,
 .gradient {
     font-family: 'Roboto', sans-serif;
 }
@@ -296,6 +296,7 @@ h3 {
     font-size: 14px;
     line-height: 200.2%;
     letter-spacing: 0.1em;
+    -webkit-appearance: none;
 }
 
 .contact-info input {
