@@ -282,3 +282,51 @@ h3 {
     width: 21px;
     height: 19px
 }
+
+/* Contact Me Styles */
+.contact-text {
+    width: 70%;
+}
+
+.contact-text h2 {
+    margin-bottom: 15px;
+}
+
+.contact-text p {
+    margin-bottom: 15px;
+}
+
+.contact-info input,
+.contact-info textarea {
+    color: #D8DEED;
+    background: #353B44;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    line-height: 200.2%;
+    letter-spacing: 0.1em;
+}
+
+.contact-info input {
+    width: 400px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.contact-info textarea {
+    width: 600px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+form .button {
+    color: #D8DEED;
+    background: #8EA9A8;
+    border-radius: 6px;
+    padding: 7px 52px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 200.2%;
+    letter-spacing: 0.1em;
+}
+
