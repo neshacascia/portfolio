@@ -15,6 +15,54 @@ header {
     margin-bottom: 170px;
 }
 
+.nav-item,
+.tech-stack-container span,
+.tech-stack-item,
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h2,
+h1,
+.gradient {
+    font-family: 'Roboto', sans-serif;
+}
+
+h4,
+p,
+.projects-tech,
+.contact-info input,
+.contact-info textarea,
+form .button {
+    font-family: 'DM Sans', sans-serif;
+}
+
+h2,
+p,
+h1,
+.tech-stack-container span,
+.tech-stack-item,
+h3,
+.contact-info input,
+.contact-info textarea,
+form .button {
+    color: #D8DEED;
+}
+
+.nav-item,
+h4,
+.home-text a,
+.projects-tech {
+    color: #8EA9A8;
+}
+
+.home-text,
+.about-text,
+.projects-text,
+.contact-text {
+    width: 70%;
+}
+
 /* Navigation Styles */
 nav {
     background: rgba(46, 51, 61, 0.7);
@@ -40,8 +88,8 @@ div.nav-bar {
 }
 
 .nav-item {
-    color: #8EA9A8;
-    font-family: 'Josefin Sans', sans-serif;
+    /* color: #8EA9A8; */
+    /* font-family: 'Josefin Sans', sans-serif; */
     font-size: 18px;
     font-weight: 700;
     line-height: 150%;
@@ -71,24 +119,24 @@ span.fixed-links {
 }
 
 h2 {
-    color: #D8DEED;
-    font-family: 'Roboto', sans-serif;
+    /* color: #D8DEED; */
+    /* font-family: 'Roboto', sans-serif; */
     font-size: 40px;
     font-weight: 700;
     letter-spacing: 0.1em;
 }
 
 h4 {
-    color: #8EA9A8;
-    font-family: 'DM Sans', sans-serif;
+    /* color: #8EA9A8; */
+    /* font-family: 'DM Sans', sans-serif; */
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 0.1em;
 }
 
 p {
-    color: #D8DEED;
-    font-family: 'DM Sans', sans-serif;
+    /* color: #D8DEED; */
+    /* font-family: 'DM Sans', sans-serif; */
     font-weight: 400;
     font-size: 18px;
     /* font-weight: lighter; */
@@ -105,7 +153,7 @@ p {
 }
 
 .home-text {
-    width: 60%;
+    /* width: 70%; */
 }
 
 .home-text h5 {
@@ -119,7 +167,7 @@ p {
 
 h1 {
     color: #D8DEED;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     font-weight: 700;
     font-size: 50px;
     line-height: 150%;
@@ -137,37 +185,18 @@ h1 {
         #232082 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	font-family: 'Roboto', sans-serif;
+	/* font-family: 'Roboto', sans-serif; */
     font-size: 50px;
     line-height: 150%;
     letter-spacing: 0.1em;
     margin-top: -10px;
     margin-bottom: 10px;
-
-    background-size: 300% 300%;
-    background-repeat: no-repeat;
-    background-position: top left;
-  
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-
-    animation: .gradient infinite 1s linear;
-}
-
-@keyframes .gradient {
-  0% {
-    background-position: top left;
-  }
-  100% {
-    background-position: top right;
-  }
 }
 
 .home-text a {
-    text-decoration: none;
-    color: #8EA9A8;
     font-weight: 700;
+    text-decoration: none;
+    /* color: #8EA9A8; */
 }
 
 .home-text a:visited {
@@ -184,7 +213,7 @@ a:hover {
 }
 
 .about-text {
-    width: 70%;
+    /* width: 70%; */
 }
 
 .about-text h4 {
@@ -200,9 +229,10 @@ a:hover {
     margin-top: 10px;
     position: relative;
 }
+
 .tech-stack-container span {
-    color: #D8DEED;
-    font-family: 'Josefin Sans', sans-serif;
+    /* color: #D8DEED; */
+    /* font-family: 'Josefin Sans', sans-serif; */
     font-size: 24px;
     position: relative;
     left: 150px;
@@ -230,8 +260,8 @@ a:hover {
 }
 
 .tech-stack-item {
-    font-family: 'Josefin Sans', sans-serif;
-    color: #D8DEED;
+    /* font-family: 'Josefin Sans', sans-serif; */
+    /* color: #D8DEED; */
     width: 160px;
     height: 82px;
     padding: 0 40px;
@@ -244,8 +274,8 @@ figcaption {
 
 /* Projects Styles */
 h3 {
-    color: #D8DEED;
-    font-family: 'Josefin Sans', sans-serif;
+    /* color: #D8DEED; */
+    /* font-family: 'Josefin Sans', sans-serif; */
     font-weight: 700;
     font-size: 24px;
     line-height: 200%;
@@ -253,7 +283,7 @@ h3 {
 }
 
 .projects-text {
-    width: 70%;
+    /* width: 70%; */
 }
 
 .projects-text h2 {
@@ -265,8 +295,8 @@ h3 {
 }
 
 .projects-tech {
-    color: #8EA9A8;
-    font-family: 'DM Sans', sans-serif;
+    /* color: #8EA9A8; */
+    /* font-family: 'DM Sans', sans-serif; */
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 0.1em;
@@ -285,7 +315,7 @@ h3 {
 
 /* Contact Me Styles */
 .contact-text {
-    width: 70%;
+    /* width: 70%; */
 }
 
 .contact-text h2 {
@@ -298,9 +328,9 @@ h3 {
 
 .contact-info input,
 .contact-info textarea {
-    color: #D8DEED;
+    /* color: #D8DEED; */
     background: #353B44;
-    font-family: 'DM Sans', sans-serif;
+    /* font-family: 'DM Sans', sans-serif; */
     font-size: 14px;
     line-height: 200.2%;
     letter-spacing: 0.1em;
@@ -319,11 +349,11 @@ h3 {
 }
 
 form .button {
-    color: #D8DEED;
+    /* color: #D8DEED; */
     background: #8EA9A8;
     border-radius: 6px;
     padding: 7px 52px;
-    font-family: 'DM Sans', sans-serif;
+    /* font-family: 'DM Sans', sans-serif; */
     font-weight: 400;
     font-size: 20px;
     line-height: 200.2%;
