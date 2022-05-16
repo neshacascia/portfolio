@@ -364,3 +364,7 @@ form .button {
 .footer {
     text-align: center;
 }
+
+.footer span {
+    margin: 0 10px;
+}
