@@ -330,3 +330,7 @@ form .button {
     letter-spacing: 0.1em;
 }
 
+/* Footer Styles */
+.footer {
+    text-align: center;
+}
