@@ -67,7 +67,7 @@ span.fixed-links {
 
 /* Standard Pages Styles */
 .pages {
-    margin: 0 120px;
+    margin: 200px 120px;
 }
 
 h2 {
@@ -243,3 +243,42 @@ figcaption {
 }
 
 /* Projects Styles */
+h3 {
+    color: #D8DEED;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 200%;
+    letter-spacing: 0.1em;
+}
+
+.projects-text {
+    width: 70%;
+}
+
+.projects-text h2 {
+    margin-bottom: 15px;
+}
+
+.projects-text h4 {
+    margin-bottom: 15px;
+}
+
+.projects-tech {
+    color: #8EA9A8;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.projects-tech-links a {
+    padding-right: 15px;
+}
+
+.projects-tech-links img {
+    width: 21px;
+    height: 19px
+}
