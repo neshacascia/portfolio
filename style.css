@@ -331,7 +331,7 @@ h3 {
 
 .contact-info input,
 .contact-info textarea {
-    background: #353B44;
+    background: rgba(46, 51, 61);
     font-size: 14px;
     line-height: 200.2%;
     letter-spacing: 0.1em;
