@@ -349,6 +349,10 @@ h3 {
     margin-bottom: 30px;
 }
 
+::placeholder {
+    color: #B9B9B9;
+}
+
 form .button {
     background: #8EA9A8;
     border-radius: 6px;
