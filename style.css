@@ -190,6 +190,16 @@ h1 {
 a:hover {
     color: #c5d1d1;
 }
+
+.home-arrow {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.home-arrow img {
+    width: 60px;
+}
 /* About Me Styles */
 #about {
     margin-top: 160px;
@@ -281,6 +291,28 @@ h3 {
     height: 19px
 }
 
+.projects-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.projects-button button {
+    background: rgba(46, 51, 61);
+    padding: 16px;
+    border-radius: 6px;
+    width: 60px;
+    height: 60px;
+}
+
+.projects-button span {
+    color: #D8DEED;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 35px;
+    line-height: 200%;
+    letter-spacing: 0.1em;
+    padding: 0 60px;
+}
 /* Contact Me Styles */
 .contact-text h2 {
     margin-bottom: 15px;
@@ -296,7 +328,6 @@ h3 {
     font-size: 14px;
     line-height: 200.2%;
     letter-spacing: 0.1em;
-    -webkit-appearance: none;
 }
 
 .contact-info input {
