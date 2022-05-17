@@ -15,6 +15,13 @@ header {
     margin-bottom: 170px;
 }
 
+button,
+input,
+textarea {
+    all: unset;
+    cursor: pointer;
+}
+
 h3,
 .nav-item,
 .tech-stack-container span,
@@ -294,6 +301,7 @@ h3 {
 .projects-button {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 90px;
 }
 
@@ -301,8 +309,7 @@ h3 {
     background: rgba(46, 51, 61);
     padding: 16px;
     border-radius: 6px;
-    width: 60px;
-    height: 60px;
+    height: 25px;
 }
 
 .projects-button span {
