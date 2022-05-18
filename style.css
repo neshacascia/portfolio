@@ -12,7 +12,6 @@ body {
 
 header {
     width: 100%;
-    margin-bottom: 170px;
 }
 
 button,
@@ -37,7 +36,6 @@ h2,
 
 h4,
 p,
-.projects-tech,
 .contact-info input,
 .contact-info textarea,
 form .button {
@@ -51,21 +49,19 @@ p,
 .tech-stack-container span,
 .tech-stack-item,
 .contact-info input,
-.contact-info textarea,
-form .button {
+.contact-info textarea {
     color: #D8DEED;
 }
 
 .nav-item,
 h4,
-.home-text a,
-.projects-tech {
+.home-text a {
     color: #8EA9A8;
 }
 
 .home-text,
 .about-text,
-.projects-text,
+.creations-text,
 .contact-text {
     width: 70%;
 }
@@ -120,7 +116,7 @@ span.fixed-links {
 
 /* Standard Pages Styles */
 .pages {
-    margin: 200px 120px;
+    margin: 0 120px;
 }
 
 h2 {
@@ -147,12 +143,12 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 170px;
+    height: 100vh;
 }
 
 .home-text h5 {
-    color: #B9B9B9;
-    font-family: 'Courier';
+    color: #B6BAC6;
+    font-family: courier;
     font-size: 18px;
     font-weight: lighter;
     letter-spacing: 0.09em;
@@ -201,16 +197,15 @@ a:hover {
 .home-arrow {
     display: flex;
     justify-content: center;
-    margin-top: 80px;
 }
 
 .home-arrow img {
     width: 60px;
+    margin-top: -100px;
 }
 /* About Me Styles */
 #about {
-    margin-top: 160px;
-    height: 700px;
+    height: 100vh;
 }
 
 .about-text h4 {
@@ -236,7 +231,7 @@ a:hover {
 .tech-stack-img {
     position: absolute;
     left: 1020px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 .tech-stack {
     background: rgba(46, 51, 61);
@@ -265,7 +260,11 @@ figcaption {
     padding-top: 10px;              
 }
 
-/* Projects Styles */
+/* Creations Styles */
+#creations {
+    height: 100vh;
+}
+
 h3 {
     font-weight: 700;
     font-size: 24px;
@@ -273,46 +272,54 @@ h3 {
     letter-spacing: 0.1em;
 }
 
-.projects-text h2 {
+.creations-text h2 {
     margin-bottom: 15px;
 }
 
-.projects-text h4 {
+.creations-text h4 {
     margin-bottom: 15px;
 }
 
-.projects-tech {
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    margin-top: 15px;
-    margin-bottom: 15px;
+.creations-tech {
+    color: #262A33;
+    font-family: courier;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-.projects-tech-links a {
+.creations-tech span {
+    background: #8EA9A8;
+    margin-right: 5px;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+.creations-tech-links a {
     padding-right: 15px;
 }
 
-.projects-tech-links img {
-    width: 21px;
-    height: 19px
+.creations-tech-links img {
+    width: 24px;
+    height: 22px
 }
 
-.projects-button {
+.creations-button {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 90px;
 }
 
-.projects-button button {
+.creations-button button {
     background: rgba(46, 51, 61);
     padding: 16px;
     border-radius: 6px;
     height: 25px;
 }
 
-.projects-button span {
+.creations-button span {
     color: #D8DEED;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 35px;
@@ -321,6 +328,10 @@ h3 {
     padding: 0 60px;
 }
 /* Contact Me Styles */
+#contact {
+    height: 100vh;
+}
+
 .contact-text h2 {
     margin-bottom: 15px;
 }
@@ -350,10 +361,11 @@ h3 {
 }
 
 ::placeholder {
-    color: #B9B9B9;
+    color: #B6BAC6;
 }
 
 form .button {
+    color: #262A33;
     background: #8EA9A8;
     border-radius: 6px;
     padding: 7px 52px;
