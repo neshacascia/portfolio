@@ -68,7 +68,7 @@ h4,
 
 /* Navigation Styles */
 nav {
-    background: rgba(46, 51, 61, 0.7);
+    background: rgba(46, 51, 61);
     display: flex;
     align-items: center;
     width: 100%;
@@ -115,7 +115,9 @@ span.fixed-links {
 
 /* Standard Pages Styles */
 .pages {
-    margin: 0 120px;
+    margin: 0 auto;
+    padding: 0 50px;
+    max-width: 1400px;
 }
 
 h2 {
@@ -206,7 +208,7 @@ a:hover {
 /* About Me Styles */
 #about {
     height: 100vh;
-    padding-top: 100px;
+    padding-top: 120px;
 }
 
 .about-text h4 {
@@ -219,7 +221,7 @@ a:hover {
 
 .tech-stack-container {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 40px;
     position: relative;
 }
 
@@ -229,21 +231,23 @@ a:hover {
     left: 150px;
 }
 
-.tech-stack-img {
-    position: absolute;
-    left: 1020px;
-    /* margin-bottom: 20px; */
-}
 .tech-stack {
     background: rgba(46, 51, 61);
     width: 80%;
     height: 250px;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: 30px auto;
     gap: 15px;
+}
+
+.tech-stack-img {
+    position: absolute;
+    left: 720px;
+    bottom: 120px;
 }
 
 .tech-stack-row {
