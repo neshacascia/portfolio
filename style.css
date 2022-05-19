@@ -105,8 +105,7 @@ span.fixed-links {
     align-items: center;
     width: 90px;
     position: fixed;
-    top: 580px;
-
+    bottom: 0;
 }
 
 .social-media-links {
@@ -116,7 +115,7 @@ span.fixed-links {
 /* Standard Pages Styles */
 .pages {
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 70px;
     max-width: 1400px;
 }
 
