@@ -53,6 +53,7 @@ p,
     color: #D8DEED;
 }
 
+h2,
 .nav-item,
 h4,
 .home-text a {
@@ -75,9 +76,10 @@ nav {
     height: 75px;
     position: fixed;
     top: 0;
+    z-index: 9;
 }
 
-div.nav-bar {
+.nav-bar {
     display: flex;
     justify-content: space-between;
     margin: 0 60px;
@@ -164,16 +166,7 @@ h1 {
     margin-top: 10px;
 }
 
-.gradient {
-    background: linear-gradient(
-        to right, 
-        #8ac6c6 0%, 
-        #2a77d6 32%,
-        #454c93 48%, 
-        #36267c 64%,
-        #232082 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+.dev {
     font-size: 50px;
     line-height: 150%;
     letter-spacing: 0.1em;
@@ -187,7 +180,7 @@ h1 {
 }
 
 .home-text a:visited {
-    color: #4743c1;
+    color: #8EA9A8;
 }
 
 a:hover {
@@ -221,7 +214,6 @@ a:hover {
 .tech-stack-container {
     width: 100%;
     margin-top: 40px;
-    position: relative;
 }
 
 .tech-stack-container span {
