@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Josefin+Sans:wght@700&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
 
 * {
     margin: 0;
@@ -34,18 +35,22 @@ h2,
     font-family: 'Roboto', sans-serif;
 }
 
+.home-text input,
 h4,
 p,
+.box span,
 .contact-info input,
 .contact-info textarea,
 form .button {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
+.nav-item,
 h1,
 h2,
 h3,
 p,
+.box span,
 .tech-stack-container span,
 .tech-stack-item,
 .contact-info input,
@@ -54,17 +59,16 @@ p,
 }
 
 h2,
-.nav-item,
 h4,
-.home-text a {
+.home-text a,
+.box span {
     color: #8EA9A8;
 }
 
 .home-text,
 .about-text,
-.creations-text,
 .contact-text {
-    width: 70%;
+    width: 65%;
 }
 
 /* Navigation Styles */
@@ -86,6 +90,11 @@ nav {
     width: 100%;
 }
 
+.nav-logo,
+.nav-toggle-button {
+    width: 40px;
+}
+
 .nav-links {
     display: flex;
     gap: 40px;
@@ -99,6 +108,7 @@ nav {
     text-decoration: none;
     list-style-type: none;
 }
+
 
 /* Social Media Links  */
 span.fixed-links {
@@ -117,14 +127,14 @@ span.fixed-links {
 /* Standard Pages Styles */
 .pages {
     margin: 0 auto;
-    padding: 0 70px;
+    padding: 0 130px;
     max-width: 1400px;
 }
 
 h2 {
     font-size: 40px;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.07em;
 }
 
 h4 {
@@ -134,8 +144,8 @@ h4 {
 }
 
 p {
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 300;
+    font-size: 16px;
     line-height: 2;
     letter-spacing: 0.1em;
 }
@@ -146,6 +156,8 @@ p {
     justify-content: space-between;
     align-items: center;
     height: 100vh;
+    padding-top: 65px;
+    margin-top: 10px
 }
 
 .home-text h5 {
@@ -160,47 +172,62 @@ p {
 h1 {
     color: #D8DEED;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 45px;
     line-height: 150%;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.07em;
     margin-top: 10px;
 }
 
 .dev {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 150%;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.07em;
     margin-top: -10px;
     margin-bottom: 10px;
 }
 
-.home-text a {
-    font-weight: 700;
+.home-text a,
+form .button {
     text-decoration: none;
 }
 
-.home-text a:visited {
+.home-text input,
+form .button {
     color: #8EA9A8;
+    border: 2px solid #8EA9A8;
+    border-radius: 6px;
+    padding: 7px 30px;
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200.2%;
+    letter-spacing: 0.1em;
 }
 
-a:hover {
-    color: #c5d1d1;
+.home-text input:hover,
+form .button:hover {
+    background: #7b8d8d61;
 }
 
-.home-arrow {
+/* .home-arrow {
     display: flex;
     justify-content: center;
 }
 
 .home-arrow img {
-    width: 60px;
+    width: 50px;
     margin-top: -100px;
+} */
+
+.home-ig img {
+    width: 480px;
 }
 
 /* About Me Styles */
 #about {
     height: 100vh;
-    padding-top: 120px;
+    padding-top: 90px;
+    margin-top: -90px;
 }
 
 .about-text h4 {
@@ -213,7 +240,7 @@ a:hover {
 
 .tech-stack-container {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .tech-stack-container span {
@@ -224,15 +251,15 @@ a:hover {
 
 .tech-stack {
     background: rgba(46, 51, 61);
-    width: 80%;
-    height: 250px;
+    width: 65%;
+    height: 200px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 30px auto;
-    gap: 15px;
+    padding-top: 10px;
+    margin: 20px auto;
 }
 
 .tech-stack-img {
@@ -246,20 +273,27 @@ a:hover {
 }
 
 .tech-stack-item {
-    width: 160px;
+    width: 140px;
     height: 82px;
-    padding: 0 40px;
+    padding: 0 10px;
     text-align: center;
 }
 
+.tech-stack-item img {
+    height: 42px;
+    width: 42px;
+}
+
 figcaption {
-    padding-top: 10px;              
+    padding-top: 10px;  
+    font-size: 14px;            
 }
 
 /* Creations Styles */
 #creations {
     height: 100vh;
-    padding-top: 180px;
+    padding-top: 130px;
+    margin-top: -22px;
 }
 
 h3 {
@@ -269,28 +303,26 @@ h3 {
     letter-spacing: 0.1em;
 }
 
+.creations-text {
+    width: 50%;
+}
+
 .creations-text h2 {
     margin-bottom: 15px;
 }
 
-.creations-text h4 {
-    margin-bottom: 15px;
-}
-
 .creations-tech {
-    color: #262A33;
-    font-family: courier;
-    font-weight: 600;
+    color: #8EA9A8;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
     font-size: 14px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 30px;
+    letter-spacing: 0.07em;
 }
 
 .creations-tech span {
-    background: #8EA9A8;
-    margin-right: 5px;
-    padding: 4px;
-    border-radius: 2px;
+    word-spacing: 8px;
 }
 
 .creations-tech-links a {
@@ -324,10 +356,63 @@ h3 {
     letter-spacing: 0.1em;
     padding: 0 60px;
 }
+
+.other-creations {
+    margin-top: 50px;
+}
+
+.creations-row-1 {
+    display: flex;
+}
+
+.box {
+    background: rgba(46, 51, 61);
+    margin-right: 20px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.box:hover {
+    background: rgba(46, 51, 61, 0.398);
+    transform: translate(0, -15px);
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+    transition-duration: 5ms;
+}
+
+.box-img {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.box img {
+    width: 30px;
+}
+
+.box-links img {
+    width: 20px;
+    margin-right: 10px;
+}
+.box h3 {
+    font-size: 20px;
+}
+
+.box p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.box span {
+    font-size: 12px;
+    letter-spacing: 0.07em;
+    word-spacing: 8px;
+}
 /* Contact Me Styles */
 #contact {
     height: 100vh;
-    padding-top: 110px;
+    margin-top: 410px;
+    padding-top: 100px;
 }
 
 .contact-text h2 {
@@ -349,33 +434,22 @@ h3 {
 .contact-info input {
     width: 400px;
     padding: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .contact-info textarea {
     width: 600px;
     padding: 10px;
-    margin-bottom: 30px;
 }
 
 ::placeholder {
     color: #B6BAC6;
 }
 
-form .button {
-    color: #262A33;
-    background: #8EA9A8;
-    border-radius: 6px;
-    padding: 7px 52px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 200.2%;
-    letter-spacing: 0.1em;
-}
-
 /* Footer Styles */
 .footer {
     text-align: center;
+    bottom: 0;
 }
 
 .footer span {
