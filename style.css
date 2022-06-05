@@ -229,8 +229,8 @@ form .button:hover {
 /* About Me Styles */
 #about {
     height: 100vh;
-    padding-top: 90px;
-    margin-top: -90px;
+    padding-top: 160px;
+    margin-top: -170px;
 }
 
 .about-text h4 {
@@ -296,7 +296,17 @@ figcaption {
 #creations {
     height: 100vh;
     padding-top: 130px;
-    margin-top: -22px;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.creations-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 30px;
 }
 
 h3 {
@@ -304,10 +314,6 @@ h3 {
     font-size: 24px;
     line-height: 200%;
     letter-spacing: 0.1em;
-}
-
-.creations-text {
-    width: 50%;
 }
 
 .creations-text h2 {
@@ -320,7 +326,7 @@ h3 {
     font-weight: 400;
     font-size: 14px;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     letter-spacing: 0.07em;
 }
 
@@ -328,8 +334,12 @@ h3 {
     word-spacing: 8px;
 }
 
+.creations-tech-links {
+    display: flex;
+}
+
 .creations-tech-links a {
-    padding-right: 15px;
+    padding-right: 20px;
 }
 
 .creations-tech-links img {
@@ -337,31 +347,83 @@ h3 {
     height: 22px
 }
 
+.carousel-track-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    list-style: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transition: transform 500ms ease-in;
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+.carousel-left {
+    width: 48%;
+    display: block;
+}
+
+.carousel-right {
+    width: 50%;
+}
+.carousel-slide img {
+    width: 100%;
+}
+
 .creations-button {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -180px;
+}
+
+.btns {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 90px;
+    gap: 20px;
 }
 
-.creations-button button {
+.btns button {
     background: rgba(46, 51, 61);
-    padding: 16px;
+    padding: 15px;
     border-radius: 6px;
-    height: 25px;
+    height: 20px;
+    width: 20px;
 }
 
-.creations-button span {
-    color: #D8DEED;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 35px;
-    line-height: 200%;
-    letter-spacing: 0.1em;
-    padding: 0 60px;
+input.carousel-indicator {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: rgba(46, 51, 61);
+    margin-top: 12px;
+    margin: 15px 5px;
+}
+
+.carousel-indicator.current-slide {
+    background: rgb(25, 26, 30);
 }
 
 .other-creations {
-    margin-top: 50px;
+    margin-top: -120px;
 }
 
 .creations-row-1 {
@@ -411,10 +473,11 @@ h3 {
     letter-spacing: 0.07em;
     word-spacing: 8px;
 }
+
 /* Contact Me Styles */
 #contact {
-    height: 100vh;
-    margin-top: 410px;
+    height: 90vh;
+    margin-top: 100px;
     padding-top: 100px;
 }
 

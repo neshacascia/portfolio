@@ -138,32 +138,86 @@
 
     <section class="pages">
         <div id="creations">
-            <div class="creations-text">
-                <h2>/creations</h2>
-                <h3>Project Name</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nesciunt quasi iure voluptatem assumenda alias consequuntur laudantium voluptatibus, et veniam recusandae porro ea harum maxime numquam blanditiis dolor fugit veritatis.</p>
-            
-                <div class="creations-tech">
-                    <span>HTML CSS JavaScript</span>
+            <h2>/creations</h2>
+            <div class="creations-container">
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide current-slides">
+                            <div class="carousel-left">
+                                <h3>Project Name</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nesciunt quasi iure voluptatem assumenda alias consequuntur laudantium voluptatibus, et veniam recusandae porro ea harum maxime numquam blanditiis dolor fugit veritatis.</p>
+                
+                                <div class="creations-tech">
+                                    <span>HTML CSS JavaScript</span>
+                                </div>
+    
+                                <div class="creations-tech-links">
+                                    <a href="" target="_blank"><img src="Assets/media-links/github.svg" alt="Link to project on GitHub"></a>
+                                    <a href="" target="_blank"><img src="Assets/media-links/external.svg" alt="Link to live code"></a>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-right">
+                                <img src="Assets/creations/the-curl-studio.png" alt="">
+                            </div>
+                        </li>
 
+                        <li class="carousel-slide">
+                            <div class="carousel-left">
+                                <h3>Project Name</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nesciunt quasi iure voluptatem assumenda alias consequuntur laudantium voluptatibus, et veniam recusandae porro ea harum maxime numquam blanditiis dolor fugit veritatis.</p>
+                
+                                <div class="creations-tech">
+                                    <span>HTML CSS JavaScript</span>
+                                </div>
+    
+                                <div class="creations-tech-links">
+                                    <a href="" target="_blank"><img src="Assets/media-links/github.svg" alt="Link to project on GitHub"></a>
+                                    <a href="" target="_blank"><img src="Assets/media-links/external.svg" alt="Link to live code"></a>
+                                </div>
+                            </div>
+
+                            <div class="carousel-right">
+                                <img src="Assets/creations/one-piece-landing-page.png" alt="">
+                            </div>
+                        </li>
+
+                        <li class="carousel-slide">
+                            <div class="carousel-left">
+                                <h3>Project Name</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nesciunt quasi iure voluptatem assumenda alias consequuntur laudantium voluptatibus, et veniam recusandae porro ea harum maxime numquam blanditiis dolor fugit veritatis.</p>
+                
+                                <div class="creations-tech">
+                                    <span>HTML CSS JavaScript</span>
+                                </div>
+    
+                                <div class="creations-tech-links">
+                                    <a href="" target="_blank"><img src="Assets/media-links/github.svg" alt="Link to project on GitHub"></a>
+                                    <a href="" target="_blank"><img src="Assets/media-links/external.svg" alt="Link to live code"></a>
+                                </div>
+                            </div>
+
+                            <div class="carousel-right">
+                                <img src="Assets/creations/one-piece-battle-selector.png" alt="">
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-
-                <div class="creations-tech-links">
-                    <a href="" target="_blank"><img src="Assets/media-links/github.svg" alt="Link to project on GitHub"></a>
-                    <a href="" target="_blank"><img src="Assets/media-links/external.svg" alt="Link to live code"></a>
-                </div>
-            </div>
-
-            <div class="creations-img">
-                <img src="" alt="">
-                <img src="" alt="">
             </div>
 
             <div class="creations-button">
-                <button><img src="Assets/left-arrow.svg" alt="Arrow pointing left"></button>
-                <span>01</span>
-                <button><img src="Assets/right-arrow.svg" alt="Arrow pointing right"></button>
+                <div class="btns">
+                    <button class="carousel-button-left"><img src="Assets/left-arrow.svg" alt="Arrow pointing left"></button>
+                    <button class="carousel-button-right"><img src="Assets/right-arrow.svg" alt="Arrow pointing right"></button>
+                </div>
+
+                <div class="carousel-nav">
+                    <input type="button" class="carousel-indicator current-slide">
+                    <input type="button" class="carousel-indicator">
+                    <input type="button" class="carousel-indicator">
+                </div>
             </div>
+        </div>
 
             <section class="other-creations">
                 <div class="creations-row-1">
@@ -208,6 +262,19 @@
         </div>
     </section>
 
+    <!-- <section>
+        <div id="services">
+            <h2>/my services</h2>
+            <p>Do you have a strong web presence? Having an accessible and repsonsive website is essential in this day and age, especially with mobiles. It is my privilege to work along with my clients to meet and exceed their needs and visions. Here is how I deliver success:</p>
+            <ol>
+                <li><span class="bold">Consultation</span>It all starts with a conversation to discuss what your project is about.</li>
+                <li><span class="bold">Proposal</span>A thorough proposal will be presented including a mockup and plan of action.</li>
+                <li><span class="bold">Creation</span>Throughout the process, clients will receive consistent updates regarding the state of their project.</li>
+                <li><span class="bold">Launch & Support</span>Final project will be delivered with ongoing support thereafter.</li>
+            </ol>
+        </div>
+    </section> -->
+    
     <section class="pages">
         <div id="contact">
             <div class="contact-text">
@@ -241,5 +308,7 @@
             <p>2022 | V 0.0.1 | Designed & coded with <span><img src="Assets/heart.svg" alt="Heart symbol"></span> by Nesha Mervin</p>
         </div>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
