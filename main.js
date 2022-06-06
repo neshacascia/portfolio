@@ -40,7 +40,7 @@ nextButton.addEventListener('click', e => {
 });
 
 // When I click the nav indicators, move to that slide
-dotsNav.addEventListener('click', e => {
-    // What indicator was clicked on?
-    const targetDot = e.target.closest('input');
-})
+// dotsNav.addEventListener('click', e => {
+//     // What indicator was clicked on?
+//     const targetDot = e.target.closest('input');
+// })
