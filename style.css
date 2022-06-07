@@ -528,6 +528,10 @@ input.carousel-indicator {
 }
 
 /* Footer Styles */
+footer {
+    margin-top: 20px;
+}
+
 .footer {
     text-align: center;
     bottom: 0;
