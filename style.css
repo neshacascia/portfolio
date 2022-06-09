@@ -495,17 +495,29 @@ input.carousel-indicator {
 }
 
 /* My Services Styles */
+<<<<<<< HEAD
 #process {
+=======
+#services {
+>>>>>>> origin
     height: 100vh;
     margin-top: 100px;
     padding-top: 120px;
 }
 
+<<<<<<< HEAD
 .process-text {
     margin-bottom: 25px;
 }
 
 .process-text h2 {
+=======
+.services-text {
+    margin-bottom: 25px;
+}
+
+.services-text h2 {
+>>>>>>> origin
     margin-bottom: 15px;
 }
 
@@ -536,6 +548,17 @@ h3.gradient {
     -webkit-text-fill-color: transparent;
 }
 
+<<<<<<< HEAD
+=======
+.latest a {
+    background: linear-gradient(90deg, #97bbaa 0%, #64acff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+}
+>>>>>>> origin
 /* Contact Me Styles */
 #contact {
     height: 90vh;
