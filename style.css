@@ -254,7 +254,6 @@ form .button:hover {
 .tech-stack-container span {
     font-size: 24px;
     position: relative;
-    /* left: 150px; */
 }
 
 .tech-stack {
@@ -298,10 +297,60 @@ figcaption {
     font-size: 14px;            
 }
 
+/* My Process Styles */
+#process {
+    height: 100vh;
+    padding-top: 120px;
+    margin-top: -100px;
+}
+
+.process-text {
+    margin-bottom: 25px;
+}
+
+.process-text h2 {
+    margin-bottom: 25px;
+}
+
+.process-text h2 {
+    margin-bottom: 15px;
+}
+
+.container {
+    display: flex;
+}
+
+.container-box {
+    background:rgba(46, 51, 61);
+    margin: 10px;
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.container-box:hover {
+    background: rgba(46, 51, 61, 0.398);
+    transform: translate(0, -15px);
+    transition-timing-function: ease-in-out;
+    transition-duration: 5ms;
+}
+
+.gradient {
+    background: linear-gradient(90deg, #97bbaa 0%, #64acff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container-box p {
+    font-size: 14px;
+}
+
 /* Creations Styles */
 #creations {
     height: 100vh;
     padding-top: 130px;
+    margin-top: -390px;
     display: flex;
     flex-direction: column;
 }
@@ -313,15 +362,15 @@ figcaption {
     gap: 15px;
 }
 
+#creations h2 {
+   margin-top: 100px;
+}
+
 h3 {
     font-weight: 700;
     font-size: 24px;
     line-height: 200%;
     letter-spacing: 0.1em;
-}
-
-.creations-text h2 {
-    margin-bottom: 15px;
 }
 
 .creations-tech {
@@ -494,75 +543,11 @@ input.carousel-indicator {
     word-spacing: 8px;
 }
 
-/* My Services Styles */
-<<<<<<< HEAD
-#process {
-=======
-#services {
->>>>>>> origin
-    height: 100vh;
-    margin-top: 100px;
-    padding-top: 120px;
-}
-
-<<<<<<< HEAD
-.process-text {
-    margin-bottom: 25px;
-}
-
-.process-text h2 {
-=======
-.services-text {
-    margin-bottom: 25px;
-}
-
-.services-text h2 {
->>>>>>> origin
-    margin-bottom: 15px;
-}
-
-.container {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.container-box {
-    background:rgba(46, 51, 61);
-    margin: 10px;
-    height: 250px;
-    width: 250px;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.container-box:hover {
-    background: rgba(46, 51, 61, 0.398);
-    transform: translate(0, -15px);
-    transition-timing-function: ease-in-out;
-    transition-duration: 5ms;
-}
-
-h3.gradient {
-    background: linear-gradient(90deg, #97bbaa 0%, #64acff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-<<<<<<< HEAD
-=======
-.latest a {
-    background: linear-gradient(90deg, #97bbaa 0%, #64acff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 20px;
-}
->>>>>>> origin
 /* Contact Me Styles */
 #contact {
     height: 90vh;
     padding-top: 100px;
+    margin-top: 70px;
 }
 
 .contact-text h2 {
