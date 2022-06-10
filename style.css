@@ -65,7 +65,7 @@ h4,
 
 .home-text,
 .about-text,
-.services-text,
+.process-text,
 .contact-text {
     width: 65%;
 }
@@ -238,7 +238,8 @@ form .button:hover {
     margin-top: -170px;
 }
 
-.about-text h4 {
+.about-text h4,
+.process-text h4 {
     margin: 15px 0;
 }
 
@@ -323,7 +324,6 @@ figcaption {
 .container-box {
     background:rgba(46, 51, 61);
     margin: 10px;
-    height: 250px;
     width: 250px;
     padding: 20px;
     border-radius: 8px;
@@ -344,13 +344,14 @@ figcaption {
 
 .container-box p {
     font-size: 14px;
+    margin-top: 15px;
 }
 
 /* Creations Styles */
 #creations {
     height: 100vh;
     padding-top: 130px;
-    margin-top: -390px;
+    margin-top: -320px;
     display: flex;
     flex-direction: column;
 }
@@ -528,6 +529,7 @@ input.carousel-indicator {
     width: 20px;
     margin-right: 10px;
 }
+
 .box h3 {
     font-size: 20px;
 }
@@ -593,4 +595,35 @@ footer {
 
 .footer span {
     margin: 0 10px;
+}
+
+/* Media Styles */
+@media all and (max-width: 768px) {
+    .pages {
+        padding: 0 60px;
+    }
+
+    .home-text {
+        width: 100%;
+    }
+    .about-text,
+    .process-text {
+        width: 100%;
+    }
+
+    .tech-stack-row {
+        width: 90%;
+    }
+
+    .tech-stack-item img {
+        width: 34px;
+        height: 34px;
+    }
+
+    .container {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }
