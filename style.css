@@ -7,8 +7,13 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-colour: #262A33;
+    --secondary-blue: rgba(46, 51, 61);
+}
+
 body {
-    background: #262A33;
+    background: var(--bg-colour);
 }
 
 header {
@@ -72,7 +77,7 @@ h4,
 
 /* Navigation Styles */
 nav {
-    background: rgba(46, 51, 61);
+    background: var(--secondary-blue);
     display: flex;
     align-items: center;
     width: 100%;
@@ -162,7 +167,7 @@ p {
     align-items: center;
     height: 100vh;
     padding-top: 65px;
-    margin-top: 10px
+    margin: 10px 0 15px 0;
 }
 
 .home-text h5 {
@@ -234,7 +239,7 @@ form .button:hover {
 /* About Me Styles */
 #about {
     height: 100vh;
-    padding-top: 160px;
+    padding-top: 140px;
     margin-top: -170px;
 }
 
@@ -258,7 +263,7 @@ form .button:hover {
 }
 
 .tech-stack {
-    background: rgba(46, 51, 61);
+    background: var(--secondary-blue);
     width: 65%;
     height: 200px;
     position: absolute;
@@ -302,7 +307,7 @@ figcaption {
 #process {
     height: 100vh;
     padding-top: 120px;
-    margin-top: -100px;
+    margin-top: 45px;
 }
 
 .process-text {
@@ -322,18 +327,11 @@ figcaption {
 }
 
 .container-box {
-    background:rgba(46, 51, 61);
+    background: var(--secondary-blue);
     margin: 10px;
     width: 250px;
     padding: 20px;
     border-radius: 8px;
-}
-
-.container-box:hover {
-    background: rgba(46, 51, 61, 0.398);
-    transform: translate(0, -15px);
-    transition-timing-function: ease-in-out;
-    transition-duration: 5ms;
 }
 
 .gradient {
@@ -350,10 +348,10 @@ figcaption {
 /* Creations Styles */
 #creations {
     height: 100vh;
-    padding-top: 130px;
-    margin-top: -320px;
     display: flex;
     flex-direction: column;
+    padding-top: 20px;
+    margin-top: -55px;
 }
 
 .creations-container {
@@ -476,14 +474,14 @@ h3 {
 }
 
 .btns button:hover {
-    background: rgba(46, 51, 61);
+    background: var(--secondary-blue);
 }
 
 input.carousel-indicator {
     height: 12px;
     width: 12px;
     border-radius: 50%;
-    background: rgba(46, 51, 61);
+    background: var(--secondary-blue);
     margin-top: 12px;
     margin: 15px 5px;
 }
@@ -501,7 +499,7 @@ input.carousel-indicator {
 }
 
 .box {
-    background: rgba(46, 51, 61);
+    background: var(--secondary-blue);
     margin-right: 20px;
     padding: 30px;
     border-radius: 10px;
@@ -548,8 +546,8 @@ input.carousel-indicator {
 /* Contact Me Styles */
 #contact {
     height: 90vh;
-    padding-top: 100px;
-    margin-top: 70px;
+    padding-top: 90px;
+    margin-top: 40px;
 }
 
 .contact-text h2 {
@@ -562,7 +560,7 @@ input.carousel-indicator {
 
 .contact-info input,
 .contact-info textarea {
-    background: rgba(46, 51, 61);
+    background: var(--secondary-blue);
     font-size: 14px;
     line-height: 200.2%;
     letter-spacing: 0.1em;
@@ -585,12 +583,14 @@ input.carousel-indicator {
 
 /* Footer Styles */
 footer {
-    margin-top: 20px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-.footer {
-    text-align: center;
-    bottom: 0;
+.hidden {
+    display: none;
 }
 
 .footer span {
@@ -598,14 +598,11 @@ footer {
 }
 
 /* Media Styles */
-@media all and (max-width: 768px) {
-    .pages {
-        padding: 0 60px;
-    }
-
+@media all and (max-width: 966px) {
     .home-text {
         width: 100%;
     }
+
     .about-text,
     .process-text {
         width: 100%;
@@ -626,4 +623,76 @@ footer {
         justify-content: center;
     }
 
+    #process {
+        margin-bottom: 200px;
+    }
+
+}
+@media all and (max-width: 822px) {
+    .pages {
+        padding: 0 60px;
+    }
+
+}
+
+@media all and (max-width: 768px) {
+    .fixed-links img {
+        display: none;
+    }
+
+    .pages {
+        padding: 0 40px;
+    }
+
+    .home-ig img {
+        display: none;
+    }
+
+    .tech-stack {
+        width: 90%;
+    }
+
+    #process {
+        margin-top: -250px;
+    }
+
+    #creations {
+        margin-top: -360px;
+    }
+
+    .carousel-slide {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        padding-top: 25px;
+    }
+
+    .carousel-left {
+        order: 1;
+        width: 80%;
+        padding-top: 25px;
+        text-align: center;
+        height: 100%;
+    }
+    
+    .carousel-left p {
+        height: max-content;
+    }
+    
+    .carousel-right {
+        width: 80%;
+    }
+
+    .creations-button {
+        
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-links a {
+        padding: 0 20px;
+        margin-bottom: 10px;
+    }
 }
