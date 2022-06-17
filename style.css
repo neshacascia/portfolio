@@ -598,35 +598,34 @@ footer {
 }
 
 /* Media Styles */
-@media all and (max-width: 966px) {
-    .home-text {
+@media all and (max-width: 1024px) {
+    .home-ig {
+        width: 60%;
+    }
+
+    .home-ig img {
         width: 100%;
     }
 
-    .about-text,
-    .process-text {
+    .pages {
+        padding: 0 95px
+    }
+
+    .tech-stack {
+        width: 80%;
+    }
+
+    .creations-container {
         width: 100%;
     }
 
-    .tech-stack-row {
-        width: 90%;
+    .carousel-slide {
+        justify-content: space-between;
     }
 
-    .tech-stack-item img {
-        width: 34px;
-        height: 34px;
-    }
-
-    .container {
+    .carousel-right img {
         width: 100%;
-        flex-wrap: wrap;
-        justify-content: center;
     }
-
-    #process {
-        margin-bottom: 200px;
-    }
-
 }
 @media all and (max-width: 822px) {
     .pages {
@@ -678,7 +677,7 @@ footer {
     .carousel-left p {
         height: max-content;
     }
-    
+
     .carousel-right {
         width: 80%;
     }
