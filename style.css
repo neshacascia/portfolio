@@ -716,6 +716,7 @@ footer {
     .other-creations {
         margin-top: 5px;
     }
+
     .footer-links {
         display: flex;
         justify-content: center;
@@ -724,5 +725,47 @@ footer {
     .footer-links a {
         padding: 0 20px;
         margin-bottom: 10px;
+    }
+}
+
+@media all and (max-width: 714px) {
+    .home-text h2,
+    .home-text p {
+        width: 100%;
+    }
+    .tech-stack-item {
+        margin: 0 -30px;
+    }
+
+    #creations {
+        margin-top: 300px;
+    }
+
+    .creations-row-1 {
+        flex-direction: column;
+    }
+
+    .box {
+        margin-bottom: 10px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    #about {
+        margin-bottom: 200px;
+    }
+
+    #creations {
+        margin-top: 500px;
+    }
+
+    textarea {
+        width: min-content;
+    }
+}
+
+@media all and (max-width: 375px) {
+    #home {
+        margin-top: 70px;
     }
 }
