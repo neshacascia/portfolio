@@ -10,14 +10,13 @@
 :root {
     --bg-colour: #262A33;
     --secondary-blue: rgba(46, 51, 61);
+    --mint-green: #8EA9A8;
+    --icy-white: #D8DEED;
+    --gradient: linear-gradient(90deg, #97bbaa 0%, #64acff 100%);
 }
 
 body {
     background: var(--bg-colour);
-}
-
-header {
-    width: 100%;
 }
 
 button,
@@ -58,14 +57,14 @@ p,
 .tech-stack-item,
 .contact-info input,
 .contact-info textarea {
-    color: #D8DEED;
+    color: var(--icy-white);
 }
 
 h2:not(.gradient-bg),
 h4,
 .home-text a,
 .box span {
-    color: #8EA9A8;
+    color: var(--mint-green);
 }
 
 .home-text,
@@ -76,6 +75,10 @@ h4,
 }
 
 /* Navigation Styles */
+header {
+    width: 100%;
+}
+
 nav {
     background: var(--secondary-blue);
     display: flex;
@@ -117,7 +120,7 @@ nav {
 }
 
 .nav-item:hover {
-    color: #8EA9A8;
+    color: var(--mint-green);
 }
 
 /* Social Media Links  */
@@ -167,7 +170,6 @@ p {
     align-items: center;
     height: 100vh;
     padding-top: 65px;
-    margin: 10px 0 15px 0;
 }
 
 .home-text h5 {
@@ -180,7 +182,7 @@ p {
 }
 
 h1 {
-    color: #D8DEED;
+    color: var(--icy-white);
     font-weight: 700;
     font-size: 45px;
     line-height: 150%;
@@ -189,7 +191,7 @@ h1 {
 }
 
 .gradient-bg {
-    background: linear-gradient(90deg, #97bbaa 0%, #64acff 100%);
+    background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 40px;
@@ -239,8 +241,11 @@ form .button:hover {
 /* About Me Styles */
 #about {
     height: 100vh;
-    padding-top: 140px;
-    margin-top: -170px;
+}
+
+.about {
+    height: 100vh;
+    padding-top: 90px;
 }
 
 .about-text h4,
@@ -306,8 +311,7 @@ figcaption {
 /* My Process Styles */
 #process {
     height: 100vh;
-    padding-top: 120px;
-    margin-top: 45px;
+    padding-top: 100px;
 }
 
 .process-text {
@@ -335,7 +339,7 @@ figcaption {
 }
 
 .gradient {
-    background: linear-gradient(90deg, #97bbaa 0%, #64acff 100%);
+    background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -351,7 +355,6 @@ figcaption {
     display: flex;
     flex-direction: column;
     padding-top: 20px;
-    margin-top: -55px;
 }
 
 .creations-container {
@@ -359,10 +362,6 @@ figcaption {
     display: flex;
     flex-direction: column;
     gap: 15px;
-}
-
-#creations h2 {
-   margin-top: 100px;
 }
 
 h3 {
@@ -547,7 +546,6 @@ input.carousel-indicator {
 #contact {
     height: 90vh;
     padding-top: 90px;
-    margin-top: 40px;
 }
 
 .contact-text h2 {
@@ -667,7 +665,7 @@ footer {
     }
 
     #creations {
-        margin-top: -120px;
+        margin-top: -300px;
     }
 
     .creations-container {
@@ -717,6 +715,10 @@ footer {
         margin-top: 5px;
     }
 
+    #contact {
+        margin-top: 70px;
+    }
+
     .footer-links {
         display: flex;
         justify-content: center;
@@ -764,8 +766,82 @@ footer {
     }
 }
 
-@media all and (max-width: 375px) {
-    #home {
+@media all and (max-width: 400px) {
+    .pages {
+        padding: 0 30px;
+    }
+
+    .home {
         margin-top: 70px;
+        width: 100%;
+        display: block;
+    }
+
+    .tech-stack-item img {
+        width: 26px;
+    }
+
+    .tech-stack-item {
+        margin: 0 -36px;
+    }
+
+    .tech-stack-item figcaption {
+        font-size: 12px;
+    }
+
+    #creations {
+        margin-top: -30px;
+    }
+
+    .carousel-slide {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .carousel-right {
+        width: 290px;
+    }
+
+    .carousel-left {
+        width: 100%;
+    }
+
+    .creations-tech-links {
+        position: relative;
+        right: 20px; 
+    }
+
+    .creations-button {
+        margin-top: -50px;
+    }
+
+    .other-creations {
+        margin-top: -100px;
+    }
+
+    .box {
+        margin: 10px 0;
+    }
+
+    #contact {
+        height: auto;
+    }
+    
+    .contact-text {
+        width: 100%;
+    }
+
+    .contact-form {
+        display: block;
+    }
+
+    .contact-info input,
+    .contact-info textarea {
+        width: 94%;
+    }
+
+    footer {
+        height: 20vh;
+        text-align: center;
     }
 }
