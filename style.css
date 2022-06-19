@@ -664,10 +664,6 @@ footer {
         justify-content: center;
     }
 
-    #creations {
-        margin-top: -300px;
-    }
-
     .creations-container {
         height: 65vh;
     }
@@ -681,7 +677,7 @@ footer {
 
     .carousel-left {
         order: 1;
-        width: 90%;
+        width: 100%;
         padding-top: 25px;
         text-align: center;
         height: 100%;
@@ -701,8 +697,8 @@ footer {
     }
 
     .creations-button {
-        height: 8vh;
-        margin: 10px;
+        height: auto;
+        margin: 30px 10px;
         position: relative;
         right: 25px;
     }
@@ -831,7 +827,7 @@ footer {
     }
 
     .creations-button {
-        margin-top: -50px;
+        margin-top: -65px;
     }
 
     .other-creations {
