@@ -778,6 +778,10 @@ footer {
 }
 
 @media all and (max-width: 615px) {
+    nav {
+        display: none;
+    }
+
     .tech-stack-item {
         margin: 0 -25px;
     }
@@ -834,7 +838,7 @@ footer {
     }
 
     .tech-stack-item {
-        margin: 0 -36px;
+        margin: 0 -40px;
     }
 
     .tech-stack-item figcaption {
