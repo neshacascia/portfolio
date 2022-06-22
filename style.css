@@ -834,7 +834,8 @@ footer {
     }
 
     .tech-stack-item img {
-        width: 26px;
+        width: 20px;
+        height: 20px;
     }
 
     .tech-stack-item {
@@ -842,7 +843,7 @@ footer {
     }
 
     .tech-stack-item figcaption {
-        font-size: 0.75rem;
+        font-size: 0.62rem;
     }
 
     #creations {
