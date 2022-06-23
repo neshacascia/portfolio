@@ -671,6 +671,10 @@ footer {
     .home-text p {
         width: 100%;
     }
+
+    .contact-info textarea {
+        width: 600px;
+    }
 }
 
 @media all and (max-width: 768px) {
