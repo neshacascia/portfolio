@@ -90,7 +90,8 @@ header {
 }
 
 nav {
-    background: var(--secondary-blue);
+    background: rgba(23, 30, 39, 0.7);
+    backdrop-filter: saturate(180%) blur(10px);
     display: flex;
     align-items: center;
     width: 100%;
@@ -182,7 +183,7 @@ p {
     justify-content: space-between;
     align-items: center;
     height: 90vh;
-    padding-top: 65px;
+    padding-top: 120px;
 }
 
 .home-text h5 {
@@ -197,7 +198,7 @@ p {
 h1 {
     color: var(--icy-white);
     font-weight: 700;
-    font-size: 3.12rem;
+    font-size: 2.87rem;
     line-height: 150%;
     letter-spacing: 0.07em;
     margin-top: 10px;
@@ -244,11 +245,12 @@ form .button:hover {
 
 .home-ig img {
     width: 480px;
+    filter: drop-shadow(0 0 1rem #86a697);
 }
 
 /* About Me Styles */
 #about {
-    height: 80vh;
+    height: 100vh;
     padding-top: 90px;
 }
 
@@ -281,7 +283,7 @@ form .button:hover {
     align-items: center;
     flex-direction: column;
     padding-top: 10px;
-    margin: 20px auto;
+    margin-top: 20px;
 }
 
 .tech-stack-img {
@@ -437,7 +439,7 @@ h3 {
 }
 
 .carousel-right img {
-    box-shadow: 15px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 15px 15px rgba(45, 60, 96, 0.2);
 }
 
 .creations-button {
@@ -568,7 +570,7 @@ input.carousel-indicator {
 }
 
 .contact-info textarea {
-    width: 600px;
+    width: 700px;
     padding: 10px;
 }
 
