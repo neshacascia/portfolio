@@ -248,6 +248,22 @@ form .button:hover {
     filter: drop-shadow(0 0 1rem #86a697);
 }
 
+.ease-in-out {
+    animation: grow 7s ease-in-out infinite;
+}
+
+@keyframes grow {
+    0% {
+        transform:scale(1, 1);
+    }
+    50% {
+        transform:scale(1.07, 1.07);
+    }
+    100% {
+        transform:scale(1, 1);
+    }
+  }
+  
 /* About Me Styles */
 #about {
     height: 100vh;
@@ -439,7 +455,7 @@ h3 {
 }
 
 .carousel-right img {
-    box-shadow: 15px 15px rgba(45, 60, 96, 0.2);
+    box-shadow: 15px 15px var(--secondary-blue);
 }
 
 .creations-button {
@@ -902,5 +918,11 @@ footer {
     footer {
         height: 20vh;
         text-align: center;
+    }
+}
+
+@media all and (max-height: 800px) {
+    #pages {
+        margin: 100px 0;
     }
 }
