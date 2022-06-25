@@ -248,7 +248,7 @@ form .button:hover {
     filter: drop-shadow(0 0 1rem #86a697);
 }
 
-.ease-in-out {
+/* .ease-in-out {
     animation: grow 7s ease-in-out infinite;
 }
 
@@ -262,7 +262,7 @@ form .button:hover {
     100% {
         transform:scale(1, 1);
     }
-  }
+  } */
   
 /* About Me Styles */
 #about {
