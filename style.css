@@ -770,7 +770,7 @@ footer {
 @media all and (max-width: 414px) {
     .pages {
         padding: 0 20px;
-        margin: 0 10px;
+        margin: 0;
         width: 90%;
     }
 
@@ -789,11 +789,11 @@ footer {
     }
 
     #about {
-        height: 180vh;
+        height: 160vh;
     }
 
     .tech-stack {
-        width: 280px;
+        width: 300px;
     }
 
     .tech-stack-item img {
@@ -806,12 +806,12 @@ footer {
     }
 
     .tech-stack-item figcaption {
-        font-size: 0.5rem;
+        font-size: 0.62rem;
     }
 
     #creations {
         width: 100%;
-        height: 300vh;
+        height: 270vh;
     }
 
     .creations {
@@ -838,6 +838,7 @@ footer {
     .other-creations {
         width: 100%;
     }
+
     .box {
         margin: 10px 0;
     }
