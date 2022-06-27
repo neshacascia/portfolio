@@ -438,25 +438,25 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 50px;
+    padding-right: 15px;
 }
 
 .carousel-left {
-    width: 52%;
+    width: 47%;
     display: block;
 }
 
 .carousel-right {
-    width: 46%;
+    width: 51%;
 }
 
 .carousel-slide img {
     width: 100%;
 }
 
-.carousel-right img {
+/* .carousel-right img {
     box-shadow: 15px 15px var(--secondary-blue);
-}
+} */
 
 .creations-button {
     height: 100%;
