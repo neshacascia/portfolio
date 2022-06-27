@@ -647,10 +647,6 @@ footer {
         padding: 0 40px;
     }
 
-    #about {
-        /* height: 110vh; */
-    }
-
     .tech-stack {
         width: 90%;
     }
@@ -662,7 +658,7 @@ footer {
     }
 
     #creations {
-        height: 320vh;
+        height: 290vh;
     }
 
     .creations {
@@ -696,9 +692,11 @@ footer {
     #contact {
         height: 120vh;
     }
+
     .footer-links {
         display: flex;
         justify-content: center;
+        text-align: center;
     }
 
     .footer-links a {
@@ -837,6 +835,9 @@ footer {
         right: 20px; 
     }
 
+    .other-creations {
+        width: 100%;
+    }
     .box {
         margin: 10px 0;
     }
