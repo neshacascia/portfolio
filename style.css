@@ -769,7 +769,7 @@ footer {
     }
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 414px) {
     .pages {
         padding: 0 20px;
         margin: 0 10px;
@@ -795,7 +795,7 @@ footer {
     }
 
     .tech-stack {
-        width: 310px;
+        width: 280px;
     }
 
     .tech-stack-item img {
@@ -808,7 +808,7 @@ footer {
     }
 
     .tech-stack-item figcaption {
-        font-size: 0.62rem;
+        font-size: 0.5rem;
     }
 
     #creations {
@@ -822,6 +822,10 @@ footer {
 
     .creations-right {
         width: 290px;
+    }
+
+    .creations-right img {
+        box-shadow: none;
     }
 
     .creations-left {
@@ -867,6 +871,6 @@ footer {
 
 @media all and (max-width: 361px) {
     #creations {
-        height: 320vh;
+        height: 280vh;
     }
 }
