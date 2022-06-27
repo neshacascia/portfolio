@@ -60,7 +60,6 @@ form .button {
 
 .nav-item,
 h1,
-h3,
 p,
 .box span,
 .tech-stack-container span,
@@ -84,6 +83,11 @@ h4,
     width: 80%;
 }
 
+h3 {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 /* Navigation Styles */
 header {
     width: 100%;
@@ -266,7 +270,7 @@ form .button:hover {
   
 /* About Me Styles */
 #about {
-    height: 100vh;
+    height: 130vh;
     padding-top: 90px;
 }
 
@@ -367,7 +371,7 @@ figcaption {
 
 /* Creations Styles */
 #creations {
-    height: 100vh;
+    height: 190vh;
     display: flex;
     flex-direction: column;
     padding-top: 100px;
@@ -414,94 +418,35 @@ h3 {
     height: 22px
 }
 
-.carousel-track-container {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-}
-
-.carousel-track {
+.featured-creations {
     list-style: none;
     position: relative;
     height: 100%;
     width: 100%;
-    transition: transform 500ms ease-in;
 }
 
-.carousel-slide {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
+.creations {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 15px;
+    margin-bottom: 50px;
 }
 
-.carousel-left {
+.creations-left {
     width: 47%;
     display: block;
 }
 
-.carousel-right {
-    width: 51%;
+.creations-right {
+    width: 50%;
 }
 
-.carousel-slide img {
+.creations img {
     width: 100%;
 }
 
-/* .carousel-right img {
+.creations-right img {
     box-shadow: 15px 15px var(--secondary-blue);
-} */
-
-.creations-button {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: -120px;
-}
-
-.btns {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.carousel-button-left img,
-.carousel-button-right img {
-   width: 100%;
-}
-
-.btns button {
-    border: 2px solid rgb(60, 66, 79);
-    border-radius: 6px;
-    padding: 15px;
-    border-radius: 6px;
-    height: 15px;
-    width: 15px;
-}
-
-.btns button:hover {
-    background: var(--secondary-blue);
-}
-
-input.carousel-indicator {
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    background: var(--secondary-blue);
-    margin: 15px 5px;
-}
-
-.carousel-indicator.current-slide {
-    background: rgb(25, 26, 30);
 }
 
 .other-creations {
@@ -663,11 +608,11 @@ footer {
         width: 100%;
     }
 
-    .carousel-slide {
+    .creations {
         justify-content: space-between;
     }
 
-    .carousel-right img {
+    .creations-right img {
         width: 100%;
     }
 }
@@ -702,12 +647,12 @@ footer {
         padding: 0 40px;
     }
 
-    .tech-stack {
-        width: 90%;
+    #about {
+        /* height: 110vh; */
     }
 
-    #process {
-        margin-top: -250px;
+    .tech-stack {
+        width: 90%;
     }
 
     .container {
@@ -716,18 +661,18 @@ footer {
         justify-content: center;
     }
 
-    .creations-container {
-        height: 65vh;
+    #creations {
+        height: 320vh;
     }
 
-    .carousel-slide {
+    .creations {
         flex-direction: column;
         align-items: center;
         width: 100%;
         padding-top: 25px;
     }
 
-    .carousel-left {
+    .creations-left {
         order: 1;
         width: 100%;
         padding-top: 25px;
@@ -741,32 +686,16 @@ footer {
 
     .creations-tech-links a {
         position: relative;
-        left: 20px;
+        left: 10px;
     }
 
-    .carousel-right {
+    .creations-right {
         width: 80%;
     }
 
-    .creations-button {
-        height: auto;
-        margin: 10px 10px;
-        position: relative;
-        right: 25px;
-    }
-
-    .btns button{
-        margin: 0 5px;
-    }
-    
-    .other-creations {
-        margin-top: 5px;
-    }
-
     #contact {
-        margin-top: 70px;
+        height: 120vh;
     }
-
     .footer-links {
         display: flex;
         justify-content: center;
@@ -811,29 +740,25 @@ footer {
 
 @media all and (max-width: 542px) {
     #about {
-        margin-bottom: 150px;
+        height: 150vh;
     }
-
+    
     .tech-stack-item {
         margin: 0 -30px;
-    }
-
-    .creations-button {
-        margin-top: -100px;
-    }
-
-    .other-creations {
-        margin-top: -90px;
     }
 }
 
 @media all and (max-width: 480px) {
     #about {
-        margin-bottom: 200px;
+        height: 155vh;
     }
 }
 
 @media all and (max-width: 438px) {
+    #about {
+        height: 170vh;
+    }
+
     #contact {
         height: auto;
         margin-bottom: 30px;
@@ -846,13 +771,31 @@ footer {
 
 @media all and (max-width: 400px) {
     .pages {
-        padding: 0 30px;
+        padding: 0 20px;
+        margin: 0 10px;
+        width: 90%;
     }
 
     .home {
         margin-top: 70px;
         width: 100%;
         display: block;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.87rem;
+    }
+
+    #about {
+        height: 180vh;
+    }
+
+    .tech-stack {
+        width: 310px;
     }
 
     .tech-stack-item img {
@@ -869,29 +812,25 @@ footer {
     }
 
     #creations {
-        margin-top: -30px;
-    }
-
-    .carousel-slide {
         width: 100%;
-        padding-right: 0;
+        height: 300vh;
     }
 
-    .carousel-right {
+    .creations {
+        width: 100%;
+    }
+
+    .creations-right {
         width: 290px;
     }
 
-    .carousel-left {
+    .creations-left {
         width: 100%;
     }
 
     .creations-tech-links {
         position: relative;
         right: 20px; 
-    }
-
-    .other-creations {
-        margin-top: -100px;
     }
 
     .box {
@@ -919,10 +858,15 @@ footer {
         height: 20vh;
         text-align: center;
     }
+
+    input.button {
+        width: 80%;
+        text-align: center;
+    }
 }
 
-@media all and (max-height: 800px) {
-    #pages {
-        margin: 100px 0;
+@media all and (max-width: 361px) {
+    #creations {
+        height: 320vh;
     }
 }

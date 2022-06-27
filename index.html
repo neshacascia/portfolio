@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
     <script src="script.js"></script>
     <title>Nesha Mervin</title>
 </head>
@@ -36,7 +37,7 @@
                 <h1>Nesha Mervin</h1>
                 <h2 class="gradient-bg">Software Developer</h2>
                 <p>I am a full-stack developer specializing in building and designing interactive digital experiences that are simple, beautiful, and accessible. Do you have a project in mind and need help bringing that idea to life?</p>
-                <a href="#contact"><input type="button" value="Let's chat!"></a>
+                <a href="#contact"><input class="button" type="button" value="Let's chat!"></a>
             </div>
     
             <div class="home-ig ease-in-out">
@@ -168,86 +169,72 @@
         </div>
     </section> -->
 
-    <section class="pages" id="pages">
+    <section class="pages">
         <div id="creations">
             <h2>/creations</h2>
             <div class="creations-container">
-                <div class="carousel-track-container">
-                    <ul class="carousel-track">
-                        <li class="carousel-slide current-slides">
-                            <div class="carousel-left">
-                                <h3>The Coffee Roasters</h3>
-                                <p>A beautiful and responsive coffee subscription website. Customers can make selections to create a coffee subscription and see an order summeary modal of their choices.</p>
+                <ul class="featured-creations">
+                    <li class="creations">
+                        <div class="creations-left">
+                            <h3>The Coffee Roasters</h3>
+                            <p>A beautiful and responsive coffee subscription website. Customers can make selections to create a coffee subscription and see an order summeary modal of their choices.</p>
                 
-                                <div class="creations-tech">
-                                    <span>HTML CSS JavaScript</span>
-                                </div>
-    
-                                <div class="creations-tech-links">
-                                    <a href="" target="_blank"><img src="Assets/media-links/github.svg" alt="Link to project on GitHub"></a>
-                                    <a href="" target="_blank"><img src="Assets/media-links/external.svg" alt="Link to live code"></a>
-                                </div>
+                            <div class="creations-tech">
+                                <span>HTML CSS JavaScript</span>
                             </div>
+    
+                            <div class="creations-tech-links">
+                                <a href="" target="_blank"><img src="Assets/media-links/github.svg" alt="Link to project on GitHub"></a>
+                                <a href="" target="_blank"><img src="Assets/media-links/external.svg" alt="Link to live code"></a>
+                            </div>
+                        </div>
                             
-                            <div class="carousel-right">
-                                <img src="Assets/creations/the-coffee-roasters.png" alt="">
-                            </div>
-                        </li>
+                        <div class="creations-right">
+                            <img src="Assets/creations/the-coffee-roasters.png" alt="">
+                        </div>
+                    </li>
 
-                        <li class="carousel-slide">
-                            <div class="carousel-left">
-                                <h3>The Curl Studio</h3>
-                                <p>Designed a fully responsive desktop and mobile landing page for a hair salon that specializes in wavy and curly hair types.</p>
+                    <li class="creations">
+                        <div class="creations-left">
+                            <h3>The Curl Studio</h3>
+                            <p>Designed a fully responsive desktop and mobile landing page for a hair salon that specializes in wavy and curly hair types.</p>
                 
-                                <div class="creations-tech">
-                                    <span>HTML CSS JavaScript</span>
-                                </div>
+                            <div class="creations-tech">
+                                <span>HTML CSS JavaScript</span>
+                            </div>
     
-                                <div class="creations-tech-links">
-                                    <a href="" target="_blank"><img src="Assets/media-links/github.svg" alt="Link to project on GitHub"></a>
-                                    <a href="" target="_blank"><img src="Assets/media-links/external.svg" alt="Link to live code"></a>
-                                </div>
+                            <div class="creations-tech-links">
+                                <a href="" target="_blank"><img src="Assets/media-links/github.svg" alt="Link to project on GitHub"></a>
+                                <a href="" target="_blank"><img src="Assets/media-links/external.svg" alt="Link to live code"></a>
                             </div>
+                        </div>
+                            
+                        <div class="creations-right">
+                            <img src="Assets/creations/the-curl-studio.png" alt="">
+                        </div>
+                    </li>
+                           
 
-                            <div class="carousel-right">
-                                <img src="Assets/creations/the-curl-studio.png" alt="">
-                            </div>
-                        </li>
-
-                        <li class="carousel-slide">
-                            <div class="carousel-left">
-                                <h3>One Piece Battle Selector</h3>
-                                <p>One Piece version of Street Fighter. A vanilla JavaScript wesbite using sprites. Users are able to select and switch fighters.</p>
+                    <li class="creations">
+                        <div class="creations-left">
+                            <h3>One Piece Battle Selector</h3>
+                            <p>One Piece version of Street Fighter. A vanilla JavaScript wesbite using sprites. Users are able to select and switch fighters.</p>
                 
-                                <div class="creations-tech">
-                                    <span>HTML CSS JavaScript</span>
-                                </div>
+                            <div class="creations-tech">
+                                <span>HTML CSS JavaScript</span>
+                            </div>
     
-                                <div class="creations-tech-links">
-                                    <a href="" target="_blank"><img src="Assets/media-links/github.svg" alt="Link to project on GitHub"></a>
-                                    <a href="" target="_blank"><img src="Assets/media-links/external.svg" alt="Link to live code"></a>
-                                </div>
+                            <div class="creations-tech-links">
+                                <a href="" target="_blank"><img src="Assets/media-links/github.svg" alt="Link to project on GitHub"></a>
+                                <a href="" target="_blank"><img src="Assets/media-links/external.svg" alt="Link to live code"></a>
                             </div>
+                        </div>
 
-                            <div class="carousel-right">
-                                <img src="Assets/creations/one-piece-battle-selector.png" alt="">
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="creations-button">
-                <div class="btns">
-                    <button class="carousel-button-left"><img src="Assets/left-arrow.svg" alt="Arrow pointing left"></button>
-                    <button class="carousel-button-right"><img src="Assets/right-arrow.svg" alt="Arrow pointing right"></button>
-                </div>
-
-                <div class="carousel-nav">
-                    <input type="button" class="carousel-indicator current-slide">
-                    <input type="button" class="carousel-indicator">
-                    <input type="button" class="carousel-indicator">
-                </div>
+                        <div class="creations-right">
+                            <img src="Assets/creations/one-piece-battle-selector.png" alt="">
+                        </div>
+                    </li> 
+                </ul>
             </div>
         </div>
 
@@ -340,6 +327,7 @@
         </div>
     </footer>
 
+    <script src="/path/to/flickity.pkgd.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
