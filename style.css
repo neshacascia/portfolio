@@ -805,12 +805,12 @@ footer {
     }
 
     .tech-stack-item img {
-        width: 20px;
-        height: 20px;
+        /* width: 20px;
+        height: 20px; */
     }
 
     .tech-stack-item {
-        margin: 0 -40px;
+        /* margin: 0 -40px; */
     }
 
     .tech-stack-item figcaption {
