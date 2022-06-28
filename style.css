@@ -769,9 +769,8 @@ footer {
 
 @media all and (max-width: 414px) {
     .pages {
-        padding: 0 30px;
+        padding: 0 20px;
         margin: 0;
-        width: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -779,10 +778,16 @@ footer {
 
     .home {
         margin-top: 70px;
-        width: 100%;
-        display: block;
     }
 
+    .home,
+    #about,
+    #creations,
+    .other-creations,
+    #contact {
+        width: 100%;
+    }
+    
     h1 {
         font-size: 2.5rem;
     }
