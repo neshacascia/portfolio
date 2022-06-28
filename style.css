@@ -769,9 +769,12 @@ footer {
 
 @media all and (max-width: 414px) {
     .pages {
-        padding: 0 20px;
+        padding: 0 30px;
         margin: 0;
         width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .home {
@@ -789,7 +792,7 @@ footer {
     }
 
     #about {
-        height: 160vh;
+        height: 140vh;
     }
 
     .tech-stack {
@@ -811,11 +814,11 @@ footer {
 
     #creations {
         width: 100%;
-        height: 270vh;
+        height: 230vh;
     }
 
     .creations {
-        width: 100%;
+        width: 90%;
     }
 
     .creations-right {
@@ -840,6 +843,7 @@ footer {
     }
 
     .box {
+        width: 90%;
         margin: 10px 0;
     }
 
@@ -857,7 +861,7 @@ footer {
 
     .contact-info input,
     .contact-info textarea {
-        width: 94%;
+        width: 90%;
     }
 
     footer {
@@ -866,7 +870,7 @@ footer {
     }
 
     input.button {
-        width: 80%;
+        width: 75%;
         text-align: center;
     }
 }
