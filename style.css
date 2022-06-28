@@ -768,16 +768,19 @@ footer {
 }
 
 @media all and (max-width: 414px) {
+    body {
+        width: 100%;
+    }
+
     .pages {
-        padding: 0 20px;
-        margin: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0 30px;
     }
 
     .home {
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
     .home,
@@ -805,8 +808,8 @@ footer {
     }
 
     .tech-stack-item img {
-        /* width: 20px;
-        height: 20px; */
+        width: 34px;
+        height: 34px;
     }
 
     .tech-stack-item {
