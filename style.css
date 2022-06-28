@@ -451,6 +451,7 @@ h3 {
 
 .other-creations {
     margin-top: -120px;
+    height: 60vh;
 }
 
 .creations-row-1 {
@@ -799,10 +800,6 @@ footer {
         padding: 0 30px;
     }
 
-    .home {
-        margin-top: 20px;
-    }
-
     .home-text h2 {
         font-size: 2.1rem;
     }
@@ -816,7 +813,7 @@ footer {
     }
 
     #about {
-        height: 160vh;
+        height: 150vh;
     }
 
     .tech-stack-item img {
@@ -825,7 +822,7 @@ footer {
     }
 
     #creations {
-        height: 270vh;
+        height: 260vh;
     }
 
     .creations {
