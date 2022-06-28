@@ -791,33 +791,13 @@ footer {
         width: 100%;
     }
 
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    h2 {
-        font-size: 1.87rem;
-    }
-
     #about {
         height: 140vh;
-    }
-
-    .tech-stack {
-        /* width: 300px; */
     }
 
     .tech-stack-item img {
         width: 34px;
         height: 34px;
-    }
-
-    .tech-stack-item {
-        /* margin: 0 -40px; */
-    }
-
-    .tech-stack-item figcaption {
-        /* font-size: 0.62rem; */
     }
 
     #creations {
@@ -829,7 +809,6 @@ footer {
     }
 
     .creations-right {
-        /* width: 290px; */
         width: 100%;
     }
 
@@ -843,7 +822,6 @@ footer {
 
     .creations-tech-links {
         position: relative;
-        /* right: 20px;  */
     }
 
     .other-creations {
