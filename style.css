@@ -371,7 +371,7 @@ figcaption {
 
 /* Creations Styles */
 #creations {
-    height: 190vh;
+    height: 180vh;
     display: flex;
     flex-direction: column;
     padding-top: 100px;
@@ -450,8 +450,7 @@ h3 {
 }
 
 .other-creations {
-    margin-top: -120px;
-    height: 60vh;
+    height: 65vh;
 }
 
 .creations-row-1 {
@@ -575,12 +574,20 @@ footer {
     .tech-stack-item {
         margin: 0 -5px;
     }
+
+    .other-creations {
+        height: 75vh;
+    }
 }
 
 
 @media all and (max-width: 980px) {
     .tech-stack-item {
         margin: 0 -10px;
+    }
+
+    .other-creations {
+        height: 90vh;
     }
 }
 
@@ -675,7 +682,7 @@ footer {
     }
 
     #creations {
-        height: 290vh;
+        height: 270vh;
     }
 
     .creations {
@@ -706,6 +713,10 @@ footer {
         width: 80%;
     }
 
+    .other-creations {
+        height: 110vh;
+    }
+
     #contact {
         height: 120vh;
     }
@@ -723,8 +734,16 @@ footer {
 }
 
 @media all and (max-width: 714px) {
+    #about {
+        height: 120vh;
+    }
+
     .tech-stack-item {
         margin: 0 -15px;
+    }
+
+    #creations {
+        height: 260vh;
     }
 
     .creations-row-1 {
@@ -734,9 +753,17 @@ footer {
     .box {
         margin-bottom: 10px;
     }
+
+    .other-creations {
+        height: 130vh;
+    }
 }
 
 @media all and (max-width: 671px) {
+    #creations {
+        height: 260vh;
+    }
+
     .contact-info input,
     .contact-info textarea {
         width: 94%;
@@ -754,6 +781,10 @@ footer {
 
     .tech-stack-item {
         margin: 0 -25px;
+    }
+
+    #creations {
+        height: 250vh;
     }
 }
 
@@ -826,6 +857,8 @@ footer {
     .tech-stack-item img {
         width: 34px;
         height: 34px;
+        object-fit:cover;
+        object-position:50% 50%;
     }
 
     #creations {
