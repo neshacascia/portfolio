@@ -799,6 +799,10 @@ footer {
         padding: 0 30px;
     }
 
+    .nav-bar {
+        margin: 0;
+    }
+
     .home {
         margin-top: 20px;
     }
@@ -812,7 +816,7 @@ footer {
     }
 
     #about {
-        height: 140vh;
+        height: 160vh;
     }
 
     .tech-stack-item img {
@@ -821,7 +825,7 @@ footer {
     }
 
     #creations {
-        height: 250vh;
+        height: 270vh;
     }
 
     .creations {
