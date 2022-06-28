@@ -743,7 +743,7 @@ footer {
 }
 
 @media all and (max-width: 615px) {
-    .nav-bar img {
+    nav {
         display: none;
     }
 
@@ -799,12 +799,12 @@ footer {
         padding: 0 30px;
     }
 
-    .nav-bar {
-        margin: 0;
-    }
-
     .home {
         margin-top: 20px;
+    }
+
+    .home-text h2 {
+        font-size: 2.1rem;
     }
 
     .home,
