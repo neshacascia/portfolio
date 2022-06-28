@@ -777,7 +777,7 @@ footer {
     }
 
     .home {
-        margin-top: 70px;
+        margin-top: 40px;
     }
 
     .home,
@@ -787,7 +787,7 @@ footer {
     #contact {
         width: 100%;
     }
-    
+
     h1 {
         font-size: 2.5rem;
     }
@@ -801,7 +801,7 @@ footer {
     }
 
     .tech-stack {
-        width: 300px;
+        /* width: 300px; */
     }
 
     .tech-stack-item img {
@@ -814,20 +814,20 @@ footer {
     }
 
     .tech-stack-item figcaption {
-        font-size: 0.62rem;
+        /* font-size: 0.62rem; */
     }
 
     #creations {
-        width: 100%;
-        height: 230vh;
+        height: 250vh;
     }
 
     .creations {
-        width: 90%;
+        width: 100%;
     }
 
     .creations-right {
-        width: 290px;
+        /* width: 290px; */
+        width: 100%;
     }
 
     .creations-right img {
@@ -840,7 +840,7 @@ footer {
 
     .creations-tech-links {
         position: relative;
-        right: 20px; 
+        /* right: 20px;  */
     }
 
     .other-creations {
@@ -848,7 +848,7 @@ footer {
     }
 
     .box {
-        width: 90%;
+        width: 100%;
         margin: 10px 0;
     }
 
