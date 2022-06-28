@@ -270,7 +270,7 @@ form .button:hover {
   
 /* About Me Styles */
 #about {
-    height: 130vh;
+    height: 100vh;
     padding-top: 90px;
 }
 
@@ -561,6 +561,10 @@ footer {
         width: 60%;
     }
 
+    #about {
+        height: 110vh;
+    }
+
     .tech-stack {
         width: 68%;
     }
@@ -604,6 +608,14 @@ footer {
         padding: 0 95px
     }
 
+    #about {
+        height: 120vh;
+    }
+
+    #creations {
+        height: 200vh;
+    }
+
     .creations-container {
         width: 100%;
     }
@@ -645,6 +657,10 @@ footer {
 
     .pages {
         padding: 0 40px;
+    }
+
+    #about {
+        height: 110vh;
     }
 
     .tech-stack {
@@ -727,8 +743,12 @@ footer {
 }
 
 @media all and (max-width: 615px) {
-    nav {
+    .nav-bar img {
         display: none;
+    }
+
+    .nav-bar {
+        justify-content: center;
     }
 
     .tech-stack-item {
