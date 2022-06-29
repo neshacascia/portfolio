@@ -13,9 +13,10 @@ html {
 
 :root {
     --bg-colour: rgb(16, 22, 31);
-    --secondary-blue: rgb(23, 30, 39);
+    --primary-blue: rgb(23, 30, 39);
+    --secondary-blue: rgba(54, 64, 80, 0.398);
     --mint-green: #8EA9A8;
-    --icy-white: #D8DEED;
+    --icy-white: #c7d2ee;
     --gradient: linear-gradient(90deg, #97bbaa 0%, #64acff 100%);
 }
 
@@ -294,7 +295,7 @@ form .button:hover {
 }
 
 .tech-stack {
-    background: var(--secondary-blue);
+    background: var(--primary-blue);
     width: 65%;
     height: 200px;
     position: absolute;
@@ -357,7 +358,7 @@ figcaption {
 }
 
 .container-box {
-    background: var(--secondary-blue);
+    background: var(--primary-blue);
     margin: 10px;
     width: 250px;
     padding: 20px;
@@ -438,7 +439,7 @@ h3 {
 }
 
 .creations-right {
-    width: 50%;
+    width: 46%;
 }
 
 .creations img {
@@ -458,14 +459,15 @@ h3 {
 }
 
 .box {
-    background: var(--secondary-blue);
+    background: var(--primary-blue);
     margin-right: 20px;
     padding: 30px;
     border-radius: 10px;
 }
 
 .box:hover {
-    background: rgba(46, 51, 61, 0.398);
+    /* background: rgba(46, 51, 61, 0.398); */
+    background: var(--secondary-blue);
     transform: translate(0, -15px);
     cursor: pointer;
     transition-timing-function: ease-in-out;
@@ -518,7 +520,7 @@ h3 {
 
 .contact-info input,
 .contact-info textarea {
-    background: var(--secondary-blue);
+    background: var(--primary-blue);
     font-size: 0.87rem;
     line-height: 200.2%;
     letter-spacing: 0.1em;
