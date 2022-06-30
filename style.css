@@ -452,6 +452,10 @@ h3 {
     box-shadow: 15px 15px var(--secondary-blue);
 }
 
+.creations-right img:hover {
+    box-shadow: 15px 15px var(--secondary-blue) inset;
+}
+
 .other-creations {
     height: 65vh;
 }
@@ -856,11 +860,15 @@ footer {
         height: 150vh;
     }
 
+    .tech-stack-item {
+        margin: 0 -40px;
+    }
+
     .tech-stack-item img {
-        width: 34px;
-        height: 34px;
-        object-fit:cover;
-        object-position:50% 50%;
+        /* width: 34px;
+        height: 34px; */
+        object-fit: cover;
+        object-position: 50% 50%;
     }
 
     .tech-stack-item figcaption {
