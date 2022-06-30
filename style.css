@@ -563,26 +563,69 @@ footer {
         width: 60%;
     }
 
+    #about {
+        height: 110vh;
+    }
+
     .tech-stack {
         width: 68%;
     }
 }
 
+@media all and (max-width: 1060px) {
+    .tech-stack-item {
+        margin: 0 -5px;
+    }
+
+    .other-creations {
+        height: 75vh;
+    }
+}
+
+
 @media all and (max-width: 980px) {
     .tech-stack-item {
         margin: 0 -10px;
     }
+
+    #creations {
+        height: 230vh;
+        margin-bottom: 10%;
+    }
+    
+    .creations-row-1 {
+        height: 90vh;
+    }
+}
+
+@media all and (max-width: 900px) {
+    #creations {
+        height: 260vh;
+        margin-bottom: 10%;
+    }
+
+    /* .creations-row-1 {
+        height: 200vh;
+    } */
 }
 
 @media all and (max-width: 895px) {
     .tech-stack-item {
         margin: 0 -15px;
     }
+
+    #creations {
+        margin-bottom: 30%;
+    }
 }
 
 @media all and (max-width: 815px) {
     .tech-stack-item {
         margin: 0 -20px;
+    }
+
+    #creations {
+        margin-bottom: 40%;
     }
 }
 
@@ -593,6 +636,14 @@ footer {
 
     .home-ig img {
         width: 100%;
+    }
+
+    .pages {
+        padding: 0 95px
+    }
+
+    #about {
+        height: 120vh;
     }
 
     .creations-container {
@@ -623,9 +674,23 @@ footer {
     .home-text p {
         width: 100%;
     }
+
+    #creations {
+        margin-bottom: 20%;
+    }
+
+    #contact {
+        height: 110vh;
+    }
     
     .contact-info textarea {
         width: 600px;
+    }
+}
+
+@media all and (max-width: 800px) {
+    #creations {
+        margin-bottom: 40%;
     }
 }
 
@@ -638,9 +703,9 @@ footer {
         padding: 0 40px;
     }
 
-    /* #about {
+    #about {
         height: 120vh;
-    } */
+    }
 
     .tech-stack {
         width: 90%;
@@ -652,9 +717,9 @@ footer {
         justify-content: center;
     }
 
-    /* #creations {
+    #creations {
         height: 340vh;
-    } */
+    }
 
     .creations {
         flex-direction: column;
@@ -689,9 +754,9 @@ footer {
         margin-bottom: 15%;
     }
 
-    /* #contact {
+    #contact {
         height: 100vh;
-    } */
+    }
 
     .footer-links {
         display: flex;
@@ -706,17 +771,17 @@ footer {
 }
 
 @media all and (max-width: 714px) {
-    /* #about {
+    #about {
         height: 120vh;
-    } */
+    }
 
     .tech-stack-item {
         margin: 0 -15px;
     }
 
-    /* #creations {
-        height: 380vh;
-    } */
+    #creations {
+        height: 360vh;
+    }
 
     .creations-row-1 {
         flex-direction: column;
@@ -732,6 +797,10 @@ footer {
 }
 
 @media all and (max-width: 671px) {
+    #creations {
+        height: 360vh;
+    }
+
     .contact-info input,
     .contact-info textarea {
         width: 94%;
@@ -750,22 +819,34 @@ footer {
     .tech-stack-item {
         margin: 0 -25px;
     }
+
+    #creations {
+        height: 390vh;
+    }
 }
 
 @media all and (max-width: 542px) {
-    /* #about {
+    #about {
         height: 150vh;
-    } */
+    }
     
     .tech-stack-item {
         margin: 0 -30px;
     }
+
+    #creations {
+        height: 370vh;
+    }
 }
 
 @media all and (max-width: 490px) {
-    /* #about {
+    #about {
         height: 155vh;
-    } */
+    }
+
+    #creations {
+        height: 400vh;
+    }
 
     .creations-pages {
         height: 370vh;
@@ -773,14 +854,14 @@ footer {
 }
 
 @media all and (max-width: 438px) {
-    /* #about {
+    #about {
         height: 170vh;
-    } */
+    }
 
-    /* #contact {
+    #contact {
         height: auto;
         margin-bottom: 30px;
-    } */
+    }
 
     footer {
         height: auto;
@@ -818,9 +899,9 @@ footer {
         width: 100%;
     }
 
-    /* #about {
-        height: 160vh;
-    } */
+    #about {
+        height: 150vh;
+    }
 
     .tech-stack-item {
         margin: 0 -36px;
@@ -828,6 +909,10 @@ footer {
 
     .tech-stack-item figcaption {
         font-size: 0.75rem;
+    }
+
+    #creations {
+        height: 400vh;
     }
 
     .creations {
@@ -860,10 +945,9 @@ footer {
         margin: 10px 0;
     }
 
-    /* #contact {
+    #contact {
         height: auto;
-        margin-top: 40%;
-    } */
+    }
 
     .contact-text {
         width: 100%;
@@ -890,7 +974,7 @@ footer {
 }
 
 @media all and (max-width: 361px) {
-    /* #creations {
+    #creations {
         height: 280vh;
-    } */
+    }
 }
