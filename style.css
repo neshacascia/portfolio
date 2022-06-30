@@ -393,7 +393,6 @@ h3 {
 }
 
 .creations-tech {
-    color: #8EA9A8;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 0.87rem;
@@ -402,7 +401,10 @@ h3 {
     letter-spacing: 0.07em;
 }
 
-.creations-tech span {
+.creations-tech span,
+.box span {
+    color: #6d7e9e;
+    letter-spacing: 0.07em;
     word-spacing: 8px;
 }
 
@@ -430,7 +432,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 90px;
 }
 
 .creations-left {
@@ -439,7 +441,7 @@ h3 {
 }
 
 .creations-right {
-    width: 46%;
+    width: 44%;
 }
 
 .creations img {
@@ -500,8 +502,6 @@ h3 {
 
 .box span {
     font-size: 0.75rem;
-    letter-spacing: 0.07em;
-    word-spacing: 8px;
 }
 
 /* Contact Me Styles */
