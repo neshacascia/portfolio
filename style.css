@@ -780,7 +780,7 @@ footer {
     }
 
     #creations {
-        height: 430vh;
+        height: 380vh;
     }
 
     .creations-row-1 {
@@ -927,7 +927,7 @@ footer {
 
     #contact {
         height: auto;
-        margin-top: 20%;
+        margin-top: 40%;
     }
 
     .contact-text {
