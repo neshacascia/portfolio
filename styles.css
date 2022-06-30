@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Josefin+Sans:wght@700&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Josefin+Sans:wght@700&family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
 
 html {
@@ -370,7 +370,7 @@ figcaption {
 
 /* Creations Styles */
 #creations {
-    height: 150vh;
+    height: 140vh;
     display: flex;
     flex-direction: column;
     padding-top: 100px;
@@ -455,7 +455,7 @@ h3 {
 }
 
 .other-creations {
-    height: 50vh;
+    height: 65vh;
 }
 
 .creations-row-1 {
@@ -672,7 +672,7 @@ footer {
     }
 
     #about {
-        height: 110vh;
+        height: 90vh;
     }
 
     .tech-stack {
@@ -718,11 +718,11 @@ footer {
     }
 
     .other-creations {
-        height: 80vh;
+        height: 70vh;
     }
 
     #contact {
-        height: 100vh;
+        height: 120vh;
     }
 
     .footer-links {
@@ -739,15 +739,11 @@ footer {
 
 @media all and (max-width: 714px) {
     #about {
-        height: 120vh;
+        height: 100vh;
     }
 
     .tech-stack-item {
         margin: 0 -15px;
-    }
-
-    #creations {
-        height: 260vh;
     }
 
     .creations-row-1 {
@@ -759,14 +755,14 @@ footer {
     }
 
     .other-creations {
-        height: 130vh;
+        height: 90vh;
     }
 }
 
 @media all and (max-width: 671px) {
-    #creations {
-        height: 260vh;
-    }
+    /* #creations {
+        height: 220vh;
+    } */
 
     .contact-info input,
     .contact-info textarea {
@@ -786,11 +782,10 @@ footer {
     .tech-stack-item {
         margin: 0 -25px;
     }
-
-    #creations {
-        height: 250vh;
+ 
+    .other-creations {
+        height: 110vh;
     }
-}
 
 @media all and (max-width: 542px) {
     #about {
@@ -804,7 +799,11 @@ footer {
 
 @media all and (max-width: 480px) {
     #about {
-        height: 155vh;
+        height: 120vh;
+    }
+
+    .other-creations {
+        height: 130vh;
     }
 }
 
@@ -855,7 +854,7 @@ footer {
     }
 
     #about {
-        height: 155vh;
+        height: 150vh;
     }
 
     .tech-stack-item {
@@ -867,7 +866,7 @@ footer {
     }
 
     #creations {
-        height: 260vh;
+        height: 250vh;
     }
 
     .creations {
@@ -892,7 +891,7 @@ footer {
 
     .other-creations {
         width: 100%;
-        height: 160vh;
+        height: 150vh;
     }
 
     .box {
@@ -948,4 +947,4 @@ footer {
     .other-creations {
         margin-bottom: 80%;
     }
-} */
+}
