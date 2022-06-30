@@ -863,6 +863,10 @@ footer {
         object-position:50% 50%;
     }
 
+    .tech-stack-item figcaption {
+        font-size: 0.75rem;
+    }
+
     #creations {
         height: 250vh;
     }
