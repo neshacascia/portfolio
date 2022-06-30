@@ -855,7 +855,7 @@ footer {
     }
 
     #about {
-        height: 160vh;
+        height: 150vh;
     }
 
     .tech-stack-item {
@@ -867,7 +867,7 @@ footer {
     }
 
     #creations {
-        height: 300vh;
+        height: 290vh;
     }
 
     .creations {
@@ -892,7 +892,7 @@ footer {
 
     .other-creations {
         width: 100%;
-        height: 170vh;
+        height: 160vh;
     }
 
     .box {
