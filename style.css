@@ -861,7 +861,7 @@ footer {
     }
 
     .tech-stack-item {
-        margin: 0 -36px;
+        margin: 0 -34px;
     }
 
     .tech-stack-item figcaption {
@@ -933,5 +933,21 @@ footer {
 @media all and (max-width: 361px) {
     #creations {
         height: 280vh;
+    }
+}
+
+@media all and (max-width: 375px) {
+    .tech-stack-item {
+        margin: 0 -36px;
+    }
+}
+
+@media all and (min-height: 675px) and (max-height: 800px) {
+    #creations {
+        margin-bottom: 130%;
+    }
+
+    .other-creations {
+        margin-bottom: 80%;
     }
 }
