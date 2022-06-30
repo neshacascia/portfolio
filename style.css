@@ -370,10 +370,11 @@ figcaption {
 
 /* Creations Styles */
 #creations {
-    height: 180vh;
+    height: 220vh;
     display: flex;
     flex-direction: column;
     padding-top: 100px;
+    margin-bottom: 10%;
 }
 
 .creations-container {
@@ -454,12 +455,9 @@ h3 {
     box-shadow: 15px 15px var(--secondary-blue) inset;
 }
 
-.other-creations {
-    height: 65vh;
-}
-
 .creations-row-1 {
     display: flex;
+    height: auto;
 }
 
 .box {
@@ -508,7 +506,7 @@ h3 {
 
 /* Contact Me Styles */
 #contact {
-    height: 90vh;
+    height: 100vh;
     padding-top: 90px;
 }
 
@@ -590,20 +588,44 @@ footer {
         margin: 0 -10px;
     }
 
-    .other-creations {
+    #creations {
+        height: 230vh;
+        margin-bottom: 10%;
+    }
+    
+    .creations-row-1 {
         height: 90vh;
     }
+}
+
+@media all and (max-width: 900px) {
+    #creations {
+        height: 260vh;
+        margin-bottom: 10%;
+    }
+
+    /* .creations-row-1 {
+        height: 200vh;
+    } */
 }
 
 @media all and (max-width: 895px) {
     .tech-stack-item {
         margin: 0 -15px;
     }
+
+    #creations {
+        margin-bottom: 30%;
+    }
 }
 
 @media all and (max-width: 815px) {
     .tech-stack-item {
         margin: 0 -20px;
+    }
+
+    #creations {
+        margin-bottom: 40%;
     }
 }
 
@@ -622,10 +644,6 @@ footer {
 
     #about {
         height: 120vh;
-    }
-
-    #creations {
-        height: 200vh;
     }
 
     .creations-container {
@@ -657,8 +675,22 @@ footer {
         width: 100%;
     }
 
+    #creations {
+        margin-bottom: 20%;
+    }
+
+    #contact {
+        height: 110vh;
+    }
+    
     .contact-info textarea {
         width: 600px;
+    }
+}
+
+@media all and (max-width: 800px) {
+    #creations {
+        margin-bottom: 40%;
     }
 }
 
@@ -672,7 +704,7 @@ footer {
     }
 
     #about {
-        height: 100vh;
+        height: 120vh;
     }
 
     .tech-stack {
@@ -686,7 +718,7 @@ footer {
     }
 
     #creations {
-        height: 240vh;
+        height: 340vh;
     }
 
     .creations {
@@ -717,8 +749,9 @@ footer {
         width: 80%;
     }
 
-    .other-creations {
-        height: 80vh;
+    .creations-row-1 {
+        height: 100vh;
+        margin-bottom: 15%;
     }
 
     #contact {
@@ -747,7 +780,7 @@ footer {
     }
 
     #creations {
-        height: 280vh;
+        height: 360vh;
     }
 
     .creations-row-1 {
@@ -765,7 +798,7 @@ footer {
 
 @media all and (max-width: 671px) {
     #creations {
-        height: 270vh;
+        height: 360vh;
     }
 
     .contact-info input,
@@ -788,7 +821,7 @@ footer {
     }
 
     #creations {
-        height: 270vh;
+        height: 390vh;
     }
 }
 
@@ -800,11 +833,23 @@ footer {
     .tech-stack-item {
         margin: 0 -30px;
     }
+
+    #creations {
+        height: 370vh;
+    }
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 490px) {
     #about {
         height: 155vh;
+    }
+
+    #creations {
+        height: 400vh;
+    }
+
+    .creations-pages {
+        height: 370vh;
     }
 }
 
@@ -867,7 +912,7 @@ footer {
     }
 
     #creations {
-        height: 290vh;
+        height: 400vh;
     }
 
     .creations {
