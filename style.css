@@ -780,7 +780,7 @@ footer {
     }
 
     #creations {
-        height: 360vh;
+        height: 380vh;
     }
 
     .creations-row-1 {
@@ -797,10 +797,6 @@ footer {
 }
 
 @media all and (max-width: 671px) {
-    #creations {
-        height: 360vh;
-    }
-
     .contact-info input,
     .contact-info textarea {
         width: 94%;
@@ -819,10 +815,6 @@ footer {
     .tech-stack-item {
         margin: 0 -25px;
     }
-
-    #creations {
-        height: 390vh;
-    }
 }
 
 @media all and (max-width: 542px) {
@@ -833,19 +825,11 @@ footer {
     .tech-stack-item {
         margin: 0 -30px;
     }
-
-    #creations {
-        height: 370vh;
-    }
 }
 
 @media all and (max-width: 490px) {
     #about {
         height: 155vh;
-    }
-
-    #creations {
-        height: 400vh;
     }
 
     .creations-pages {
@@ -900,7 +884,7 @@ footer {
     }
 
     #about {
-        height: 150vh;
+        height: 160vh;
     }
 
     .tech-stack-item {
@@ -909,10 +893,6 @@ footer {
 
     .tech-stack-item figcaption {
         font-size: 0.75rem;
-    }
-
-    #creations {
-        height: 400vh;
     }
 
     .creations {
@@ -947,6 +927,7 @@ footer {
 
     #contact {
         height: auto;
+        margin-top: 20%;
     }
 
     .contact-text {
