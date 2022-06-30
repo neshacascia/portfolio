@@ -370,11 +370,10 @@ figcaption {
 
 /* Creations Styles */
 #creations {
-    height: 220vh;
+    height: 150vh;
     display: flex;
     flex-direction: column;
     padding-top: 100px;
-    margin-bottom: 10%;
 }
 
 .creations-container {
@@ -455,9 +454,12 @@ h3 {
     box-shadow: 15px 15px var(--secondary-blue) inset;
 }
 
+.other-creations {
+    height: 50vh;
+}
+
 .creations-row-1 {
     display: flex;
-    height: auto;
 }
 
 .box {
@@ -506,7 +508,7 @@ h3 {
 
 /* Contact Me Styles */
 #contact {
-    height: 100vh;
+    height: 90vh;
     padding-top: 90px;
 }
 
@@ -588,44 +590,20 @@ footer {
         margin: 0 -10px;
     }
 
-    #creations {
-        height: 230vh;
-        margin-bottom: 10%;
-    }
-    
-    .creations-row-1 {
+    .other-creations {
         height: 90vh;
     }
-}
-
-@media all and (max-width: 900px) {
-    #creations {
-        height: 260vh;
-        margin-bottom: 10%;
-    }
-
-    /* .creations-row-1 {
-        height: 200vh;
-    } */
 }
 
 @media all and (max-width: 895px) {
     .tech-stack-item {
         margin: 0 -15px;
     }
-
-    #creations {
-        margin-bottom: 30%;
-    }
 }
 
 @media all and (max-width: 815px) {
     .tech-stack-item {
         margin: 0 -20px;
-    }
-
-    #creations {
-        margin-bottom: 40%;
     }
 }
 
@@ -644,6 +622,10 @@ footer {
 
     #about {
         height: 120vh;
+    }
+
+    #creations {
+        height: 200vh;
     }
 
     .creations-container {
@@ -675,22 +657,8 @@ footer {
         width: 100%;
     }
 
-    #creations {
-        margin-bottom: 20%;
-    }
-
-    #contact {
-        height: 110vh;
-    }
-    
     .contact-info textarea {
         width: 600px;
-    }
-}
-
-@media all and (max-width: 800px) {
-    #creations {
-        margin-bottom: 40%;
     }
 }
 
@@ -704,7 +672,7 @@ footer {
     }
 
     #about {
-        height: 120vh;
+        height: 110vh;
     }
 
     .tech-stack {
@@ -718,7 +686,7 @@ footer {
     }
 
     #creations {
-        height: 340vh;
+        height: 220vh;
     }
 
     .creations {
@@ -749,9 +717,8 @@ footer {
         width: 80%;
     }
 
-    .creations-row-1 {
-        height: 100vh;
-        margin-bottom: 15%;
+    .other-creations {
+        height: 80vh;
     }
 
     #contact {
@@ -780,7 +747,7 @@ footer {
     }
 
     #creations {
-        height: 360vh;
+        height: 260vh;
     }
 
     .creations-row-1 {
@@ -798,7 +765,7 @@ footer {
 
 @media all and (max-width: 671px) {
     #creations {
-        height: 360vh;
+        height: 260vh;
     }
 
     .contact-info input,
@@ -821,7 +788,7 @@ footer {
     }
 
     #creations {
-        height: 390vh;
+        height: 250vh;
     }
 }
 
@@ -833,23 +800,11 @@ footer {
     .tech-stack-item {
         margin: 0 -30px;
     }
-
-    #creations {
-        height: 370vh;
-    }
 }
 
-@media all and (max-width: 490px) {
+@media all and (max-width: 480px) {
     #about {
         height: 155vh;
-    }
-
-    #creations {
-        height: 400vh;
-    }
-
-    .creations-pages {
-        height: 370vh;
     }
 }
 
@@ -900,20 +855,20 @@ footer {
     }
 
     #about {
-        height: 150vh;
+        height: 155vh;
     }
 
     .tech-stack-item {
-        margin: 0 -36px;
+        margin: 0 -34px;
     }
 
     .tech-stack-item figcaption {
         font-size: 0.75rem;
     }
 
-    /* #creations {
-        height: 370vh;
-    } */
+    #creations {
+        height: 260vh;
+    }
 
     .creations {
         width: 100%;
@@ -976,5 +931,21 @@ footer {
 @media all and (max-width: 361px) {
     #creations {
         height: 280vh;
+    }
+}
+
+@media all and (max-width: 375px) {
+    .tech-stack-item {
+        margin: 0 -36px;
+    }
+}
+
+@media all and (min-height: 675px) and (max-height: 800px) {
+    #creations {
+        margin-bottom: 130%;
+    }
+
+    .other-creations {
+        margin-bottom: 80%;
     }
 }
