@@ -672,7 +672,7 @@ footer {
     }
 
     #about {
-        height: 90vh;
+        height: 120vh;
     }
 
     .tech-stack {
@@ -686,7 +686,7 @@ footer {
     }
 
     #creations {
-        height: 220vh;
+        height: 300vh;
     }
 
     .creations {
@@ -718,7 +718,7 @@ footer {
     }
 
     .other-creations {
-        height: 70vh;
+        height: 90vh;
     }
 
     #contact {
@@ -739,7 +739,7 @@ footer {
 
 @media all and (max-width: 714px) {
     #about {
-        height: 100vh;
+        height: 125vh;
     }
 
     .tech-stack-item {
@@ -755,7 +755,7 @@ footer {
     }
 
     .other-creations {
-        height: 90vh;
+        height: 120vh;
     }
 }
 
