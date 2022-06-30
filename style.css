@@ -861,14 +861,7 @@ footer {
     }
 
     .tech-stack-item {
-        margin: 0 -40px;
-    }
-
-    .tech-stack-item img {
-        /* width: 34px;
-        height: 34px; */
-        object-fit: cover;
-        object-position: 50% 50%;
+        margin: 0 -36px;
     }
 
     .tech-stack-item figcaption {
