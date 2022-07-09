@@ -335,7 +335,7 @@ figcaption {
 
 /* Creations Styles */
 #creations {
-    height: 75vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     padding-top: 100px;
@@ -421,7 +421,7 @@ h3 {
 
 /* Creations Butttons */
 .creations-button {
-    height: 15vh;
+    height: 25vh;
     width: 100%;
     display: flex;
     flex-direction: column;
