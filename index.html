@@ -35,7 +35,7 @@
                 <h5>hello, my name is</h5>
                 <h1>Nesha Mervin</h1>
                 <h2 class="gradient-bg">Software Developer</h2>
-                <p>I am a front-end developer based in Toronto, specializing in building and designing interactive digital experiences that are simple, beautiful, and accessible. Do you have a project in mind and need help bringing that idea to life?</p>
+                <p>I am a front-end developer, specializing in building and designing interactive digital experiences that are simple, beautiful, and accessible. I aim to deliver creative solutions with a life-long desire to learn. Do you have a project in mind and need help bringing that idea to life?</p>
                 <a href="#contact"><input class="button" type="button" value="Let's chat!"></a>
             </div>
     
@@ -142,8 +142,8 @@
         <div id="creations">
             <h2>/creations</h2>
             <div class="creations-container">
-                <ul class="featured-creations">
-                    <li class="creations">
+                <ul class="featured-creations carousel">
+                    <li class="creations carousel-item carousel-item-current">
                         <div class="creations-left">
                             <h3>The Coffee Roasters</h3>
                             <p>A beautiful and responsive coffee subscription website. Customers can make selections to create a coffee subscription and see an order summary modal of their choices.</p>
@@ -163,7 +163,7 @@
                         </div>
                     </li>
 
-                    <li class="creations">
+                    <li class="creations carousel-item">
                         <div class="creations-left">
                             <h3>The Curl Studio</h3>
                             <p>Designed a fully responsive desktop and mobile landing page for a hair salon that specializes in wavy and curly hair types.</p>
@@ -184,10 +184,10 @@
                     </li>
                            
 
-                    <li class="creations">
+                    <li class="creations carousel-item">
                         <div class="creations-left">
                             <h3>One Piece Battle Selector</h3>
-                            <p>Who will take on the two Yonkos? A vanilla JavaScript wesbite using One Piece character sprites. Users are able to select and switch fighters.</p>
+                            <p>Who will take on the two Yonkos? This is a vanilla JavaScript wesbite using One Piece character sprites. Users are able to select and switch fighters.</p>
                 
                             <div class="creations-tech">
                                 <span>HTML CSS JavaScript</span>
@@ -204,6 +204,13 @@
                         </div>
                     </li> 
                 </ul>
+
+                <div class="creations-button">
+                    <div class="btns">
+                        <button class="carousel-button-prev"><img src="assets/left-arrow.svg" alt="Arrow pointing left"></button>
+                        <button class="carousel-button-next"><img src="assets/right-arrow.svg" alt="Arrow pointing right"></button>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -301,7 +308,6 @@
         </div>
     </footer>
 
-    <script src="/path/to/flickity.pkgd.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
