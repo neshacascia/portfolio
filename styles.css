@@ -905,6 +905,10 @@ footer {
         height: 120vh;
     }
 
+    .featured-creations {
+        height: 45vh;
+    }
+    
     .creations {
         width: 100%;
     }
