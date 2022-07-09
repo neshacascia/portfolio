@@ -333,41 +333,6 @@ figcaption {
     font-size: 0.87rem;            
 }
 
-/* My Process Styles */
-#process {
-    height: 100vh;
-    padding-top: 100px;
-}
-
-.process-text {
-    margin-bottom: 25px;
-}
-
-.process-text h2 {
-    margin-bottom: 25px;
-}
-
-.process-text h2 {
-    margin-bottom: 15px;
-}
-
-.container {
-    display: flex;
-}
-
-.container-box {
-    background: var(--primary-blue);
-    margin: 10px;
-    width: 250px;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.container-box p {
-    font-size: 0.87rem;
-    margin-top: 15px;
-}
-
 /* Creations Styles */
 #creations {
     height: 75vh;
