@@ -821,6 +821,7 @@ footer {
     .other-creations {
         height: 110vh;
     }
+}
 
 @media all and (max-width: 542px) {
     #about {
@@ -906,7 +907,7 @@ footer {
     }
 
     .featured-creations {
-        height: 60vh;
+        height: 65vh;
     }
 
     .creations {
@@ -953,7 +954,7 @@ footer {
 
     .contact-info input,
     .contact-info textarea {
-        width: 90%;
+        width: 100%;
     }
 
     footer {
@@ -962,7 +963,7 @@ footer {
     }
 
     input.button {
-        width: 75%;
+        width: 100%;
         text-align: center;
     }
 }
