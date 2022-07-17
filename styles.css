@@ -187,7 +187,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 110vh;
+    height: 100vh;
 }
 
 .home-text h5 {
