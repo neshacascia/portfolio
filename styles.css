@@ -187,8 +187,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 90vh;
-    padding-top: 120px;
+    height: 110vh;
 }
 
 .home-text h5 {
@@ -269,7 +268,7 @@ form .button:hover {
   
 /* About Me Styles */
 #about {
-    height: 100vh;
+    height: 120vh;
     padding-top: 90px;
 }
 
@@ -484,9 +483,21 @@ h3 {
     }
 }
 
+input.carousel-indicator {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: rgba(46, 51, 61);
+    margin: 30px 5px;
+}
+
+.carousel-indicator.current-slide {
+    background: rgb(25, 26, 30);
+}
+
 /* Other Creations */
 .other-creations {
-    height: 55vh;
+    height: 20vh;
 }
 
 .creations-row-1 {
