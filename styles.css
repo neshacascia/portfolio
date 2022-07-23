@@ -975,7 +975,7 @@ footer {
     }
 
     input.button {
-        width: fit-content;
+        width: 95%;
         text-align: center;
     }
 }
