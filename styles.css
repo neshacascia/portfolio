@@ -919,7 +919,7 @@ footer {
     }
 
     .featured-creations {
-        height: 65vh;
+        height: 60vh;
     }
 
     .creations {
@@ -975,7 +975,7 @@ footer {
     }
 
     input.button {
-        width: 100%;
+        width: fit-content;
         text-align: center;
     }
 }
