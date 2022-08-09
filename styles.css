@@ -912,7 +912,7 @@ footer {
     }
 
     #about {
-        height: 150vh;
+        height: 160vh;
     }
 
     .tech-stack-item {
@@ -925,7 +925,7 @@ footer {
 
     #creations {
         /* height: 250vh; */
-        height: 120vh;
+        height: 220vh;
     }
 
     .featured-creations {
@@ -974,10 +974,10 @@ footer {
         display: block;
     }
 
-    .contact-info input,
+    /* .contact-info input,
     .contact-info textarea {
         width: 100%;
-    }
+    } */
 
     footer {
         height: 20vh;
@@ -985,7 +985,7 @@ footer {
     }
 
     input.button {
-        width: 90%;
+        width: 80%;
         text-align: center;
     }
 }
