@@ -269,8 +269,8 @@ form .button:hover {
   
 /* About Me Styles */
 #about {
-    height: 120vh;
-    padding-top: 90px;
+    height: 100vh;
+    padding-top: 100px;
 }
 
 .about-text h4,
@@ -335,10 +335,10 @@ figcaption {
 
 /* Creations Styles */
 #creations {
-    height: 85vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
+    padding-top: 110px;
 }
 
 .creations-container {
@@ -503,6 +503,7 @@ input.carousel-indicator {
 
 .creations-row-1 {
     display: flex;
+    margin-top: 20px;
 }
 
 .box {
@@ -527,13 +528,18 @@ input.carousel-indicator {
     margin-bottom: 10px;
 }
 
-.box img {
+.box-img img {
     width: 30px;
 }
 
 .box-links img {
     width: 20px;
     margin-right: 10px;
+}
+
+.creations-img {
+    width: 96%;
+    margin: 10px 0;
 }
 
 .box h3 {
@@ -668,7 +674,7 @@ footer {
     }
 
     #creations {
-        height: 90vh;
+        height: 130vh;
     }
 
     .creations-container {
@@ -729,7 +735,7 @@ footer {
     }
 
     #creations {
-        height: 100vh;
+        height: 220vh;
     }
 
     .creations {
@@ -766,6 +772,10 @@ footer {
 
     .other-creations {
         height: 75vh;
+    }
+
+    .box {
+        margin: 10px 0;
     }
 
     #contact {
