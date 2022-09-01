@@ -294,7 +294,7 @@ form .button:hover {
 
 .tech-stack {
     background: var(--primary-blue);
-    width: 65%;
+    width: 78%;
     height: 200px;
     position: absolute;
     display: flex;
@@ -618,9 +618,9 @@ footer {
         height: 110vh;
     } */
 
-    .tech-stack {
+    /* .tech-stack {
         width: 68%;
-    }
+    } */
 }
 
 @media all and (max-width: 1060px) {
