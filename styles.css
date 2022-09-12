@@ -335,7 +335,7 @@ figcaption {
 
 /* Creations Styles */
 #creations {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     padding-top: 110px;
@@ -538,7 +538,7 @@ input.carousel-indicator {
 }
 
 .creations-img {
-    width: 96%;
+    width: 100%;
     margin: 10px 0;
 }
 
