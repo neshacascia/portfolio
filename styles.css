@@ -516,7 +516,7 @@ input.carousel-indicator {
 .box:hover {
     /* background: rgba(46, 51, 61, 0.398); */
     background: var(--secondary-blue);
-    transform: translate(0, -15px);
+    /* transform: translate(0, -15px); */
     cursor: pointer;
     transition-timing-function: ease-in-out;
     transition-duration: 5ms;
