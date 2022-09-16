@@ -342,7 +342,7 @@ figcaption {
 
 /* Creations Styles */
 #creations {
-  height: 100vh;
+  height: 180vh;
   display: flex;
   flex-direction: column;
   padding-top: 110px;
@@ -508,9 +508,10 @@ input.carousel-indicator {
   height: 20vh;
 }
 
-.creations-row-1 {
+.creations-row-1,
+.creations-row-2 {
   display: flex;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .box {
@@ -541,7 +542,7 @@ input.carousel-indicator {
 
 .box-links img {
   width: 20px;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .creations-img {
