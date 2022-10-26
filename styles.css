@@ -691,12 +691,13 @@ footer {
   }
 
   #about {
-    height: 150vh;
+    height: 120vh;
   }
 
   .about-content {
     flex-direction: column;
     height: 100%;
+    justify-content: flex-start;
   }
 
   .about-text,
@@ -723,7 +724,7 @@ footer {
   }
 
   #creations {
-    height: 260vh;
+    height: 190vh;
   }
 
   .creations-row {
@@ -887,14 +888,10 @@ footer {
     width: 100%;
   }
 
-  .about-content {
-    justify-content: flex-start;
-  }
-
   .tech-stack {
     position: initial;
     height: 105%;
-    width: 90%;
+    width: 100%;
   }
 
   .tech-stack-item {
