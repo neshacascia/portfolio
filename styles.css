@@ -304,7 +304,7 @@ form .button:hover {
 
 .tech-stack {
   background: var(--primary-blue);
-  height: 55%;
+  height: 60%;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -696,6 +696,7 @@ footer {
 
   .about-content {
     flex-direction: column;
+    height: 100%;
   }
 
   .about-text,
@@ -818,10 +819,6 @@ footer {
 }
 
 @media all and (max-width: 542px) {
-  /* #about {
-    height: 150vh;
-  } */
-
   #creations {
     height: 300vh;
   }
@@ -891,14 +888,15 @@ footer {
   }
 
   .tech-stack {
-    position: static;
-    height: 100%;
+    position: initial;
+    height: 105%;
     width: 90%;
   }
 
   .tech-stack-item {
     margin: 0 -20px;
   }
+
   .tech-stack-item figcaption {
     font-size: 0.75rem;
   }
@@ -949,11 +947,6 @@ footer {
     display: block;
   }
 
-  /* .contact-info input,
-    .contact-info textarea {
-        width: 100%;
-    } */
-
   footer {
     height: 20vh;
     text-align: center;
@@ -969,17 +962,8 @@ footer {
   #about {
     height: 150vh;
   }
+
   #creations {
     height: 130vh;
-  }
-
-  .other-creations {
-    height: 150vh;
-  }
-}
-
-@media all and (max-width: 375px) {
-  .tech-stack-item {
-    margin: 0 -36px;
   }
 }
