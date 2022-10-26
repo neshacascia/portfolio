@@ -139,6 +139,10 @@ nav {
   color: var(--mint-green);
 }
 
+.nav-mobile {
+  display: none;
+}
+
 /* Social Media Links  */
 span.fixed-links {
   display: flex;
@@ -806,12 +810,17 @@ footer {
 }
 
 @media all and (max-width: 615px) {
-  nav {
+  .nav-links {
     display: none;
   }
 
+  .nav-mobile {
+    display: block;
+    width: 6%;
+  }
+
   .nav-bar {
-    justify-content: center;
+    justify-content: space-between;
   }
 
   #creations {
