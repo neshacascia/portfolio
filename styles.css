@@ -39,6 +39,7 @@ textarea {
 
 h3,
 .nav-item,
+.hm-nav-item,
 .tech-stack-container span,
 .tech-stack-item {
   font-family: "Josefin Sans", sans-serif;
@@ -60,6 +61,7 @@ form .button {
 }
 
 .nav-item,
+.hm-nav-item,
 h1,
 p,
 .box span,
@@ -89,6 +91,7 @@ h3 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 /* Navigation Styles */
 header {
   width: 100%;
@@ -127,7 +130,8 @@ nav {
   list-style-type: none;
 }
 
-.nav-item {
+.nav-item,
+.hm-nav-item {
   font-size: 1.12rem;
   font-weight: 700;
   line-height: 150%;
@@ -139,7 +143,8 @@ nav {
   color: var(--mint-green);
 }
 
-.nav-mobile {
+.nav-mobile,
+.hamburger-menu {
   display: none;
 }
 
@@ -821,6 +826,28 @@ footer {
 
   .nav-bar {
     justify-content: space-between;
+  }
+
+  .hamburger-menu {
+    height: 100vh;
+    z-index: 9999;
+  }
+
+  .hm-nav-links {
+    height: 100%;
+    background: rgba(23, 30, 39, 0.7);
+    backdrop-filter: saturate(180%) blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .hm-nav-item {
+    height: 100%;
+    font-size: 1.5rem;
   }
 
   #creations {
