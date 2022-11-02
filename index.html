@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
+    <script src="main.js" defer></script>
     <title>Nesha Mervin</title>
   </head>
 
@@ -419,10 +419,16 @@
         </div>
 
         <div class="contact-form">
-          <form action="">
+          <form action="" method="">
             <div class="contact-info">
               <label for="name">
-                <input type="text" name="name" placeholder="Name" required />
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                  required
+                />
               </label>
             </div>
 
@@ -431,6 +437,7 @@
                 <input
                   type="email"
                   name="email"
+                  id="email"
                   placeholder="Email address"
                   required
                 />
@@ -489,7 +496,5 @@
         </p>
       </div>
     </footer>
-
-    <script src="main.js"></script>
   </body>
 </html>
