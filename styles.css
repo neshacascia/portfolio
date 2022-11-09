@@ -149,7 +149,7 @@ nav {
 }
 
 .hamburger-menu {
-  height: 110vh;
+  height: 120vh;
   background: rgba(23, 30, 39, 0.93);
   backdrop-filter: saturate(180%) blur(10px);
   z-index: 9999;
