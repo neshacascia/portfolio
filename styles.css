@@ -695,6 +695,10 @@ footer {
 }
 
 @media all and (max-width: 615px) {
+  nav {
+    background: rgba(23, 30, 39, 0.93);
+  }
+
   .nav-links {
     display: none;
   }
@@ -706,7 +710,6 @@ footer {
 
   .nav-bar {
     justify-content: space-between;
-    background: rgba(23, 30, 39, 0.93);
   }
 
   #creations {
