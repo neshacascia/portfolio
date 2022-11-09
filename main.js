@@ -1,12 +1,31 @@
 //Mobile Hamburger Menu:
-const hamburgerMenu = document.querySelector(".nav-mobile");
-const mobileNav = document.querySelector(".hamburger-menu");
+const hamburgerBtn = document.querySelector('.nav-mobile');
+const mobileNav = document.querySelector('.hamburger-menu');
 
-let mobileNavToggle = true;
-
-hamburgerMenu.addEventListener("click", displayNavMenu);
+hamburgerBtn.addEventListener('click', displayNavMenu);
 
 function displayNavMenu() {
-  console.log("I am being clicked!");
-  mobileNav.style.display === "block";
+  mobileNav.classList.toggle('active');
+
+  const closeBtn = document.querySelector('#close-btn');
+  closeBtn.addEventListener('click', closeNavMenu);
+
+  const mobileNavLinks = document.querySelectorAll('.hm-nav-item');
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', closeNavMenu);
+  });
 }
+
+function closeNavMenu() {
+  mobileNav.classList.remove('active');
+}
+
+//Form Submission:
+const contactForm = document.querySelector('#contact-form');
+
+contactForm.addEventListener('click', e => {
+  e.preventDefault();
+
+  const contactFormData = new FormData(contactForm);
+  console.log(contactFormData); // FormData {}
+});
