@@ -316,6 +316,7 @@ form .button:hover {
 .about-paragraph {
   width: 55%;
 }
+
 .tech-stack-container {
   display: flex;
   justify-content: center;
@@ -368,7 +369,7 @@ figcaption {
 
 /* Creations Styles */
 #creations {
-  height: 180vh;
+  height: 190vh;
   display: flex;
   flex-direction: column;
   padding-top: 110px;
