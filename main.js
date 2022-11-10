@@ -5,6 +5,7 @@ const mobileNav = document.querySelector('.hamburger-menu');
 hamburgerBtn.addEventListener('click', displayNavMenu);
 
 function displayNavMenu() {
+  hamburgerBtn.style.display = 'none';
   mobileNav.classList.toggle('active');
 
   const closeBtn = document.querySelector('#close-btn');
@@ -18,6 +19,7 @@ function displayNavMenu() {
 
 function closeNavMenu() {
   mobileNav.classList.remove('active');
+  hamburgerBtn.style.display = 'block';
 }
 
 //Form Submission:
