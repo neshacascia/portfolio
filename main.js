@@ -28,6 +28,6 @@ const contactForm = document.querySelector('#contact-form');
 contactForm.addEventListener('click', e => {
   e.preventDefault();
 
-  const contactFormData = new FormData(contactForm);
-  console.log(contactFormData); // FormData {}
+  // const contactFormData = new FormData(contactForm);
+  // console.log(contactFormData); // FormData {}
 });
