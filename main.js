@@ -25,7 +25,7 @@ function closeNavMenu() {
 //Form Submission:
 const contactForm = document.querySelector('#contact-form');
 
-contactForm.addEventListener('click', e => {
+contactForm.addEventListener('submit', e => {
   e.preventDefault();
 
   // const contactFormData = new FormData(contactForm);
