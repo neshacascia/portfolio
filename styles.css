@@ -372,7 +372,7 @@ figcaption {
 
 /* Creations Styles */
 #creations {
-  height: 190vh;
+  height: 200vh;
   display: flex;
   flex-direction: column;
   padding-top: 110px;
