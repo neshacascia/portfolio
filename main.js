@@ -38,6 +38,14 @@ function handleSubmit(e) {
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: new URLSearchParams(contactFormData).toString(),
   })
-    .then(() => console.log('Form successfully submitted'))
+    .then(() => {
+      const messageModal = document.querySelector('.message-modal');
+      messageModal.classList.toggle('hidden');
+      setTimeout(() => {
+        messageModal.classList.toggle('hidden');
+      }, 2500);
+      myForm.reset();
+      console.log('Form successfully submitted');
+    })
     .catch(error => alert(error));
 }

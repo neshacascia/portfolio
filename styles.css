@@ -278,14 +278,11 @@ form .button {
   font-weight: 400;
   line-height: 200.2%;
   letter-spacing: 0.1em;
-  transition-property: background;
-  transition: 750ms;
 }
 
 .home-text input:hover,
 form .button:hover {
   background: #7b8d8d61;
-  /* color: #c9d6d6; */
 }
 
 .home-ig img {
@@ -519,6 +516,16 @@ h3 {
 
 ::placeholder {
   color: #b6bac6;
+}
+
+.message-modal {
+  background: rgba(23, 30, 39, 0.552);
+  backdrop-filter: saturate(180%) blur(10px);
+  height: 100%;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 /* Footer Styles */
