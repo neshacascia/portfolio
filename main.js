@@ -23,11 +23,21 @@ function closeNavMenu() {
 }
 
 //Form Submission:
-const contactForm = document.querySelector('#contact-form');
+document
+  .querySelector('#contact-form')
+  .addEventListener('submit', handleSubmit);
 
-contactForm.addEventListener('submit', e => {
+function handleSubmit(e) {
   e.preventDefault();
 
-  // const contactFormData = new FormData(contactForm);
-  // console.log(contactFormData); // FormData {}
-});
+  const myForm = e.target;
+  const contactFormData = new FormData(myForm);
+
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(contactFormData).toString(),
+  })
+    .then(() => console.log('Form successfully submitted'))
+    .catch(error => alert(error));
+}
