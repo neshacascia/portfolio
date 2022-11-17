@@ -92,6 +92,10 @@ h3 {
   -webkit-text-fill-color: transparent;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Navigation Styles */
 header {
   width: 100%;
