@@ -478,12 +478,11 @@ h3 {
 
 .box h3 {
   font-size: 1.25rem;
-  padding-top: 12px;
+  padding-top: 10px;
 }
 
 .box p {
   font-size: 0.87rem;
-  margin-bottom: 10px;
 }
 
 .box span {
