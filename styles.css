@@ -50,10 +50,11 @@ h2 {
   font-family: 'Roboto', sans-serif;
 }
 
-.home-text input,
+button,
 h4,
 p,
 .box span,
+.more-creations,
 .contact-info input,
 .contact-info textarea,
 form .button {
@@ -64,6 +65,7 @@ form .button {
 .hm-nav-item,
 h1,
 p,
+button,
 .box span,
 .tech-stack-container span,
 .tech-stack-item,
@@ -271,8 +273,7 @@ form .button {
   text-decoration: none;
 }
 
-.home-text input,
-form .button {
+.button {
   color: #8ea9a8;
   border: 2px solid #8ea9a8;
   border-radius: 6px;
@@ -284,9 +285,10 @@ form .button {
   letter-spacing: 0.1em;
 }
 
-.home-text input:hover,
+.button:hover,
 form .button:hover {
   background: #7b8d8d61;
+  border: 2px solid #8ea9a8;
 }
 
 .home-ig img {
@@ -377,17 +379,23 @@ figcaption {
 
 /* Creations Styles */
 #creations {
-  height: 200vh;
+  height: 210vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding-top: 110px;
+}
+
+#creations h2 {
+  padding-bottom: 20px;
 }
 
 .creations-container {
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 h3 {
@@ -436,8 +444,8 @@ h3 {
 .creations-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* margin: 20px 20px 20px 0; */
   justify-content: space-between;
+  gap: 10px;
 }
 
 .box {
@@ -652,7 +660,7 @@ footer {
   }
 
   #creations {
-    height: 280vh;
+    height: 300vh;
   }
 
   .creations-row {
@@ -682,6 +690,7 @@ footer {
 
   #contact {
     height: 120vh;
+    margin-top: 80px;
   }
 
   .footer-links {
@@ -738,7 +747,7 @@ footer {
 
 @media all and (max-width: 542px) {
   #creations {
-    height: 340vh;
+    height: 360vh;
   }
 }
 
@@ -767,7 +776,7 @@ footer {
 
   #contact {
     height: auto;
-    margin-bottom: 30px;
+    margin: 30px 0px 30px 0px;
   }
 
   footer {
