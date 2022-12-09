@@ -65,7 +65,7 @@ form .button {
 .hm-nav-item,
 h1,
 p,
-button,
+.button,
 .box span,
 .tech-stack-container span,
 .tech-stack-item,
@@ -576,9 +576,9 @@ footer {
     width: 100%;
   }
 
-  .pages {
+  /* .pages {
     padding: 0 95px;
-  }
+  } */
 
   #about {
     height: 160vh;
@@ -603,13 +603,35 @@ footer {
   }
 
   .home-text,
-  .process-text {
+  .process-text,
+  .about-text,
+  .about-paragraph,
+  .contact-text {
     width: 100%;
   }
 
   .home-text h2,
   .home-text p {
     width: 100%;
+  }
+
+  #about {
+    height: 150vh;
+  }
+
+  .about-content {
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-start;
+  }
+
+  .tech-stack-container {
+    margin-top: 40px;
+  }
+
+  .creations-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 
   .contact-info textarea {
@@ -630,18 +652,6 @@ footer {
     height: 170vh;
   }
 
-  .about-content {
-    flex-direction: column;
-    height: 100%;
-    justify-content: flex-start;
-  }
-
-  .about-text,
-  .about-paragraph,
-  .contact-text {
-    width: 100%;
-  }
-
   .tech-stack-container {
     height: fit-content;
     width: 100%;
@@ -650,7 +660,7 @@ footer {
   .tech-stack {
     margin-top: 20px;
     width: 60%;
-    height: 55%;
+    height: 60%;
   }
 
   .container {
@@ -660,13 +670,13 @@ footer {
   }
 
   #creations {
-    height: 300vh;
+    height: 280vh;
   }
 
-  .creations-row {
+  /* .creations-row {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-  }
+  } */
 
   .creations {
     flex-direction: column;
