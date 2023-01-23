@@ -459,7 +459,6 @@ h3 {
   /* background: rgba(46, 51, 61, 0.398); */
   background: var(--secondary-blue);
   /* transform: translate(0, -15px); */
-  cursor: pointer;
   transition-timing-function: ease-in-out;
   transition-duration: 5ms;
 }
@@ -487,6 +486,10 @@ h3 {
 .box h3 {
   font-size: 1.25rem;
   padding-top: 10px;
+}
+
+.box h3:hover {
+  cursor: pointer;
 }
 
 .box p {
