@@ -31,9 +31,10 @@ function handleSubmit(e) {
   })
     .then(() => {
       const messageModal = document.querySelector('.message-modal');
-      messageModal.classList.toggle('hidden');
+      messageModal.classList.remove('hidden');
+      messageModal.classList.add('flex');
       setTimeout(() => {
-        messageModal.classList.toggle('hidden');
+        messageModal.classList.add('hidden');
       }, 2500);
       myForm.reset();
       console.log('Form successfully submitted');

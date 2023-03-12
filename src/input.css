@@ -24,3 +24,8 @@ nav {
   background: rgba(23, 30, 39, 0.992);
   backdrop-filter: saturate(180%) blur(10px);
 }
+
+#message-modal {
+  background: rgba(23, 30, 39, 0.552);
+  backdrop-filter: saturate(180%) blur(10px);
+}
