@@ -623,6 +623,10 @@ video {
   right: 0px;
 }
 
+.bottom-0{
+  bottom: 0px;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -810,6 +814,10 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-\[120px\]{
+  width: 120px;
 }
 
 .flex-shrink{
@@ -1312,6 +1320,10 @@ video {
   gap: 0.5rem;
 }
 
+.gap-3{
+  gap: 0.75rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1801,6 +1813,10 @@ video {
 .object-scale-down{
   -o-object-fit: scale-down;
      object-fit: scale-down;
+}
+
+.p-\[10px\]{
+  padding: 10px;
 }
 
 .px-\[60px\]{
@@ -2418,6 +2434,12 @@ nav {
 
 @media (min-width: 768px){
   .md\:flex{
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:flex{
     display: flex;
   }
 }
