@@ -25,6 +25,10 @@ nav {
   backdrop-filter: saturate(180%) blur(10px);
 }
 
+#tech-stack {
+  word-spacing: 8px;
+}
+
 #message-modal {
   background: rgba(23, 30, 39, 0.552);
   backdrop-filter: saturate(180%) blur(10px);
