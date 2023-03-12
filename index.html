@@ -4,100 +4,201 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="/dist/output.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="styles.css" /> -->
     <script src="main.js" async></script>
     <title>Nesha Mervin</title>
   </head>
 
-  <body>
-    <header id="home">
-      <nav>
-        <div class="nav-bar">
-          <a href="#home">
-            <img class="nav-logo" src="Assets/saturn.svg" alt="Saturn logo"/>
-          </a>
+  <body class="bg-bgBlue">
+    <header id="home" class="w-full">
+      <nav
+        class="w-full h-[75px] flex justify-between items-center gap-10 fixed z-10 px-[60px]"
+      >
+        <a href="#home">
+          <img
+            class="nav-logo w-10"
+            src="Assets/saturn.svg"
+            alt="Saturn logo"
+          />
+        </a>
 
-          <div class="nav-links">
-            <ul class="nav-links">
-              <li><a href="#home" class="nav-item">home</a></li>
-              <li><a href="#about" class="nav-item">about</a></li>
-              <li><a href="#creations" class="nav-item">creations</a></li>
-              <li><a href="#contact" class="nav-item">contact</a></li>
-            </ul>
-          </div>
+        <ul class="nav-links hidden text-base tracking-wider gap-10 sm:flex">
+          <li>
+            <a
+              href="#home"
+              class="nav-item text-icyWhite font-josefin hover:text-mintGreen"
+              >home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="nav-item text-icyWhite font-josefin hover:text-mintGreen"
+              >about</a
+            >
+          </li>
+          <li>
+            <a
+              href="#creations"
+              class="nav-item text-icyWhite font-josefin hover:text-mintGreen"
+              >creations</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="nav-item text-icyWhite font-josefin hover:text-mintGreen"
+              >contact</a
+            >
+          </li>
+        </ul>
 
-          <img class="nav-mobile" src="Assets/hamburger-icon.svg" alt="Hamburger menu icon" />
-        </div>
+        <i
+          id="menu-bars"
+          class="fa-solid fa-bars text-mintGreen text-2xl hover:text-icyWhite hover:cursor-pointer sm:hidden"
+          onclick="openMobileMenu()"
+        ></i>
       </nav>
     </header>
 
-    <section class="hamburger-menu">
-      <img id="close-btn" src="./Assets/close-btn.svg" alt="Close button" />
-      <ul class="hm-nav-links">
-        <li><a href="#home" class="hm-nav-item">home</a></li>
-        <li><a href="#about" class="hm-nav-item">about</a></li>
-        <li><a href="#creations" class="hm-nav-item">creations</a></li>
-        <li><a href="#contact" class="hm-nav-item">contact</a></li>
+    <section
+      id="mobile-menu"
+      class="hidden w-full fixed z-50 mt-[75px] sm:hidden"
+    >
+      <i
+        id="close-btn"
+        class="fa-solid fa-xmark text-mintGreen text-2xl absolute right-0 mt-4 mr-[62px] hover:text-icyWhite hover:cursor-pointer"
+        onclick="closeMobileMenu()"
+      ></i>
+      <ul
+        class="hm-nav-links flex flex-col justify-around items-center gap-2 my-5"
+      >
+        <li>
+          <a
+            href="#home"
+            id="nav-item"
+            class="hm-nav-item text-icyWhite font-josefin hover:text-mintGreen"
+            >home</a
+          >
+        </li>
+        <li>
+          <a
+            href="#about"
+            id="nav-item"
+            class="hm-nav-item text-icyWhite font-josefin hover:text-mintGreen"
+            >about</a
+          >
+        </li>
+        <li>
+          <a
+            href="#creations"
+            id="nav-item"
+            class="hm-nav-item text-icyWhite font-josefin hover:text-mintGreen"
+            >creations</a
+          >
+        </li>
+        <li>
+          <a
+            href="#contact"
+            id="nav-item"
+            class="hm-nav-item text-icyWhite font-josefin hover:text-mintGreen"
+            >contact</a
+          >
+        </li>
       </ul>
     </section>
 
     <section class="pages">
       <div class="home">
-        <div class="home-text">
+        <div class="home-text w-[80%]">
           <h5>hello, my name is</h5>
-          <h1>Nesha Mervin</h1>
-          <h2 class="gradient-bg">Software Developer</h2>
-          <p>
-            I am a passionate front-end developer, bridging the gap between development and design. I specialize in transforming ideas into 
+          <h1 class="text-icyWhite font-roboto">Nesha Mervin</h1>
+          <h2 class="gradient-bg font-roboto">Software Developer</h2>
+          <p class="font-inter">
+            I am a passionate front-end developer, bridging the gap between
+            development and design. I specialize in transforming ideas into
             interactive, digital experiences that are simple, beautiful, and
-            accessible. Currently looking for new opportunities to grow as a developer. 
+            accessible. Currently looking for new opportunities to grow as a
+            developer.
           </p>
-          <a href="#contact">
+          <a href="#contact" class="text-mintGreen">
             <!-- <input class="button" type="button" value="Let's chat!" /> -->
-            <button type="button" class="button">Let's chat</button>
+            <button type="button" class="button font-inter">Let's chat</button>
           </a>
         </div>
 
         <div class="home-ig ease-in-out">
-          <img src="Assets/home-computer.svg" alt="Illustration of a computer" />
+          <img
+            src="Assets/home-computer.svg"
+            alt="Illustration of a computer"
+          />
         </div>
       </div>
     </section>
 
     <span class="fixed-links">
-      <a class="social-media-links" href="https://www.linkedin.com/in/neshamervin/" target="_blank">
+      <a
+        class="social-media-links"
+        href="https://www.linkedin.com/in/neshamervin/"
+        target="_blank"
+      >
         <img src="Assets/media-links/linkedin.svg" alt="LinkedIn" />
       </a>
-      <a class="social-media-links" href="https://github.com/neshacascia" target="_blank">
+      <a
+        class="social-media-links"
+        href="https://github.com/neshacascia"
+        target="_blank"
+      >
         <img src="Assets/media-links/github.svg" alt="GitHub" />
       </a>
-      <a class="social-media-links" href="https://twitter.com/neshacascia" target="_blank">
+      <a
+        class="social-media-links"
+        href="https://twitter.com/neshacascia"
+        target="_blank"
+      >
         <img src="Assets/media-links/twitter.svg" alt="Twitter" />
       </a>
-      <img class="social-media-links" src="Assets/media-links/line.svg" alt="" />
+      <img
+        class="social-media-links"
+        src="Assets/media-links/line.svg"
+        alt=""
+      />
     </span>
 
     <section class="pages" id="pages">
       <div id="about">
-        <div class="about-text">
-          <h2>/about me</h2>
-          <h4 class="gradient-bg">— from business banking to coding</h4>
+        <div class="about-text w-[80%]">
+          <h2 class="text-mintGreen font-roboto">/about me</h2>
+          <h4 class="gradient-bg text-mintGreen font-inter">
+            — from business banking to coding
+          </h4>
 
           <div class="about-content">
             <div class="about-paragraph">
-              <p>
+              <p class="font-inter">
                 I have experience working in the financial industry, providing
                 support with operational risk policies, procedures, and
-                technical support. 
+                technical support.
               </p>
-              <p>
-                However, the passion to create and innovate has always been in me. Building scalable and efficient web applications that create a positive impact is my goal. I love using modern frontend architecture but I do enjoy being challenged with projects that require me to work outside my skillset. I am always looking to improve and am excited to learn new technologies.
-                
+              <p class="font-inter">
+                However, the passion to create and innovate has always been in
+                me. Building scalable and efficient web applications that create
+                a positive impact is my goal. I love using modern frontend
+                architecture but I do enjoy being challenged with projects that
+                require me to work outside my skillset. I am always looking to
+                improve and am excited to learn new technologies.
               </p>
-              <p>
-                When I'm not coding, I'm probably watching anime, discovering new food spots or reading.
+              <p class="font-inter">
+                When I'm not coding, I'm probably watching anime, discovering
+                new food spots or reading.
               </p>
             </div>
 
@@ -106,68 +207,92 @@
                 <div class="tech-stack-row">
                   <figure class="tech-stack-item">
                     <img src="Assets/tech-stack/html.svg" alt="" />
-                    <figcaption>HTML</figcaption>
+                    <figcaption class="text-icyWhite font-josefin">
+                      HTML
+                    </figcaption>
                   </figure>
 
                   <figure class="tech-stack-item">
                     <img src="Assets/tech-stack/css.svg" alt="" />
-                    <figcaption>CSS</figcaption>
+                    <figcaption class="text-icyWhite font-josefin">
+                      CSS
+                    </figcaption>
                   </figure>
 
                   <figure class="tech-stack-item">
                     <img src="Assets/tech-stack/javascript.svg" alt="" />
-                    <figcaption>JavaScript</figcaption>
+                    <figcaption class="text-icyWhite font-josefin">
+                      JavaScript
+                    </figcaption>
                   </figure>
                 </div>
 
                 <div class="tech-stack-row">
                   <figure class="tech-stack-item">
                     <img src="Assets/tech-stack/git.svg" alt="" />
-                    <figcaption>Git</figcaption>
+                    <figcaption class="text-icyWhite font-josefin">
+                      Git
+                    </figcaption>
                   </figure>
 
                   <figure class="tech-stack-item">
                     <img src="Assets/tech-stack/tailwindcss.svg" alt="" />
-                    <figcaption>TailwindCSS</figcaption>
+                    <figcaption class="text-icyWhite font-josefin">
+                      TailwindCSS
+                    </figcaption>
                   </figure>
 
                   <figure class="tech-stack-item">
                     <img src="Assets/tech-stack/react.svg" alt="" />
-                    <figcaption>React</figcaption>
+                    <figcaption class="text-icyWhite font-josefin">
+                      React
+                    </figcaption>
                   </figure>
                 </div>
 
                 <div class="tech-stack-row">
                   <figure class="tech-stack-item">
                     <img src="Assets/tech-stack/firebase.svg" alt="" />
-                    <figcaption>Firebase</figcaption>
+                    <figcaption class="text-icyWhite font-josefin">
+                      Firebase
+                    </figcaption>
                   </figure>
 
                   <figure class="tech-stack-item">
                     <img src="Assets/tech-stack/mongodb.svg" alt="" />
-                    <figcaption>MongoDB</figcaption>
+                    <figcaption class="text-icyWhite font-josefin">
+                      MongoDB
+                    </figcaption>
                   </figure>
 
                   <figure class="tech-stack-item">
                     <img src="Assets/tech-stack/node.svg" alt="" />
-                    <figcaption>Node.js</figcaption>
+                    <figcaption class="text-icyWhite font-josefin">
+                      Node.js
+                    </figcaption>
                   </figure>
                 </div>
 
                 <div class="tech-stack-row">
                   <figure class="tech-stack-item">
                     <img src="Assets/tech-stack/accessibility.svg" alt="" />
-                    <figcaption>Accessibility</figcaption>
+                    <figcaption class="text-icyWhite font-josefin">
+                      Accessibility
+                    </figcaption>
                   </figure>
 
                   <figure class="tech-stack-item">
                     <img src="Assets/tech-stack/restful-apis.svg" alt="" />
-                    <figcaption>RESTful APIs</figcaption>
+                    <figcaption class="text-icyWhite font-josefin">
+                      RESTful APIs
+                    </figcaption>
                   </figure>
 
                   <figure class="tech-stack-item">
                     <img src="Assets/tech-stack/typescript.svg" alt="" />
-                    <figcaption>TypeScript</figcaption>
+                    <figcaption class="text-icyWhite font-josefin">
+                      TypeScript
+                    </figcaption>
                   </figure>
                 </div>
               </div>
@@ -179,27 +304,52 @@
 
     <section class="pages">
       <div id="creations">
-        <h2>/creations</h2>
+        <h2 class="text-mintGreen font-roboto">/creations</h2>
         <div class="creations-container">
           <div class="creations-row">
             <div class="box">
               <div class="box-img">
                 <img src="Assets/folder.svg" alt="Folder" />
                 <div class="box-links">
-                  <a href="https://github.com/neshacascia/rest-countries-api" target="_blank">
-                    <img src="Assets/media-links/github.svg" alt="Link to project on GitHub" />
+                  <a
+                    href="https://github.com/neshacascia/rest-countries-api"
+                    target="_blank"
+                  >
+                    <img
+                      src="Assets/media-links/github.svg"
+                      alt="Link to project on GitHub"
+                    />
                   </a>
-                  <a href="https://nc-rest-countries-api.netlify.app/" target="_blank">
-                    <img src="Assets/media-links/external.svg" alt="Link to live code" />
+                  <a
+                    href="https://nc-rest-countries-api.netlify.app/"
+                    target="_blank"
+                  >
+                    <img
+                      src="Assets/media-links/external.svg"
+                      alt="Link to live code"
+                    />
                   </a>
                 </div>
               </div>
 
-              <img class="creations-img" src="Assets/creations/rest-countries-api.png" alt="" />
-              <span>React | React Router | API | CSS</span>
-              <a href="https://nc-rest-countries-api.netlify.app/" target="_blank"><h3>REST Countries API</h3></a>
-              <p>
-                This app pulls data from the REST Countries API to display information about various countries in the world. Clicking a card will lead to a separate page which displays more detailed information about the corresponding country.
+              <img
+                class="creations-img"
+                src="Assets/creations/rest-countries-api.png"
+                alt=""
+              />
+              <span class="text-mintGreen font-inter"
+                >React | React Router | API | CSS</span
+              >
+              <a
+                href="https://nc-rest-countries-api.netlify.app/"
+                target="_blank"
+                ><h3 class="font-josefin">REST Countries API</h3></a
+              >
+              <p class="font-inter">
+                This app pulls data from the REST Countries API to display
+                information about various countries in the world. Clicking a
+                card will lead to a separate page which displays more detailed
+                information about the corresponding country.
               </p>
             </div>
 
@@ -228,20 +378,43 @@
               <div class="box-img">
                 <img src="Assets/folder.svg" alt="Folder" />
                 <div class="box-links">
-                  <a href="https://github.com/neshacascia/space-tourism" target="_blank">
-                    <img src="Assets/media-links/github.svg" alt="Link to project on GitHub" />
+                  <a
+                    href="https://github.com/neshacascia/space-tourism"
+                    target="_blank"
+                  >
+                    <img
+                      src="Assets/media-links/github.svg"
+                      alt="Link to project on GitHub"
+                    />
                   </a>
-                  <a href="https://nc-space-tourism.netlify.app/" target="_blank">
-                    <img src="Assets/media-links/external.svg" alt="Link to live code" />
+                  <a
+                    href="https://nc-space-tourism.netlify.app/"
+                    target="_blank"
+                  >
+                    <img
+                      src="Assets/media-links/external.svg"
+                      alt="Link to live code"
+                    />
                   </a>
                 </div>
               </div>
 
-              <img class="creations-img" src="Assets/creations/space-tourism.png" alt="" />
-              <span>React | React Router | TailwindCSS</span>
-              <a href="https://nc-space-tourism.netlify.app/" target="_blank"><h3>Space Tourism</h3></a>
-              <p>
-                Multi-page space tourism website that displays information about various destinations, the crew and the different technologies available for space travel. Come explore what it's like to travel to space!
+              <img
+                class="creations-img"
+                src="Assets/creations/space-tourism.png"
+                alt=""
+              />
+              <span class="text-mintGreen font-inter"
+                >React | React Router | TailwindCSS</span
+              >
+              <a href="https://nc-space-tourism.netlify.app/" target="_blank"
+                ><h3 class="font-josefin">Space Tourism</h3></a
+              >
+              <p class="font-inter">
+                Multi-page space tourism website that displays information about
+                various destinations, the crew and the different technologies
+                available for space travel. Come explore what it's like to
+                travel to space!
               </p>
             </div>
 
@@ -249,20 +422,40 @@
               <div class="box-img">
                 <img src="Assets/folder.svg" alt="Folder" />
                 <div class="box-links">
-                  <a href="https://github.com/neshacascia/devjobs" target="_blank">
-                    <img src="Assets/media-links/github.svg" alt="Link to project on GitHub" />
+                  <a
+                    href="https://github.com/neshacascia/devjobs"
+                    target="_blank"
+                  >
+                    <img
+                      src="Assets/media-links/github.svg"
+                      alt="Link to project on GitHub"
+                    />
                   </a>
                   <a href="https://nc-devjobs.netlify.app/" target="_blank">
-                    <img src="Assets/media-links/external.svg" alt="Link to live code" />
+                    <img
+                      src="Assets/media-links/external.svg"
+                      alt="Link to live code"
+                    />
                   </a>
                 </div>
               </div>
 
-              <img class="creations-img" src="Assets/creations/dev-jobs.png" alt="" />
-              <span>React | Firebase | TailwindCSS</span>
-              <a href="https://nc-devjobs.netlify.app/" target="_blank"><h3>DevJobs</h3></a>
-              <p>
-                Job board app that pulls data from Firebase. Users are able to filter jobs by title, location and whether a job is for a full-time position. Clicking a posting leads to separate page which displays more informaton about the position.
+              <img
+                class="creations-img"
+                src="Assets/creations/dev-jobs.png"
+                alt=""
+              />
+              <span class="text-mintGreen font-inter"
+                >React | Firebase | TailwindCSS</span
+              >
+              <a href="https://nc-devjobs.netlify.app/" target="_blank"
+                ><h3 class="font-josefin">DevJobs</h3></a
+              >
+              <p class="font-inter">
+                Job board app that pulls data from Firebase. Users are able to
+                filter jobs by title, location and whether a job is for a
+                full-time position. Clicking a posting leads to separate page
+                which displays more informaton about the position.
               </p>
             </div>
 
@@ -270,20 +463,42 @@
               <div class="box-img">
                 <img src="Assets/folder.svg" alt="Folder" />
                 <div class="box-links">
-                  <a href="https://github.com/neshacascia/sneakers-ecommerce-page" target="_blank">
-                    <img src="Assets/media-links/github.svg" alt="Link to project on GitHub" />
+                  <a
+                    href="https://github.com/neshacascia/sneakers-ecommerce-page"
+                    target="_blank"
+                  >
+                    <img
+                      src="Assets/media-links/github.svg"
+                      alt="Link to project on GitHub"
+                    />
                   </a>
-                  <a href="https://nc-sneakers-ecommerce.netlify.app/" target="_blank">
-                    <img src="Assets/media-links/external.svg" alt="Link to live code" />
+                  <a
+                    href="https://nc-sneakers-ecommerce.netlify.app/"
+                    target="_blank"
+                  >
+                    <img
+                      src="Assets/media-links/external.svg"
+                      alt="Link to live code"
+                    />
                   </a>
                 </div>
               </div>
 
-              <img class="creations-img" src="Assets/creations/sneakers-ecommerce-page.png" alt="" />
-              <span>React | TailwindCSS</span>
-              <a href="https://nc-sneakers-ecommerce.netlify.app/" target="_blank"><h3>Product Page</h3></a>
-              <p>
-                This product page has lightbox product gallery and cart functionality. Shopping cart is usable for adding/removing products, editing quantities, calculates checkout totals.
+              <img
+                class="creations-img"
+                src="Assets/creations/sneakers-ecommerce-page.png"
+                alt=""
+              />
+              <span class="text-mintGreen font-inter">React | TailwindCSS</span>
+              <a
+                href="https://nc-sneakers-ecommerce.netlify.app/"
+                target="_blank"
+                ><h3 class="font-josefin">Product Page</h3></a
+              >
+              <p class="font-inter">
+                This product page has lightbox product gallery and cart
+                functionality. Shopping cart is usable for adding/removing
+                products, editing quantities, calculates checkout totals.
               </p>
             </div>
 
@@ -291,20 +506,39 @@
               <div class="box-img">
                 <img src="Assets/folder.svg" alt="Folder" />
                 <div class="box-links">
-                  <a href="https://github.com/neshacascia/devfinder" target="_blank">
-                    <img src="Assets/media-links/github.svg" alt="Link to project on GitHub"/>
+                  <a
+                    href="https://github.com/neshacascia/devfinder"
+                    target="_blank"
+                  >
+                    <img
+                      src="Assets/media-links/github.svg"
+                      alt="Link to project on GitHub"
+                    />
                   </a>
                   <a href="https://nc-devfinder.netlify.app" target="_blank">
-                    <img src="Assets/media-links/external.svg" alt="Link to live code" />
+                    <img
+                      src="Assets/media-links/external.svg"
+                      alt="Link to live code"
+                    />
                   </a>
                 </div>
               </div>
 
-              <img class="creations-img" src="Assets/creations/devfinder.png" alt="" />
-              <span>JavaScript | API | TailwindCSS</span>
-              <a href="https://nc-devfinder.netlify.app" target="_blank"><h3>DevFinder</h3></a>
-              <p>
-                This app uses the GitHub users API to search for users by their username and displays relevant profile information. Users can switch between light and dark themes.
+              <img
+                class="creations-img"
+                src="Assets/creations/devfinder.png"
+                alt=""
+              />
+              <span class="text-mintGreen font-inter"
+                >JavaScript | API | TailwindCSS</span
+              >
+              <a href="https://nc-devfinder.netlify.app" target="_blank"
+                ><h3 class="font-josefin">DevFinder</h3></a
+              >
+              <p class="font-inter">
+                This app uses the GitHub users API to search for users by their
+                username and displays relevant profile information. Users can
+                switch between light and dark themes.
               </p>
             </div>
 
@@ -312,22 +546,44 @@
               <div class="box-img">
                 <img src="Assets/folder.svg" alt="Folder" />
                 <div class="box-links">
-                  <a href="https://github.com/neshacascia/js-one-piece-rps" target="_blank">
-                    <img src="Assets/media-links/github.svg" alt="Link to project on GitHub" />
+                  <a
+                    href="https://github.com/neshacascia/js-one-piece-rps"
+                    target="_blank"
+                  >
+                    <img
+                      src="Assets/media-links/github.svg"
+                      alt="Link to project on GitHub"
+                    />
                   </a>
-                  <a href="https://neshacascia.github.io/js-one-piece-rps/" target="_blank">
-                    <img src="Assets/media-links/external.svg" alt="Link to live code" />
+                  <a
+                    href="https://neshacascia.github.io/js-one-piece-rps/"
+                    target="_blank"
+                  >
+                    <img
+                      src="Assets/media-links/external.svg"
+                      alt="Link to live code"
+                    />
                   </a>
                 </div>
               </div>
 
-              <img class="creations-img" src="Assets/creations/one-piece-rps.gif" alt="" />
-              <span>JavaScript | CSS | HTML</span>
-              <a href="https://neshacascia.github.io/js-one-piece-rps/" target="_blank"><h3>One Piece RPS</h3></a>
-              <p>
-                This version of rock, paper, scissors incorporates One Piece character sprites.
-                Users are able to select and switch fighters while playing 5
-                rounds against the computer.
+              <img
+                class="creations-img"
+                src="Assets/creations/one-piece-rps.gif"
+                alt=""
+              />
+              <span class="text-mintGreen font-inter"
+                >JavaScript | CSS | HTML</span
+              >
+              <a
+                href="https://neshacascia.github.io/js-one-piece-rps/"
+                target="_blank"
+                ><h3 class="font-josefin">One Piece RPS</h3></a
+              >
+              <p class="font-inter">
+                This version of rock, paper, scissors incorporates One Piece
+                character sprites. Users are able to select and switch fighters
+                while playing 5 rounds against the computer.
               </p>
             </div>
           </div>
@@ -337,10 +593,10 @@
 
     <section class="pages" id="pages">
       <div id="contact">
-        <div class="contact-text">
-          <h2>/contact me</h2>
-          <p>It all begins with an idea.</p>
-          <p>
+        <div class="contact-text w-[80%]">
+          <h2 class="text-mintGreen font-roboto">/contact me</h2>
+          <p class="font-inter">It all begins with an idea.</p>
+          <p class="font-inter">
             Thinking of launching a business? Or have a creative project in
             mind? I'd love to bring your vision to life. Just looking to chat?
             Feel free to reach out, I look forward to hearing from you!
@@ -351,45 +607,81 @@
           <form name="contact" method="POST" id="contact-form" netlify>
             <div class="contact-info">
               <label for="name"></label>
-                <input type="text" name="name" id="name" placeholder="Name" required />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                required
+                class="text-icyWhite font-inter"
+              />
             </div>
 
             <div class="contact-info">
               <label for="email"></label>
-                <input type="email" name="email" id="email" placeholder="Email address" required />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email address"
+                required
+                class="text-icyWhite font-inter"
+              />
             </div>
 
             <div class="contact-info">
               <label for="message"></label>
-                <textarea name="message" id="message" cols="30" rows="4" placeholder="Enter your message..." required></textarea>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="4"
+                placeholder="Enter your message..."
+                required
+                class="text-icyWhite font-inter"
+              ></textarea>
             </div>
 
-            <button class="button" type="submit">Submit</button>
+            <button class="button font-inter" type="submit">Submit</button>
           </form>
         </div>
       </div>
 
       <div class="message-modal hidden">
-        <p>Thank you! Your message was successfully sent!</p>
-      </div> 
+        <p class="font-inter">Thank you! Your message was successfully sent!</p>
+      </div>
     </section>
 
     <footer class="pages">
       <div class="footer">
         <span class="footer-links hidden">
-          <a class="social-media-links" href="https://www.linkedin.com/in/neshamervin/" target="_blank">
+          <a
+            class="social-media-links"
+            href="https://www.linkedin.com/in/neshamervin/"
+            target="_blank"
+          >
             <img src="Assets/media-links/linkedin.svg" alt="LinkedIn" />
           </a>
-          <a class="social-media-links" href="https://github.com/neshacascia" target="_blank">
+          <a
+            class="social-media-links"
+            href="https://github.com/neshacascia"
+            target="_blank"
+          >
             <img src="Assets/media-links/github.svg" alt="GitHub" />
           </a>
-          <a class="social-media-links" href="https://twitter.com/neshacascia" target="_blank">
+          <a
+            class="social-media-links"
+            href="https://twitter.com/neshacascia"
+            target="_blank"
+          >
             <img src="Assets/media-links/twitter.svg" alt="Twitter" />
           </a>
         </span>
 
-        <p>
-          Designed & coded with <span><img src="Assets/heart.svg" alt="Heart symbol" /></span> by Nesha
+        <p class="font-inter">
+          Designed & coded with
+          <span><img src="Assets/heart.svg" alt="Heart symbol" /></span> by
+          Nesha
         </p>
       </div>
     </footer>
