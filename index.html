@@ -129,7 +129,10 @@
           >
             Nesha Mervin
           </h1>
-          <h2 class="gradient-bg font-roboto text-[40px] font-bold -mt-2 mb-2">
+          <h2
+            id="gradient-bg"
+            class="font-roboto text-[40px] font-bold -mt-2 mb-2"
+          >
             Software Developer
           </h2>
           <p
@@ -192,7 +195,7 @@
     </span>
 
     <section class="pages max-w-[1400px] mx-auto lg:px-[130px]" id="pages">
-      <div id="about" class="h-screen flex justify-between pt-[100px]">
+      <div id="about" class="h-full flex justify-between pt-[100px]">
         <div class="about-text w-[80%]">
           <h2
             class="text-mintGreen font-roboto text-[40px] font-bold -mt-2 mb-2"
@@ -235,7 +238,7 @@
               </p>
             </div>
 
-            <div class="tech-stack-container flex justify-center">
+            <div class="tech-stack-container flex justify-center mt-[60px]">
               <div
                 class="tech-stack bg-primaryBlue h-[60%] flex flex-col justify-center items-center absolute pt-3"
               >
@@ -434,16 +437,24 @@
     </section>
 
     <section class="pages max-w-[1400px] mx-auto lg:px-[130px]">
-      <div id="creations">
-        <h2 class="text-mintGreen font-roboto text-[40px] font-bold -mt-2 mb-2">
+      <div id="creation" class="h-full flex flex-col justify-center mt-[110%]">
+        <h2
+          class="text-mintGreen font-roboto text-[40px] font-bold pb-5 -mt-2 mb-2"
+        >
           /creations
         </h2>
-        <div class="creations-container">
-          <div class="creations-row">
-            <div class="box">
-              <div class="box-img">
-                <img src="Assets/folder.svg" alt="Folder" />
-                <div class="box-links">
+        <div
+          class="creations-container h-full flex flex-col justify-between items-center"
+        >
+          <div
+            class="creations-row md:grid justify-between gap-3 sm:grid-cols-2 lg:grid-cols-3"
+          >
+            <div
+              class="box bg-primaryBlue p-7 mr-5 mb-5 hover:bg-secondaryBlue"
+            >
+              <div class="box-img flex justify-between mb-5">
+                <img src="Assets/folder.svg" alt="Folder" class="w-[30px]" />
+                <div class="box-links flex items-center gap-2">
                   <a
                     href="https://github.com/neshacascia/rest-countries-api"
                     target="_blank"
@@ -451,6 +462,7 @@
                     <img
                       src="Assets/media-links/github.svg"
                       alt="Link to project on GitHub"
+                      class="w-5 ml-4"
                     />
                   </a>
                   <a
@@ -460,26 +472,31 @@
                     <img
                       src="Assets/media-links/external.svg"
                       alt="Link to live code"
+                      class="w-5 ml-4"
                     />
                   </a>
                 </div>
               </div>
 
               <img
-                class="creations-img"
+                class="creations-img w-full mt-[10px] mb-4"
                 src="Assets/creations/rest-countries-api.png"
                 alt=""
               />
-              <span class="text-mintGreen font-inter"
+              <span class="text-[#6d7e9e] font-inter text-xs tracking-wider"
                 >React | React Router | API | CSS</span
               >
               <a
                 href="https://nc-rest-countries-api.netlify.app/"
                 target="_blank"
-                ><h3 class="font-josefin">REST Countries API</h3></a
+                ><h3
+                  class="font-josefin font-bold text-xl tracking-widest leading-[200%] pt-[10px] hover:cursor-pointer"
+                >
+                  REST Countries API
+                </h3></a
               >
               <p
-                class="text-icyWhite font-inter text-base font-light tracking-widest leading-8"
+                class="text-icyWhite font-inter text-sm font-light tracking-widest leading-8"
               >
                 This app pulls data from the REST Countries API to display
                 information about various countries in the world. Clicking a
@@ -509,10 +526,12 @@
               </p>
             </div> -->
 
-            <div class="box">
-              <div class="box-img">
-                <img src="Assets/folder.svg" alt="Folder" />
-                <div class="box-links">
+            <div
+              class="box bg-primaryBlue p-7 mr-5 mb-5 hover:bg-secondaryBlue"
+            >
+              <div class="box-img flex justify-between mb-5">
+                <img src="Assets/folder.svg" alt="Folder" class="w-[30px]" />
+                <div class="box-links flex items-center gap-2">
                   <a
                     href="https://github.com/neshacascia/space-tourism"
                     target="_blank"
@@ -520,6 +539,7 @@
                     <img
                       src="Assets/media-links/github.svg"
                       alt="Link to project on GitHub"
+                      class="w-5 ml-4"
                     />
                   </a>
                   <a
@@ -529,24 +549,29 @@
                     <img
                       src="Assets/media-links/external.svg"
                       alt="Link to live code"
+                      class="w-5 ml-4"
                     />
                   </a>
                 </div>
               </div>
 
               <img
-                class="creations-img"
+                class="creations-img w-full mt-[10px] mb-4"
                 src="Assets/creations/space-tourism.png"
                 alt=""
               />
-              <span class="text-mintGreen font-inter"
+              <span class="text-[#6d7e9e] font-inter text-xs tracking-wider"
                 >React | React Router | TailwindCSS</span
               >
               <a href="https://nc-space-tourism.netlify.app/" target="_blank"
-                ><h3 class="font-josefin">Space Tourism</h3></a
+                ><h3
+                  class="font-josefin font-bold text-xl tracking-widest leading-[200%] pt-[10px] hover:cursor-pointer"
+                >
+                  Space Tourism
+                </h3></a
               >
               <p
-                class="text-icyWhite font-inter text-base font-light tracking-widest leading-8"
+                class="text-icyWhite font-inter text-sm font-light tracking-widest leading-8"
               >
                 Multi-page space tourism website that displays information about
                 various destinations, the crew and the different technologies
@@ -555,10 +580,12 @@
               </p>
             </div>
 
-            <div class="box">
-              <div class="box-img">
-                <img src="Assets/folder.svg" alt="Folder" />
-                <div class="box-links">
+            <div
+              class="box bg-primaryBlue p-7 mr-5 mb-5 hover:bg-secondaryBlue"
+            >
+              <div class="box-img flex justify-between mb-5">
+                <img src="Assets/folder.svg" alt="Folder" class="w-[30px]" />
+                <div class="box-links flex items-center gap-2">
                   <a
                     href="https://github.com/neshacascia/devjobs"
                     target="_blank"
@@ -566,30 +593,36 @@
                     <img
                       src="Assets/media-links/github.svg"
                       alt="Link to project on GitHub"
+                      class="w-5 ml-4"
                     />
                   </a>
                   <a href="https://nc-devjobs.netlify.app/" target="_blank">
                     <img
                       src="Assets/media-links/external.svg"
                       alt="Link to live code"
+                      class="w-5 ml-4"
                     />
                   </a>
                 </div>
               </div>
 
               <img
-                class="creations-img"
+                class="creations-img w-full mt-[10px] mb-4"
                 src="Assets/creations/dev-jobs.png"
                 alt=""
               />
-              <span class="text-mintGreen font-inter"
+              <span class="text-[#6d7e9e] font-inter text-xs tracking-wider"
                 >React | Firebase | TailwindCSS</span
               >
               <a href="https://nc-devjobs.netlify.app/" target="_blank"
-                ><h3 class="font-josefin">DevJobs</h3></a
+                ><h3
+                  class="font-josefin font-bold text-xl tracking-widest leading-[200%] pt-[10px] hover:cursor-pointer"
+                >
+                  DevJobs
+                </h3></a
               >
               <p
-                class="text-icyWhite font-inter text-base font-light tracking-widest leading-8"
+                class="text-icyWhite font-inter text-sm font-light tracking-widest leading-8"
               >
                 Job board app that pulls data from Firebase. Users are able to
                 filter jobs by title, location and whether a job is for a
@@ -598,10 +631,12 @@
               </p>
             </div>
 
-            <div class="box">
-              <div class="box-img">
-                <img src="Assets/folder.svg" alt="Folder" />
-                <div class="box-links">
+            <div
+              class="box bg-primaryBlue p-7 mr-5 mb-5 hover:bg-secondaryBlue"
+            >
+              <div class="box-img flex justify-between mb-5">
+                <img src="Assets/folder.svg" alt="Folder" class="w-[30px]" />
+                <div class="box-links flex items-center gap-2">
                   <a
                     href="https://github.com/neshacascia/sneakers-ecommerce-page"
                     target="_blank"
@@ -609,6 +644,7 @@
                     <img
                       src="Assets/media-links/github.svg"
                       alt="Link to project on GitHub"
+                      class="w-5 ml-4"
                     />
                   </a>
                   <a
@@ -618,24 +654,31 @@
                     <img
                       src="Assets/media-links/external.svg"
                       alt="Link to live code"
+                      class="w-5 ml-4"
                     />
                   </a>
                 </div>
               </div>
 
               <img
-                class="creations-img"
+                class="creations-img w-full mt-[10px] mb-4"
                 src="Assets/creations/sneakers-ecommerce-page.png"
                 alt=""
               />
-              <span class="text-mintGreen font-inter">React | TailwindCSS</span>
+              <span class="text-[#6d7e9e] font-inter text-xs tracking-wider"
+                >React | TailwindCSS</span
+              >
               <a
                 href="https://nc-sneakers-ecommerce.netlify.app/"
                 target="_blank"
-                ><h3 class="font-josefin">Product Page</h3></a
+                ><h3
+                  class="font-josefin font-bold text-xl tracking-widest leading-[200%] pt-[10px] hover:cursor-pointer"
+                >
+                  Product Page
+                </h3></a
               >
               <p
-                class="text-icyWhite font-inter text-base font-light tracking-widest leading-8"
+                class="text-icyWhite font-inter text-sm font-light tracking-widest leading-8"
               >
                 This product page has lightbox product gallery and cart
                 functionality. Shopping cart is usable for adding/removing
@@ -643,10 +686,12 @@
               </p>
             </div>
 
-            <div class="box">
-              <div class="box-img">
-                <img src="Assets/folder.svg" alt="Folder" />
-                <div class="box-links">
+            <div
+              class="box bg-primaryBlue p-7 mr-5 mb-5 hover:bg-secondaryBlue"
+            >
+              <div class="box-img flex justify-between mb-5">
+                <img src="Assets/folder.svg" alt="Folder" class="w-[30px]" />
+                <div class="box-links flex items-center gap-2">
                   <a
                     href="https://github.com/neshacascia/devfinder"
                     target="_blank"
@@ -654,30 +699,36 @@
                     <img
                       src="Assets/media-links/github.svg"
                       alt="Link to project on GitHub"
+                      class="w-5 ml-4"
                     />
                   </a>
                   <a href="https://nc-devfinder.netlify.app" target="_blank">
                     <img
                       src="Assets/media-links/external.svg"
                       alt="Link to live code"
+                      class="w-5 ml-4"
                     />
                   </a>
                 </div>
               </div>
 
               <img
-                class="creations-img"
+                class="creations-img w-full mt-[10px] mb-4"
                 src="Assets/creations/devfinder.png"
                 alt=""
               />
-              <span class="text-mintGreen font-inter"
+              <span class="text-[#6d7e9e] font-inter text-xs tracking-wider"
                 >JavaScript | API | TailwindCSS</span
               >
               <a href="https://nc-devfinder.netlify.app" target="_blank"
-                ><h3 class="font-josefin">DevFinder</h3></a
+                ><h3
+                  class="font-josefi font-bold text-xl tracking-widest leading-[200%] pt-[10px] hover:cursor-pointer"
+                >
+                  DevFinder
+                </h3></a
               >
               <p
-                class="text-icyWhite font-inter text-base font-light tracking-widest leading-8"
+                class="text-icyWhite font-inter text-sm font-light tracking-widest leading-8"
               >
                 This app uses the GitHub users API to search for users by their
                 username and displays relevant profile information. Users can
@@ -685,10 +736,12 @@
               </p>
             </div>
 
-            <div class="box">
-              <div class="box-img">
-                <img src="Assets/folder.svg" alt="Folder" />
-                <div class="box-links">
+            <div
+              class="box bg-primaryBlue p-7 mr-5 mb-5 hover:bg-secondaryBlue"
+            >
+              <div class="box-img flex justify-between mb-5">
+                <img src="Assets/folder.svg" alt="Folder" class="w-[30px]" />
+                <div class="box-links flex items-center gap-2">
                   <a
                     href="https://github.com/neshacascia/js-one-piece-rps"
                     target="_blank"
@@ -696,6 +749,7 @@
                     <img
                       src="Assets/media-links/github.svg"
                       alt="Link to project on GitHub"
+                      class="w-5 ml-4"
                     />
                   </a>
                   <a
@@ -705,26 +759,31 @@
                     <img
                       src="Assets/media-links/external.svg"
                       alt="Link to live code"
+                      class="w-5 ml-4"
                     />
                   </a>
                 </div>
               </div>
 
               <img
-                class="creations-img"
+                class="creations-img w-full mt-[10px] mb-4"
                 src="Assets/creations/one-piece-rps.gif"
                 alt=""
               />
-              <span class="text-mintGreen font-inter"
+              <span class="text-[#6d7e9e] font-inter text-xs tracking-wider"
                 >JavaScript | CSS | HTML</span
               >
               <a
                 href="https://neshacascia.github.io/js-one-piece-rps/"
                 target="_blank"
-                ><h3 class="font-josefin">One Piece RPS</h3></a
+                ><h3
+                  class="font-josefin font-bold text-xl tracking-widest leading-[200%] pt-[10px] hover:cursor-pointer"
+                >
+                  One Piece RPS
+                </h3></a
               >
               <p
-                class="text-icyWhite font-inter text-base font-light tracking-widest leading-8"
+                class="text-icyWhite font-inter text-sm font-light tracking-widest leading-8"
               >
                 This version of rock, paper, scissors incorporates One Piece
                 character sprites. Users are able to select and switch fighters
