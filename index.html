@@ -192,7 +192,7 @@
     </span>
 
     <section class="pages max-w-[1400px] mx-auto lg:px-[130px]" id="pages">
-      <div id="about">
+      <div id="about" class="h-screen flex justify-between pt-[100px]">
         <div class="about-text w-[80%]">
           <h2
             class="text-mintGreen font-roboto text-[40px] font-bold -mt-2 mb-2"
@@ -200,22 +200,25 @@
             /about me
           </h2>
           <h4
-            class="gradient-bg text-mintGreen font-inter text-base font-[500] tracking-widest"
+            id="gradient-bg"
+            class="text-mintGreen font-inter text-base font-[500] tracking-widest my-4 mb-5"
           >
             — from business banking to coding
           </h4>
 
-          <div class="about-content">
-            <div class="about-paragraph">
+          <div
+            class="about-content flex flex-col md:flex-row justify-between w-full"
+          >
+            <div class="about-paragraph w-[60%]">
               <p
-                class="text-icyWhite font-inter text-base font-light tracking-widest leading-8"
+                class="text-icyWhite font-inter text-base font-light tracking-widest leading-8 mb-5"
               >
                 I have experience working in the financial industry, providing
                 support with operational risk policies, procedures, and
                 technical support.
               </p>
               <p
-                class="text-icyWhite font-inter text-base font-light tracking-widest leading-8"
+                class="text-icyWhite font-inter text-base font-light tracking-widest leading-8 mb-5"
               >
                 However, the passion to create and innovate has always been in
                 me. Building scalable and efficient web applications that create
@@ -225,102 +228,200 @@
                 improve and am excited to learn new technologies.
               </p>
               <p
-                class="text-icyWhite font-inter text-base font-light tracking-widest leading-8"
+                class="text-icyWhite font-inter text-base font-light tracking-widest leading-8 mb-5"
               >
                 When I'm not coding, I'm probably watching anime, discovering
                 new food spots or reading.
               </p>
             </div>
 
-            <div class="tech-stack-container">
-              <div class="tech-stack">
-                <div class="tech-stack-row">
-                  <figure class="tech-stack-item">
-                    <img src="Assets/tech-stack/html.svg" alt="" />
-                    <figcaption class="text-icyWhite font-josefin">
+            <div class="tech-stack-container flex justify-center">
+              <div
+                class="tech-stack bg-primaryBlue h-[60%] flex flex-col justify-center items-center absolute pt-3"
+              >
+                <div class="tech-stack-row flex relative mb-3">
+                  <figure
+                    class="tech-stack-item w-[140px] h-[82px] flex flex-col items-center"
+                  >
+                    <img
+                      src="Assets/tech-stack/html.svg"
+                      alt=""
+                      class="w-[42px] h-[42px]"
+                    />
+                    <figcaption
+                      class="text-icyWhite font-josefin text-[13.92px] pt-3"
+                    >
                       HTML
                     </figcaption>
                   </figure>
 
-                  <figure class="tech-stack-item">
-                    <img src="Assets/tech-stack/css.svg" alt="" />
-                    <figcaption class="text-icyWhite font-josefin">
+                  <figure
+                    class="tech-stack-item w-[140px] h-[82px] flex flex-col items-center"
+                  >
+                    <img
+                      src="Assets/tech-stack/css.svg"
+                      alt=""
+                      class="w-[42px] h-[42px]"
+                    />
+                    <figcaption
+                      class="text-icyWhite font-josefin text-[13.92px] pt-3"
+                    >
                       CSS
                     </figcaption>
                   </figure>
 
-                  <figure class="tech-stack-item">
-                    <img src="Assets/tech-stack/javascript.svg" alt="" />
-                    <figcaption class="text-icyWhite font-josefin">
+                  <figure
+                    class="tech-stack-item w-[140px] h-[82px] flex flex-col items-center"
+                  >
+                    <img
+                      src="Assets/tech-stack/javascript.svg"
+                      alt=""
+                      class="w-[42px] h-[42px]"
+                    />
+                    <figcaption
+                      class="text-icyWhite font-josefin text-[13.92px] pt-3"
+                    >
                       JavaScript
                     </figcaption>
                   </figure>
                 </div>
 
-                <div class="tech-stack-row">
-                  <figure class="tech-stack-item">
-                    <img src="Assets/tech-stack/git.svg" alt="" />
-                    <figcaption class="text-icyWhite font-josefin">
+                <div class="tech-stack-row flex relative mb-3">
+                  <figure
+                    class="tech-stack-item w-[140px] h-[82px] flex flex-col items-center"
+                  >
+                    <img
+                      src="Assets/tech-stack/git.svg"
+                      alt=""
+                      class="w-[42px] h-[42px]"
+                    />
+                    <figcaption
+                      class="text-icyWhite font-josefin text-[13.92px] pt-3"
+                    >
                       Git
                     </figcaption>
                   </figure>
 
-                  <figure class="tech-stack-item">
-                    <img src="Assets/tech-stack/tailwindcss.svg" alt="" />
-                    <figcaption class="text-icyWhite font-josefin">
+                  <figure
+                    class="tech-stack-item w-[140px] h-[82px] flex flex-col items-center"
+                  >
+                    <img
+                      src="Assets/tech-stack/tailwindcss.svg"
+                      alt=""
+                      class="w-[42px] h-[42px]"
+                    />
+                    <figcaption
+                      class="text-icyWhite font-josefin text-[13.92px] pt-3"
+                    >
                       TailwindCSS
                     </figcaption>
                   </figure>
 
-                  <figure class="tech-stack-item">
-                    <img src="Assets/tech-stack/react.svg" alt="" />
-                    <figcaption class="text-icyWhite font-josefin">
+                  <figure
+                    class="tech-stack-item w-[140px] h-[82px] flex flex-col items-center"
+                  >
+                    <img
+                      src="Assets/tech-stack/react.svg"
+                      alt=""
+                      class="w-[42px] h-[42px]"
+                    />
+                    <figcaption
+                      class="text-icyWhite font-josefin text-[13.92px] pt-3"
+                    >
                       React
                     </figcaption>
                   </figure>
                 </div>
 
-                <div class="tech-stack-row">
-                  <figure class="tech-stack-item">
-                    <img src="Assets/tech-stack/firebase.svg" alt="" />
-                    <figcaption class="text-icyWhite font-josefin">
+                <div class="tech-stack-row flex relative mb-3">
+                  <figure
+                    class="tech-stack-item w-[140px] h-[82px] flex flex-col items-center"
+                  >
+                    <img
+                      src="Assets/tech-stack/firebase.svg"
+                      alt=""
+                      class="w-[42px] h-[42px]"
+                    />
+                    <figcaption
+                      class="text-icyWhite font-josefin text-[13.92px] pt-3"
+                    >
                       Firebase
                     </figcaption>
                   </figure>
 
-                  <figure class="tech-stack-item">
-                    <img src="Assets/tech-stack/mongodb.svg" alt="" />
-                    <figcaption class="text-icyWhite font-josefin">
+                  <figure
+                    class="tech-stack-item w-[140px] h-[82px] flex flex-col items-center"
+                  >
+                    <img
+                      src="Assets/tech-stack/mongodb.svg"
+                      alt=""
+                      class="w-[42px] h-[42px]"
+                    />
+                    <figcaption
+                      class="text-icyWhite font-josefin text-[13.92px] pt-3"
+                    >
                       MongoDB
                     </figcaption>
                   </figure>
 
-                  <figure class="tech-stack-item">
-                    <img src="Assets/tech-stack/node.svg" alt="" />
-                    <figcaption class="text-icyWhite font-josefin">
+                  <figure
+                    class="tech-stack-item w-[140px] h-[82px] flex flex-col items-center"
+                  >
+                    <img
+                      src="Assets/tech-stack/node.svg"
+                      alt=""
+                      class="w-[42px] h-[42px]"
+                    />
+                    <figcaption
+                      class="text-icyWhite font-josefin text-[13.92px] pt-3"
+                    >
                       Node.js
                     </figcaption>
                   </figure>
                 </div>
 
-                <div class="tech-stack-row">
-                  <figure class="tech-stack-item">
-                    <img src="Assets/tech-stack/accessibility.svg" alt="" />
-                    <figcaption class="text-icyWhite font-josefin">
+                <div class="tech-stack-row flex relative">
+                  <figure
+                    class="tech-stack-item w-[140px] h-[82px] flex flex-col items-center"
+                  >
+                    <img
+                      src="Assets/tech-stack/accessibility.svg"
+                      alt=""
+                      class="w-[42px] h-[42px]"
+                    />
+                    <figcaption
+                      class="text-icyWhite font-josefin text-[13.92px] pt-3"
+                    >
                       Accessibility
                     </figcaption>
                   </figure>
 
-                  <figure class="tech-stack-item">
-                    <img src="Assets/tech-stack/restful-apis.svg" alt="" />
-                    <figcaption class="text-icyWhite font-josefin">
+                  <figure
+                    class="tech-stack-ite w-[140px] h-[82px] flex flex-col items-center"
+                  >
+                    <img
+                      src="Assets/tech-stack/restful-apis.svg"
+                      alt=""
+                      class="w-[42px] h-[42px]"
+                    />
+                    <figcaption
+                      class="text-icyWhite font-josefin text-[13.92px] pt-3"
+                    >
                       RESTful APIs
                     </figcaption>
                   </figure>
 
-                  <figure class="tech-stack-item">
-                    <img src="Assets/tech-stack/typescript.svg" alt="" />
-                    <figcaption class="text-icyWhite font-josefin">
+                  <figure
+                    class="tech-stack-item w-[140px] h-[82px] flex flex-col items-center"
+                  >
+                    <img
+                      src="Assets/tech-stack/typescript.svg"
+                      alt=""
+                      class="w-[42px] h-[42px]"
+                    />
+                    <figcaption
+                      class="text-icyWhite font-josefin text-[13.92px] pt-3"
+                    >
                       TypeScript
                     </figcaption>
                   </figure>

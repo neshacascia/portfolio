@@ -9,7 +9,7 @@
 }
 
 h3,
-.gradient-bg {
+#gradient-bg {
   background: var(--gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
