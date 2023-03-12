@@ -1,25 +1,16 @@
-//Mobile Hamburger Menu:
-const hamburgerBtn = document.querySelector('.nav-mobile');
-const mobileNav = document.querySelector('.hamburger-menu');
+const mobileNav = document.querySelector('#mobile-menu');
 
-hamburgerBtn.addEventListener('click', displayNavMenu);
+const mobileMenuNavLinks = document.querySelectorAll('#nav-item');
+mobileMenuNavLinks.forEach(link => {
+  link.addEventListener('click', closeMobileMenu);
+});
 
-function displayNavMenu() {
-  hamburgerBtn.style.display = 'none';
-  mobileNav.classList.toggle('active');
-
-  const closeBtn = document.querySelector('#close-btn');
-  closeBtn.addEventListener('click', closeNavMenu);
-
-  const mobileNavLinks = document.querySelectorAll('.hm-nav-item');
-  mobileNavLinks.forEach(link => {
-    link.addEventListener('click', closeNavMenu);
-  });
+function openMobileMenu() {
+  mobileNav.classList.remove('hidden');
 }
 
-function closeNavMenu() {
-  mobileNav.classList.remove('active');
-  hamburgerBtn.style.display = 'block';
+function closeMobileMenu() {
+  mobileNav.classList.add('hidden');
 }
 
 //Form Submission:
