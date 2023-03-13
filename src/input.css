@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,700&family=Inter:wght@300;400;500&family=Josefin+Sans:wght@700&family=Roboto:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gradient: linear-gradient(90deg, #97bbaa 0%, #64acff 100%);
+}
+
+::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+h3,
+#gradient-bg {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav,
+#mobile-menu {
+  background: rgba(23, 30, 39, 0.7);
+  backdrop-filter: saturate(180%) blur(10px);
+}
+
+#tech-stack {
+  word-spacing: 8px;
+}
+
+#message-modal {
+  background: rgba(23, 30, 39, 0.552);
+  backdrop-filter: saturate(180%) blur(10px);
+}
