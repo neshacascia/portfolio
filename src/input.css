@@ -21,13 +21,9 @@ h3,
   -webkit-text-fill-color: transparent;
 }
 
-nav {
-  background: rgba(23, 30, 39, 0.7);
-  backdrop-filter: saturate(180%) blur(10px);
-}
-
+nav,
 #mobile-menu {
-  background: rgba(23, 30, 39, 0.992);
+  background: rgba(23, 30, 39, 0.7);
   backdrop-filter: saturate(180%) blur(10px);
 }
 
