@@ -30,7 +30,7 @@ function handleSubmit(e) {
     body: new URLSearchParams(contactFormData).toString(),
   })
     .then(() => {
-      const messageModal = document.querySelector('.message-modal');
+      const messageModal = document.querySelector('#message-modal');
       messageModal.classList.remove('hidden');
       messageModal.classList.add('flex');
       setTimeout(() => {
