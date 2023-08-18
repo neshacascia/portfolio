@@ -35,3 +35,41 @@ nav,
   background: rgba(23, 30, 39, 0.552);
   backdrop-filter: saturate(180%) blur(10px);
 }
+
+/* Particles.js Styling */
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+#particles-js {
+  position: absolute;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background-color: #10161f;
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
