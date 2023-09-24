@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="main.js" async></script>
+    <title>Nesha Mervin</title>
+  </head>
+
+  <body class="bg-bgBlue w-full overflow-x-hidden">
+    <header id="services" class="w-full">
+      <nav
+        class="w-full h-[75px] flex justify-between items-center gap-10 fixed z-10 px-[30px] lg:px-[60px]"
+      >
+        <a href="index.html#home">
+          <img class="w-10" src="Assets/saturn.svg" alt="Saturn logo" />
+        </a>
+
+        <ul class="hidden text-lg tracking-widest gap-10 sm:flex">
+          <li>
+            <a
+              href="index.html"
+              class="text-icyWhite font-josefin hover:text-mintGreen"
+              >home</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#about"
+              class="text-icyWhite font-josefin hover:text-mintGreen"
+              >about</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#creations"
+              class="text-icyWhite font-josefin hover:text-mintGreen"
+              >creations</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#contact"
+              class="text-icyWhite font-josefin hover:text-mintGreen"
+              >contact</a
+            >
+          </li>
+        </ul>
+
+        <button class="sm:hidden" onclick="openMobileMenu()">
+          <i
+            id="menu-bars"
+            class="fa-solid fa-bars text-mintGreen text-2xl hover:text-icyWhite hover:cursor-pointer"
+          ></i>
+        </button>
+      </nav>
+    </header>
+
+    <section
+      id="mobile-menu"
+      class="hidden w-full fixed z-50 mt-[75px] sm:hidden"
+    >
+      <button class="absolute right-0" onclick="closeMobileMenu()">
+        <i
+          id="close-btn"
+          class="fa-solid fa-xmark text-mintGreen text-2xl mr-[32px] mt-4 hover:text-icyWhite hover:cursor-pointer"
+        ></i>
+      </button>
+
+      <ul class="text-xl flex flex-col justify-around items-center gap-3 my-5">
+        <li>
+          <a
+            href="index.html"
+            id="nav-item"
+            class="text-icyWhite font-josefin hover:text-mintGreen"
+            >home</a
+          >
+        </li>
+        <li>
+          <a
+            href="index.html#about"
+            id="nav-item"
+            class="text-icyWhite font-josefin hover:text-mintGreen"
+            >about</a
+          >
+        </li>
+        <li>
+          <a
+            href="index.html#creations"
+            id="nav-item"
+            class="text-icyWhite font-josefin hover:text-mintGreen"
+            >creations</a
+          >
+        </li>
+        <li>
+          <a
+            href="index.html#contact"
+            id="nav-item"
+            class="text-icyWhite font-josefin hover:text-mintGreen"
+            >contact</a
+          >
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
