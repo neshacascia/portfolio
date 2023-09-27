@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="main.js" async></script>
+    <title>Nesha Mervin</title>
+  </head>
+
+  <body class="bg-bgBlue w-full overflow-x-hidden">
+    <header id="services" class="w-full">
+      <nav
+        class="w-full h-[75px] flex justify-between items-center gap-10 fixed z-10 px-[30px] lg:px-[60px]"
+      >
+        <a href="index.html#home">
+          <img class="w-10" src="Assets/saturn.svg" alt="Saturn logo" />
+        </a>
+
+        <ul class="hidden text-lg tracking-widest gap-10 sm:flex">
+          <li>
+            <a
+              href="index.html"
+              class="text-icyWhite font-josefin hover:text-mintGreen"
+              >home</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#about"
+              class="text-icyWhite font-josefin hover:text-mintGreen"
+              >about</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#creations"
+              class="text-icyWhite font-josefin hover:text-mintGreen"
+              >creations</a
+            >
+          </li>
+          <li>
+            <a
+              href="#services"
+              class="text-icyWhite font-josefin hover:text-mintGreen"
+              >services</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#contact"
+              class="text-icyWhite font-josefin hover:text-mintGreen"
+              >contact</a
+            >
+          </li>
+        </ul>
+
+        <button class="sm:hidden" onclick="openMobileMenu()">
+          <i
+            id="menu-bars"
+            class="fa-solid fa-bars text-mintGreen text-2xl hover:text-icyWhite hover:cursor-pointer"
+          ></i>
+        </button>
+      </nav>
+    </header>
+
+    <section
+      id="mobile-menu"
+      class="hidden w-full fixed z-50 mt-[75px] sm:hidden"
+    >
+      <button class="absolute right-0" onclick="closeMobileMenu()">
+        <i
+          id="close-btn"
+          class="fa-solid fa-xmark text-mintGreen text-2xl mr-[32px] mt-4 hover:text-icyWhite hover:cursor-pointer"
+        ></i>
+      </button>
+
+      <ul class="text-xl flex flex-col justify-around items-center gap-3 my-5">
+        <li>
+          <a
+            href="index.html"
+            id="nav-item"
+            class="text-icyWhite font-josefin hover:text-mintGreen"
+            >home</a
+          >
+        </li>
+        <li>
+          <a
+            href="index.html#about"
+            id="nav-item"
+            class="text-icyWhite font-josefin hover:text-mintGreen"
+            >about</a
+          >
+        </li>
+        <li>
+          <a
+            href="index.html#creations"
+            id="nav-item"
+            class="text-icyWhite font-josefin hover:text-mintGreen"
+            >creations</a
+          >
+        </li>
+        <li>
+          <a
+            href="#services"
+            id="nav-item"
+            class="text-icyWhite font-josefin hover:text-mintGreen"
+            >services</a
+          >
+        </li>
+        <li>
+          <a
+            href="index.html#contact"
+            id="nav-item"
+            class="text-icyWhite font-josefin hover:text-mintGreen"
+            >contact</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section
+      class="max-w-[1400px] w-full flex flex-col items-center mx-auto pt-[70px] px-[30px] lg:px-[130px]"
+    >
+      <div id="process" class="h-full flex flex-col justify-center pt-[70px]">
+        <div class="w-full md:w-[80%] lg:w-[90%]">
+          <h2
+            class="text-mintGreen font-roboto text-[40px] font-bold tracking-wider -mt-2 mb-2"
+          >
+            /my services
+          </h2>
+          <p
+            id="gradient-bg"
+            class="text-mintGreen font-inter text-base font-[500] tracking-widest my-4 mb-5 md:text-lg"
+          >
+            Do you have a strong web presence?
+          </p>
+          <p
+            class="text-icyWhite font-inter text-base font-light tracking-widest leading-8 mb-14"
+          >
+            What will customers experience when they visit your website on their
+            phones? In today's digital landscape, having a website that is both
+            an user-friendly and responsive website is essential. My passion
+            lies in helping small businesses not only establish but elevate
+            their online presence. Whether that be creating a new website for
+            you from the ground up or refreshing an existing one, this is the
+            place to be. Here is how I deliver success:
+          </p>
+        </div>
+
+        <div class="w-full h-full flex flex-col gap-10 mb-10">
+          <div class="flex items-start gap-6">
+            <img src="Assets/consultation.svg" class="w-14" />
+            <div>
+              <h3
+                class="font-josefin font-bold text-xl tracking-widest leading-[200%]"
+              >
+                1. Consultation
+              </h3>
+              <p
+                class="text-icyWhite font-inter text-sm font-light tracking-widest leading-8"
+              >
+                It all starts with a conversation to discuss your business and
+                the vision for your website.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-7">
+            <img src="Assets/proposal.svg" class="w-12" />
+            <div>
+              <h3
+                class="font-josefin font-bold text-xl tracking-widest leading-[200%]"
+              >
+                2. Proposal
+              </h3>
+              <p
+                class="text-icyWhite font-inter text-sm font-light tracking-widest leading-8"
+              >
+                Based on our consultation, I will draft a thorough proposal
+                outlining a mockup, project costs, timeline, and details.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-6">
+            <img src="Assets/creation.svg" class="w-14" />
+            <div>
+              <h3
+                class="font-josefin font-bold text-xl tracking-widest leading-[200%] pt-[10px] hover:cursor-pointer"
+              >
+                3. Creation
+              </h3>
+              <p
+                class="text-icyWhite font-inter text-sm font-light tracking-widest leading-8"
+              >
+                We begin the exciting process of building your website!
+                Throughout the process, you will receive consistent updates
+                regarding the state of your project.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-8">
+            <img src="Assets/launch.svg" class="w-11 mt-2" />
+            <div>
+              <h3
+                class="font-josefin font-bold text-xl tracking-widest leading-[200%] pt-[10px] hover:cursor-pointer"
+              >
+                4. Launch & Support
+              </h3>
+              <p
+                class="text-icyWhite font-inter text-sm font-light tracking-widest leading-8"
+              >
+                Once the site is complete and you are satisfied, we will go live
+                and the final project will be launched. Post-production, I can
+                provide ongoing support, taking care of any maintenance needs.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex justify-center">
+            <a
+              href="index.html#contact"
+              class="text-mintGreen font-inter text-base font-normal tracking-widest leading-[200.2%] border-2 border-mintGreen rounded-md py-2 px-8 mt-8 hover:bg-[#7b8d8d61]"
+              >Let's chat
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
