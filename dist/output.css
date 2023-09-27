@@ -923,6 +923,10 @@ video {
   width: 2.75rem;
 }
 
+.w-auto{
+  width: auto;
+}
+
 .max-w-\[1400px\]{
   max-width: 1400px;
 }
