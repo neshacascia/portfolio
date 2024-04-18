@@ -691,6 +691,16 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.my-3{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .-mt-2{
   margin-top: -0.5rem;
 }
@@ -699,8 +709,8 @@ video {
   margin-bottom: 2.5rem;
 }
 
-.mb-16{
-  margin-bottom: 4rem;
+.mb-14{
+  margin-bottom: 3.5rem;
 }
 
 .mb-2{
@@ -747,12 +757,16 @@ video {
   margin-top: 75px;
 }
 
-.mb-14{
-  margin-bottom: 3.5rem;
+.-mt-1{
+  margin-top: -0.25rem;
 }
 
-.mb-12{
-  margin-bottom: 3rem;
+.mb-1{
+  margin-bottom: 0.25rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
 }
 
 .box-border{
@@ -871,6 +885,10 @@ video {
   width: 2.5rem;
 }
 
+.w-11{
+  width: 2.75rem;
+}
+
 .w-12{
   width: 3rem;
 }
@@ -909,22 +927,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-8{
-  width: 2rem;
-}
-
-.w-9{
-  width: 2.25rem;
-}
-
-.w-11{
-  width: 2.75rem;
-}
-
-.w-auto{
-  width: auto;
 }
 
 .max-w-\[1400px\]{
@@ -2292,6 +2294,10 @@ video {
   color: rgb(142 169 168 / var(--tw-text-opacity));
 }
 
+.text-transparent{
+  color: transparent;
+}
+
 .underline{
   text-decoration-line: underline;
 }
@@ -2798,6 +2804,10 @@ nav,
     margin-right: -0.25rem;
   }
 
+  .lg\:mb-6{
+    margin-bottom: 1.5rem;
+  }
+
   .lg\:flex{
     display: flex;
   }
@@ -2830,5 +2840,11 @@ nav,
     .dark\:lg\:hover\:\[paint-order\:markers\]:hover{
       paint-order: markers;
     }
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:mb-6{
+    margin-bottom: 1.5rem;
   }
 }
