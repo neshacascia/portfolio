@@ -1,9 +1,12 @@
 const mobileNav = document.querySelector('#mobile-menu');
+const toggleButton = document.querySelector('.slider');
 
 const mobileMenuNavLinks = document.querySelectorAll('#nav-item');
 mobileMenuNavLinks.forEach(link => {
   link.addEventListener('click', closeMobileMenu);
 });
+
+let isDarkMode = true;
 
 function openMobileMenu() {
   mobileNav.classList.remove('hidden');
@@ -13,7 +16,20 @@ function closeMobileMenu() {
   mobileNav.classList.add('hidden');
 }
 
-//Form Submission:
+// toggle theme
+function toggleTheme() {
+  if (isDarkMode) {
+    isDarkMode = false;
+    toggleButton.classList.remove('before:right-[4px]', 'rightSlider');
+    toggleButton.classList.add('before:left-[4px]', 'leftSlider');
+  } else {
+    isDarkMode = true;
+    toggleButton.classList.remove('before:left-[4px]', 'leftSlider');
+    toggleButton.classList.add('before:right-[4px]', 'rightSlider');
+  }
+}
+
+// form submission:
 document
   .querySelector('#contact-form')
   .addEventListener('submit', handleSubmit);
