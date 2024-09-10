@@ -7,6 +7,7 @@ mobileMenuNavLinks.forEach(link => {
 });
 
 let isDarkMode = true;
+document.documentElement.classList.add('dark');
 
 function openMobileMenu() {
   mobileNav.classList.remove('hidden');
@@ -22,10 +23,12 @@ function toggleTheme() {
     isDarkMode = false;
     toggleButton.classList.remove('before:right-[4px]', 'rightSlider');
     toggleButton.classList.add('before:left-[4px]', 'leftSlider');
+    document.documentElement.classList.remove('dark');
   } else {
     isDarkMode = true;
     toggleButton.classList.remove('before:left-[4px]', 'leftSlider');
     toggleButton.classList.add('before:right-[4px]', 'rightSlider');
+    document.documentElement.classList.add('dark');
   }
 }
 
