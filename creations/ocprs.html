@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="main.js" async></script>
+    <title>Nesha Mervin</title>
+  </head>
+
+  <body class="bg-bgBlue w-full overflow-x-hidden">
+    <header class="w-full">
+      <nav
+        class="w-full h-[75px] flex justify-between items-center gap-10 fixed z-10 px-[30px] lg:px-[60px]"
+      >
+        <a href="/index.html#home">
+          <img class="w-10" src="/Assets/saturn.svg" alt="Saturn logo" />
+        </a>
+
+        <ul class="hidden text-lg tracking-widest gap-10 sm:flex">
+          <li>
+            <a
+              href="/index.html"
+              class="text-icyWhite font-josefin hover:text-mintGreen"
+              >home</a
+            >
+          </li>
+          <li>
+            <a
+              href="/index.html#about"
+              class="text-icyWhite font-josefin hover:text-mintGreen"
+              >about</a
+            >
+          </li>
+          <li>
+            <a
+              href="/index.html#creations"
+              class="text-icyWhite font-josefin hover:text-mintGreen"
+              >creations</a
+            >
+          </li>
+          <!-- <li>
+            <a
+              href="/index.html#services"
+              class="text-icyWhite font-josefin hover:text-mintGreen"
+              >services</a
+            >
+          </li> -->
+          <li>
+            <a
+              href="/index.html#contact"
+              class="text-icyWhite font-josefin hover:text-mintGreen"
+              >contact</a
+            >
+          </li>
+        </ul>
+
+        <button class="sm:hidden" onclick="openMobileMenu()">
+          <i
+            id="menu-bars"
+            class="fa-solid fa-bars text-mintGreen text-2xl hover:text-icyWhite hover:cursor-pointer"
+          ></i>
+        </button>
+      </nav>
+    </header>
+
+    <section
+      id="mobile-menu"
+      class="hidden w-full fixed z-50 mt-[75px] sm:hidden"
+    >
+      <button class="absolute right-0" onclick="closeMobileMenu()">
+        <i
+          id="close-btn"
+          class="fa-solid fa-xmark text-mintGreen text-2xl mr-[32px] mt-4 hover:text-icyWhite hover:cursor-pointer"
+        ></i>
+      </button>
+
+      <ul class="text-xl flex flex-col justify-around items-center gap-3 my-5">
+        <li>
+          <a
+            href="/index.html"
+            id="nav-item"
+            class="text-icyWhite font-josefin hover:text-mintGreen"
+            >home</a
+          >
+        </li>
+        <li>
+          <a
+            href="/index.html#about"
+            id="nav-item"
+            class="text-icyWhite font-josefin hover:text-mintGreen"
+            >about</a
+          >
+        </li>
+        <li>
+          <a
+            href="/index.html#creations"
+            id="nav-item"
+            class="text-icyWhite font-josefin hover:text-mintGreen"
+            >creations</a
+          >
+        </li>
+        <!-- <li>
+          <a
+            href="/index.html#services"
+            id="nav-item"
+            class="text-icyWhite font-josefin hover:text-mintGreen"
+            >services</a
+          >
+        </li> -->
+        <li>
+          <a
+            href="/index.html#contact"
+            id="nav-item"
+            class="text-icyWhite font-josefin hover:text-mintGreen"
+            >contact</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section
+      class="max-w-[1400px] w-full flex flex-col items-center mx-auto pt-[70px] px-[30px] lg:px-[130px]"
+    >
+      <div class="h-full flex flex-col justify-center pt-[70px]">
+        <div class="w-full md:w-[80%] lg:w-[90%]">
+          <h2
+            class="text-mintGreen font-roboto text-[40px] font-bold tracking-wider -mt-2 mb-2"
+          >
+            /ontario-cpr-society
+          </h2>
+          <p
+            class="text-icyWhite font-inter text-base font-light tracking-widest leading-8 mb-14"
+          >
+            Led the frontend development for Ontario CPR Society’s website
+            launch, a platform offering CPR and first aid training courses. The
+            client needed a modern and high-converting website to showcase their
+            various packages effectively and improve user engagement. My
+            development work involved translating Figma design prototypes into
+            high-quality code ensuring the webpages were interactive, responsive
+            and accessible. I built 10+ modular and reusable components using
+            React.js, Gatsby and Bootstrap, reducing redundancy and improving
+            maintainability. I structured the website by storing
+            section-specific data in JSON-based data structure, enabling dynamic
+            content rendering and reducing content update time by 50%. This
+            approach accelerated development time, enhanced performance and
+            simplified future content updates, allowing for rapid scalability as
+            new packages or services were added.
+          </p>
+        </div>
+
+        <div class="flex gap-6 md:gap-14">
+          <div>
+            <h3
+              id="gradient-bg"
+              class="text-mintGreen font-inter text-base font-[500] tracking-widest my-2 md:text-lg"
+            >
+              Client
+            </h3>
+            <p
+              class="text-icyWhite font-inter text-base font-light tracking-widest leading-8 mb-14"
+            >
+              Ontario CPR Society
+            </p>
+          </div>
+
+          <div>
+            <h3
+              id="gradient-bg"
+              class="text-mintGreen font-inter text-base font-[500] tracking-widest my-2 md:text-lg"
+            >
+              Industry
+            </h3>
+            <p
+              class="text-icyWhite font-inter text-base font-light tracking-widest leading-8 mb-14"
+            >
+              Health & Safety Training
+            </p>
+          </div>
+
+          <div>
+            <h3
+              id="gradient-bg"
+              class="text-mintGreen font-inter text-base font-[500] tracking-widest my-2 md:text-lg"
+            >
+              Services
+            </h3>
+            <p
+              class="text-icyWhite font-inter text-base font-light tracking-widest leading-8 mb-14"
+            >
+              Web Development
+            </p>
+          </div>
+
+          <a
+            href="https://ontariocprsociety.ca/"
+            target="_blank"
+            id="gradient-bg"
+            class="text-mintGreen font-inter text-base font-[500] tracking-widest my-2 md:text-lg"
+          >
+            Live Site ↗
+          </a>
+        </div>
+
+        <div class="mb-14">
+          <figure>
+            <img src="/Assets/case-study/ocprs-1.webp" />
+            <img src="/Assets/case-study/ocprs-2.webp" loading="lazy" />
+            <img src="/Assets/case-study/ocprs-3.webp" loading="lazy" />
+            <figcaption
+              class="text-icyWhite font-inter text-sm text-center font-light tracking-widest leading-8"
+            >
+              Homepage
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
