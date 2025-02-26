@@ -91,3 +91,7 @@ input:checked + .slider:before + .leftSlider {
 .document {
   color: #d8deed !important;
 }
+
+#contact {
+  padding-bottom: 110px;
+}
