@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="../main.js" defer></script>
+    <title>Nesha Mervin</title>
+  </head>
+
+  <body class="bg-bgBlue w-full overflow-x-hidden">
+    <header class="w-full">
+      <nav
+        class="w-full h-[75px] flex justify-between items-center gap-10 fixed z-10 px-[30px] lg:px-[60px]"
+      >
+        <a href="/index.html#home">
+          <img class="w-10" src="/Assets/saturn.svg" alt="Saturn logo" />
+        </a>
+
+        <ul class="hidden text-lg tracking-widest gap-10 sm:flex">
+          <li>
+            <a
+              href="/index.html"
+              class="text-icyWhite font-josefin hover:text-mintGreen"
+              >home</a
+            >
+          </li>
+          <li>
+            <a
+              href="/index.html#about"
+              class="text-icyWhite font-josefin hover:text-mintGreen"
+              >about</a
+            >
+          </li>
+          <li>
+            <a
+              href="/index.html#creations"
+              class="text-icyWhite font-josefin hover:text-mintGreen"
+              >creations</a
+            >
+          </li>
+          <li>
+            <a
+              href="/index.html#contact"
+              class="text-icyWhite font-josefin hover:text-mintGreen"
+              >contact</a
+            >
+          </li>
+        </ul>
+
+        <button class="sm:hidden" onclick="openMobileMenu()">
+          <i
+            id="menu-bars"
+            class="fa-solid fa-bars text-mintGreen text-2xl hover:text-icyWhite hover:cursor-pointer"
+          ></i>
+        </button>
+      </nav>
+    </header>
+
+    <span class="hidden w-[120px] lg:flex flex-col items-center fixed bottom-0">
+      <a
+        class="p-[10px]"
+        href="https://www.linkedin.com/in/neshamervin/"
+        target="_blank"
+      >
+        <img src="../Assets/media-links/linkedin.svg" alt="LinkedIn" />
+      </a>
+      <a class="p-[10px]" href="https://github.com/neshacascia" target="_blank">
+        <img src="../Assets/media-links/github.svg" alt="GitHub" />
+      </a>
+      <a
+        class="p-[10px]"
+        href="https://twitter.com/neshacascia"
+        target="_blank"
+      >
+        <img src="../Assets/media-links/twitter.svg" alt="Twitter" />
+      </a>
+      <img class="p-[10px]" src="../Assets/media-links/line.svg" alt="" />
+    </span>
+
+    <section
+      id="mobile-menu"
+      class="hidden w-full fixed z-50 mt-[75px] sm:hidden"
+    >
+      <button class="absolute right-0" onclick="closeMobileMenu()">
+        <i
+          id="close-btn"
+          class="fa-solid fa-xmark text-mintGreen text-2xl mr-[32px] mt-4 hover:text-icyWhite hover:cursor-pointer"
+        ></i>
+      </button>
+
+      <ul class="text-xl flex flex-col justify-around items-center gap-3 my-5">
+        <li>
+          <a
+            href="/index.html"
+            id="nav-item"
+            class="text-icyWhite font-josefin hover:text-mintGreen"
+            >home</a
+          >
+        </li>
+        <li>
+          <a
+            href="/index.html#about"
+            id="nav-item"
+            class="text-icyWhite font-josefin hover:text-mintGreen"
+            >about</a
+          >
+        </li>
+        <li>
+          <a
+            href="/index.html#creations"
+            id="nav-item"
+            class="text-icyWhite font-josefin hover:text-mintGreen"
+            >creations</a
+          >
+        </li>
+        <li>
+          <a
+            href="/index.html#contact"
+            id="nav-item"
+            class="text-icyWhite font-josefin hover:text-mintGreen"
+            >contact</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section
+      class="max-w-[1400px] w-full flex flex-col items-center mx-auto pt-[70px] px-[30px] lg:px-[130px]"
+    >
+      <div class="h-full flex flex-col justify-center pt-[70px]">
+        <div class="w-full md:w-[80%] lg:w-[90%]">
+          <h2
+            class="text-mintGreen font-roboto text-[40px] font-bold tracking-wider -mt-2 mb-2"
+          >
+            /ontario-security-license
+          </h2>
+          <p
+            class="text-icyWhite font-inter text-base font-light tracking-widest leading-8 mb-14"
+          >
+            Led frontend development for Ontario Security License, the leading
+            online security guard training platform in Ontario. I built 15+
+            modular and reusable components using React.js, Gatsby, and
+            Bootstrap, streamlining development and improving maintainability. I
+            was responsible for developing new subpages, transforming Figma
+            design prototypes into high-quality, responsive, and accessible web
+            pages to enhance user experience and drive conversions.
+          </p>
+        </div>
+
+        <div class="flex gap-6 md:gap-14">
+          <div>
+            <h3
+              id="gradient-bg"
+              class="text-mintGreen font-inter text-base font-[500] tracking-widest my-2 md:text-lg"
+            >
+              Client
+            </h3>
+            <p
+              class="text-icyWhite font-inter text-base font-light tracking-widest leading-8 mb-14"
+            >
+              Ontario Security License
+            </p>
+          </div>
+
+          <div>
+            <h3
+              id="gradient-bg"
+              class="text-mintGreen font-inter text-base font-[500] tracking-widest my-2 md:text-lg"
+            >
+              Industry
+            </h3>
+            <p
+              class="text-icyWhite font-inter text-base font-light tracking-widest leading-8 mb-14"
+            >
+              Security & Compliance Training
+            </p>
+          </div>
+
+          <div>
+            <h3
+              id="gradient-bg"
+              class="text-mintGreen font-inter text-base font-[500] tracking-widest my-2 md:text-lg"
+            >
+              Services
+            </h3>
+            <p
+              class="text-icyWhite font-inter text-base font-light tracking-widest leading-8 mb-14"
+            >
+              Web Development
+            </p>
+          </div>
+
+          <a
+            href="https://ontariosecuritylicense.ca/guaranteed-job/"
+            target="_blank"
+            id="gradient-bg"
+            class="text-mintGreen font-inter text-base font-[500] tracking-widest my-2 md:text-lg"
+          >
+            Live Site ↗
+          </a>
+        </div>
+
+        <div class="mb-14">
+          <figure>
+            <img src="/Assets/case-study/guaranteed-1.webp" />
+            <img src="/Assets/case-study/guaranteed-2.webp" loading="lazy" />
+            <figcaption
+              class="text-icyWhite font-inter text-sm text-center font-light tracking-widest leading-8"
+            >
+              Guaranteed Job
+            </figcaption>
+          </figure>
+        </div>
+        <p
+          class="text-icyWhite font-inter text-base font-light tracking-widest leading-8 mb-14"
+        >
+          A major focus of my work was revamping the highly visited License
+          subpage, which previously had an outdated design and lacked clear
+          information. I spearheaded the redesign of their existing page,
+          ensuring high performance and cross-browser compatibility. To improve
+          efficiency, I refactored repetitive and hardcoded logic, achieving a
+          37% reduction in lines of code. Additionally, I optimized page load
+          time by 75%, significantly improving performance and user experience.
+          By implementing a JSON-based data architecture, I enabled dynamic
+          content rendering, reducing content update time by 60% allowing for
+          seamless scalability.
+        </p>
+
+        <figure>
+          <img src="/Assets/case-study/license.webp" loading="lazy" />
+          <figcaption
+            class="text-icyWhite font-inter text-sm text-center font-light tracking-widest leading-8"
+          >
+            Before & After License Page
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="max-w-[1400px] mx-auto px-[30px] lg:px-[130px]">
+      <div id="contact" class="pt-[110px]">
+        <div class="w-full md:w-[80%]">
+          <h2
+            class="text-mintGreen font-roboto text-[40px] font-bold tracking-wider -mt-2 mb-4"
+          >
+            let's work together
+          </h2>
+          <p
+            class="text-icyWhite font-inter text-base font-light tracking-widest leading-8 mb-4"
+          >
+            Every great project begins with an idea.
+          </p>
+          <p
+            class="text-icyWhite font-inter text-base font-light tracking-widest leading-8 mb-4"
+          >
+            Thinking of launching a business? Building new features or
+            refreshing an existing website? If you're looking for a dedicated
+            and passionate developer to bring your vision to life, let's
+            connect!
+          </p>
+        </div>
+
+        <button
+          onclick="copyEmail()"
+          class="text-mintGreen font-inter text-base font-normal tracking-widest leading-[200.2%] border-2 border-mintGreen rounded-md py-2 px-8 mt-8 hover:bg-[#7b8d8d61]"
+          type="submit"
+        >
+          neshacascia@gmail.com <i class="fa-solid fa-copy"></i>
+        </button>
+
+        <div id="copy-message" class="hidden text-center mt-3 pl-4">
+          <p
+            class="text-icyWhite font-inter text-base font-light tracking-widest leading-8"
+          >
+            Email copied!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="max-w-[1400px] mx-auto px-[30px] lg:px-[130px]">
+      <div class="flex flex-col items-center gap-5 mb-5">
+        <span class="flex justify-center items-center gap-10 lg:hidden">
+          <a href="https://www.linkedin.com/in/neshamervin/" target="_blank">
+            <img src="../Assets/media-links/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/neshacascia" target="_blank">
+            <img src="../Assets/media-links/github.svg" alt="GitHub" />
+          </a>
+          <a href="https://twitter.com/neshacascia" target="_blank">
+            <img src="../Assets/media-links/twitter.svg" alt="Twitter" />
+          </a>
+        </span>
+
+        <p
+          class="text-icyWhite font-inter text-base font-light tracking-widest leading-8 flex items-center gap-3"
+        >
+          Designed & coded with
+          <span><img src="../Assets/heart.svg" alt="Heart symbol" /></span> by
+          Nesha
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

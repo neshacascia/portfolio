@@ -736,12 +736,20 @@ video {
   margin-right: 32px;
 }
 
+.mt-1{
+  margin-top: 0.25rem;
+}
+
 .mt-2{
   margin-top: 0.5rem;
 }
 
 .mt-4{
   margin-top: 1rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
 }
 
 .mt-8{
@@ -754,6 +762,10 @@ video {
 
 .mt-\[75px\]{
   margin-top: 75px;
+}
+
+.mt-3{
+  margin-top: 0.75rem;
 }
 
 .box-border{
@@ -850,6 +862,10 @@ video {
 
 .h-0{
   height: 0px;
+}
+
+.h-48{
+  height: 12rem;
 }
 
 .h-\[22px\]{
@@ -2003,6 +2019,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-\[110px\]{
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
 .pb-5{
   padding-bottom: 1.25rem;
 }
@@ -2033,6 +2054,10 @@ video {
 
 .pt-\[70px\]{
   padding-top: 70px;
+}
+
+.pl-4{
+  padding-left: 1rem;
 }
 
 .text-left{
@@ -2118,6 +2143,10 @@ video {
 
 .text-\[17\.92px\]{
   font-size: 17.92px;
+}
+
+.text-\[21px\]{
+  font-size: 21px;
 }
 
 .text-\[32px\]{
@@ -2680,18 +2709,6 @@ input {
   display: none;
 }
 
-/* .slider:hover {
-  background: #8ea9a8;
-}
-
-input:checked + .slider {
-  background-color: #8ea9a8;
-}
-
-input:checked + .slider:hover {
-  background: #8ea9a8;
-} */
-
 input:focus + .slider {
   box-shadow: 0 0 1px #fff;
 }
@@ -2710,6 +2727,14 @@ input:checked + .slider:before + .leftSlider {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.document {
+  color: #d8deed !important;
+}
+
+#contact {
+  padding-bottom: 110px;
 }
 
 @media (min-width: 640px){
@@ -2760,6 +2785,10 @@ input:checked + .slider:before + .leftSlider {
 
 .hover\:cursor-pointer:hover{
   cursor: pointer;
+}
+
+.hover\:cursor-not-allowed:hover{
+  cursor: not-allowed;
 }
 
 .hover\:bg-\[\#7b8d8d61\]:hover{
@@ -2855,6 +2884,10 @@ input:checked + .slider:before + .leftSlider {
 
   .md\:justify-between{
     justify-content: space-between;
+  }
+
+  .md\:gap-14{
+    gap: 3.5rem;
   }
 
   .md\:text-\[40px\]{
