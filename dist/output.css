@@ -2787,6 +2787,10 @@ input:checked + .slider:before + .leftSlider {
   cursor: pointer;
 }
 
+.hover\:cursor-not-allowed:hover{
+  cursor: not-allowed;
+}
+
 .hover\:bg-\[\#7b8d8d61\]:hover{
   background-color: #7b8d8d61;
 }
