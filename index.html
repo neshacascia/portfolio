@@ -117,14 +117,6 @@
             >creations</a
           >
         </li>
-        <!-- <li>
-          <a
-            href="services.html"
-            id="nav-item"
-            class="text-icyWhite font-josefin hover:text-mintGreen"
-            >services</a
-          >
-        </li> -->
         <li>
           <a
             href="#contact"
@@ -768,7 +760,7 @@
     </section>
 
     <section class="max-w-[1400px] mx-auto px-[30px] lg:px-[130px]">
-      <div id="contact" class="h-screen pt-[110px]">
+      <div id="contact" class="pt-[110px]">
         <div class="w-full md:w-[80%]">
           <h2
             class="text-mintGreen font-roboto text-[40px] font-bold tracking-wider -mt-2 mb-4"
@@ -778,80 +770,38 @@
           <p
             class="text-icyWhite font-inter text-base font-light tracking-widest leading-8 mb-4"
           >
-            It all begins with an idea.
+            Every great project begins with an idea.
           </p>
           <p
             class="text-icyWhite font-inter text-base font-light tracking-widest leading-8 mb-4"
           >
-            Thinking of launching a business? Or have a creative project in
-            mind? I'd love to bring your vision to life. Just looking to chat?
-            Feel free to reach out, I look forward to hearing from you!
+            Thinking of launching a business? Building new features or
+            refreshing an existing website? If you're looking for a dedicated
+            and passionate developer to bring your vision to life, let's
+            connect!
           </p>
-        </div>
 
-        <div>
-          <form name="contact" method="POST" id="contact-form" netlify>
-            <div>
-              <label for="name"></label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Name"
-                required
-                class="text-icyWhite bg-primaryBlue font-inter text-sm tracking-widest leading-[200.2%] w-full md:w-[400px] p-3 mb-5"
-              />
-            </div>
+          <button
+            onclick="copyEmail()"
+            class="text-mintGreen font-inter text-base font-normal tracking-widest leading-[200.2%] border-2 border-mintGreen rounded-md py-2 px-8 mt-8 hover:bg-[#7b8d8d61]"
+            type="submit"
+          >
+            neshacascia@gmail.com <i class="fa-solid fa-copy"></i>
+          </button>
 
-            <div>
-              <label for="email"></label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email address"
-                required
-                class="text-icyWhite bg-primaryBlue font-inter text-sm tracking-widest leading-[200.2%] w-full md:w-[400px] p-3 mb-5"
-              />
-            </div>
-
-            <div>
-              <label for="message"></label>
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="4"
-                placeholder="Enter your message..."
-                required
-                class="text-icyWhite bg-primaryBlue font-inter text-sm tracking-widest leading-[200.2%] w-full md:w-[700px] p-3"
-              ></textarea>
-            </div>
-
-            <button
-              class="text-mintGreen font-inter text-base font-normal tracking-widest leading-[200.2%] border-2 border-mintGreen rounded-md py-2 px-8 mt-8 hover:bg-[#7b8d8d61]"
-              type="submit"
+          <div id="copy-message" class="hidden text-center mt-3 pl-4">
+            <p
+              class="text-icyWhite font-inter text-base font-light tracking-widest leading-8"
             >
-              Submit
-            </button>
-          </form>
+              Email copied!
+            </p>
+          </div>
         </div>
-      </div>
-
-      <div
-        id="message-modal"
-        class="hidden text-center h-full w-full justify-center py-4 px-6"
-      >
-        <p
-          class="text-icyWhite font-inter text-base font-light tracking-widest leading-8"
-        >
-          Thank you! Your message was successfully sent!
-        </p>
       </div>
     </section>
 
     <footer class="max-w-[1400px] mx-auto px-[30px] lg:px-[130px]">
-      <div class="h-full flex flex-col items-center gap-5 pt-40 mb-5">
+      <div class="flex flex-col items-center gap-5 mb-5">
         <span class="flex justify-center items-center gap-10 lg:hidden">
           <a href="https://www.linkedin.com/in/neshamervin/" target="_blank">
             <img src="Assets/media-links/linkedin.svg" alt="LinkedIn" />
